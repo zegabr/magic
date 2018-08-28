@@ -1,11 +1,14 @@
 git clone https://github.com/zegabr/cps.git
 git clone https://github.com/zegabr/remaper.git
 
-rm cps/README.md
-rm cps/LICENSE
-mv cps ~/Desktop
-cd Desktop/cps
-bash cps.sh
+rm ./cps/README.md
+rm ./cps/LICENSE
+rm ./remaper/README.md
+rm ./remaper/LICENSE
+
+mv ./cps ~/Desktop
+mv ./remaper/remaper.sh ~/Desktop/cps
 
 cd
-mv remaper/remaper.sh ~/Desktop/cps
+cd Desktop/cps
+bash cps.sh
