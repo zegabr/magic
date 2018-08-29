@@ -7,7 +7,8 @@ rm ./remaper/README.md
 rm ./remaper/LICENSE
 
 mv ./cps ~/Desktop
-mv ./remaper/remaper.sh ~/Desktop/cps
+mv ./remaper/remaper.sh ~/
+mv ./remaper/undo.sh ~/
 
 cd
 cd Desktop/cps
