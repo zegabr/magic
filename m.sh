@@ -9,6 +9,7 @@ rm ./remaper/LICENSE
 mv ./cps ~/Desktop
 mv ./remaper/remaper.sh ~/
 mv ./remaper/undo.sh ~/
+rm -f -r ./remaper
 
 cd
 cd Desktop/cps
