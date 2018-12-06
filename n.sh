@@ -1,6 +1,8 @@
 echo "#include <bits/stdc++.h>
 using namespace std;
-char pl = '\n',sp=' ';
+
+#define pl '\n'
+#define sp ' '
 typedef long long ll;
 typedef pair<int,int> pii;
 
@@ -15,7 +17,7 @@ int main(){
 
 
 }
-" > a.cpp
+" > A.cpp
 
 ##gedit settings
 gsettings set org.gnome.gedit.preferences.print print-syntax-highlighting true
