@@ -4,7 +4,7 @@ using namespace std;
 #define pl '\n'
 #define sp ' '
 typedef long long ll;
-typedef pair<int,int> pii;
+typedef pair<ll,ll> pll;
 
 
 
@@ -18,7 +18,7 @@ int main(){
 
 
 }
-" > A.cpp
+" > a.cpp
 
 ##gedit settings
 gsettings set org.gnome.gedit.preferences.print print-syntax-highlighting true
@@ -33,4 +33,4 @@ gsettings set org.gnome.gedit.preferences.editor display-overview-map false
 gsettings set org.gnome.gedit.preferences.editor tabs-size 4 
 gsettings set org.gnome.gedit.preferences.editor wrap-mode 'none'
 wmctrl -r gedit -e 0,0,150,430,570 ##change gedit window position and dimensions
-gedit A.cpp i &
+gedit a.cpp i &
