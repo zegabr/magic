@@ -8,13 +8,13 @@ rm ./remaper/README.md
 rm ./remaper/LICENSE
 
 #move cps pro desktop
-mv ./cps ~/Desktop
+mv ./cps ~/Desktop/
 mv ./remaper/remaper.sh ~/
 mv ./remaper/undo.sh ~/
 rm -f -r ./remaper
 
 cd
-cd Desktop/cps
+cd Desktop/cps/
 #roda cps
 bash cps.sh
 
