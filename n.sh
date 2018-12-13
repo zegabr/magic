@@ -1,8 +1,10 @@
 echo "#include <bits/stdc++.h>
 using namespace std;
-char pl = '\n',sp=' ';
+
+#define pl '\n'
+#define sp ' '
 typedef long long ll;
-typedef pair<int,int> pii;
+typedef pair<ll,ll> pll;
 
 
 
@@ -12,6 +14,7 @@ typedef pair<int,int> pii;
 
 int main(){
     ios::sync_with_stdio(0); cin.tie(0);
+    //cout<<fixed<<setprecision(10);
 
 
 }
