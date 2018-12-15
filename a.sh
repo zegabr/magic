@@ -1,5 +1,5 @@
 #cria aliases
-alias python=python3
+alias py=python3
 
 alias draft='cd && bash m/n.sh'
 alias contest='cd && bash m/m.sh'
