@@ -37,7 +37,8 @@ wmctrl -r gedit -e 0,0,150,430,570 ##change gedit window position and dimensions
 gedit a.cpp i &
 
 echo "
-set ruler nu title autoindent noerrorbells nohlsearch tabstop=4
 syntax on
+set ruler nu title autoindent noerrorbells nohlsearch tabstop=4
+se et
 
 " > ~/.vimrc
