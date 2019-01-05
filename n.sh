@@ -48,5 +48,5 @@ behave mswin
 
 echo "try gedit a.cpp i &"
 echo "or"
-echo "vim a.cpp i"
+echo "vim -O a.cpp i"
 
