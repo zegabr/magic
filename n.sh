@@ -34,11 +34,19 @@ gsettings set org.gnome.gedit.preferences.editor display-overview-map false
 gsettings set org.gnome.gedit.preferences.editor tabs-size 4 
 gsettings set org.gnome.gedit.preferences.editor wrap-mode 'none'
 wmctrl -r gedit -e 0,0,150,430,570 ##change gedit window position and dimensions
-gedit a.cpp i &
 
 echo "
 syntax on
-set ruler nu title autoindent noerrorbells nohlsearch tabstop=4
+set ruler nu title autoindent noerrorbells hls tabstop=4
 se et
+source $VIMRUNTIME/mswin.vim
+behave mswin
+
+
 
 " > ~/.vimrc
+
+echo "try gedit a.cpp i &"
+echo "or"
+echo "vim a.cpp i"
+
