@@ -35,11 +35,19 @@ gsettings set org.gnome.gedit.preferences.editor tabs-size 4
 gsettings set org.gnome.gedit.preferences.editor wrap-mode 'none'
 wmctrl -r gedit -e 0,0,150,430,570 ##change gedit window position and dimensions
 
+##vim settings
 echo "
 syntax on
-set ruler nu title autoindent noerrorbells hls tabstop=4
+set ruler nu title autoindent noerrorbells hls
+
+set tabstop=2 shitfwidth=2 softtabstop=2 smarttab
+
+autocmd filetype python :set tabstop=4
+autocmd filetype python :set shiftwidth=4
+autocmd filetype python :set softtab=4
+
 se et
-source $VIMRUNTIME/mswin.vim
+source \$VIMRUNTIME/mswin.vim
 behave mswin
 
 
