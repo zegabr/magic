@@ -20,6 +20,7 @@ int main(){
 
 }
 " > a.cpp
+cp a.cpp tmp.cpp
 
 ##gedit settings
 gsettings set org.gnome.gedit.preferences.print print-syntax-highlighting true
