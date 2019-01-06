@@ -14,8 +14,8 @@ typedef pair<ll,ll> pll;
 
 
 int main(){
-    ios::sync_with_stdio(0); cin.tie(0);
-    //cout<<fixed<<setprecision(10);
+  ios::sync_with_stdio(0); cin.tie(0);
+  //cout<<fixed<<setprecision(10);
 
 
 }
@@ -40,7 +40,7 @@ echo "
 syntax on
 set ruler nu title autoindent noerrorbells hls
 
-set tabstop=2 shitfwidth=2 softtabstop=2 smarttab
+set tabstop=2 shiftwidth=2 softtabstop=2 smarttab
 
 autocmd filetype python :set tabstop=4
 autocmd filetype python :set shiftwidth=4
