@@ -38,20 +38,18 @@ wmctrl -r gedit -e 0,0,150,430,570 ##change gedit window position and dimensions
 
 ##vim settings
 echo "
+
 syntax on
 set ruler nu title autoindent noerrorbells hls
 
-set tabstop=2 shiftwidth=2 softtabstop=2 smarttab
-
-autocmd filetype python :set tabstop=4
-autocmd filetype python :set shiftwidth=4
-autocmd filetype python :set softtab=4
-
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set smarttab
 se et
+
 source \$VIMRUNTIME/mswin.vim
 behave mswin
-
-
 
 " > ~/.vimrc
 
