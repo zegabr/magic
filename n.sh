@@ -28,11 +28,11 @@ source geditsetup.sh
 
 ##vim settings
 cat m/vimsetup >  ~/.vimrc
-echo
+
 vim --version | grep +clipboard
 vim --version | grep +autocmd
 echo "if it has +clipboard, you can use ^A, ^C and ^V"
-
+echo
 
 echo "a.cpp and i (input file) added to your home folder"
 
