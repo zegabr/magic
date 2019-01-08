@@ -1,22 +1,19 @@
 set nocompatible
 syntax on
-set ruler nu title autoindent noerrorbells hls
+set ruler nu title  noerrorbells hls
 
-set ts=4  sw=4 sts=4 expandtab
+
+set ts=4  sw=4 sts=4 noexpandtab
 
 source $VIMRUNTIME/mswin.vim
 behave mswin
 
-
-
-
-
 "below command is for vimrc testing while ediing it
 if has("autocmd")
     autocmd bufwritepost .vimrc source $MYVIMRC
-	filetype on
-	autocmd FileType javascript setlocal ts=4 sw=4 sts=4 noexpandtab
-	autocmd FileType python setlocal ts=4 sw=4 sts=4 noexpandtab
-	autocmd Filetype html setlocal ts=2 sw=2 sts=2 expandtab
-	autocmd Filetype css setlocal ts=2 sw=2 sts=2 expandtab
+    filetype on
+    autocmd FileType javascript setlocal ts=4 sw=4 sts=4 noexpandtab
+    autocmd FileType python setlocal ts=4 sw=4 sts=4 noexpandtab
+    autocmd Filetype html setlocal ts=2 sw=2 sts=2 expandtab
+    autocmd Filetype css setlocal ts=2 sw=2 sts=2 expandtab
 endif
