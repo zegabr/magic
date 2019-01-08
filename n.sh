@@ -14,8 +14,8 @@ typedef pair<ll,ll> pll;
 
 
 int main(){
-  ios::sync_with_stdio(0); cin.tie(0);
-  //cout<<fixed<<setprecision(10);
+	ios::sync_with_stdio(0); cin.tie(0);
+	//cout<<fixed<<setprecision(10);
 
 
 }
@@ -24,11 +24,11 @@ cp a.cpp tmp.cpp
 echo "paste input here" > i
 
 ##gedit settings
-source geditsetup.sh
-
+echo "bash geditsetup.sh for configuring gedit"
+echo
 ##vim settings
-cat m/vimsetup >  ~/.vimrc
-
+echo "cat m/vimsetup > ~/.vimrc for vimsetup"
+echo
 vim --version | grep +clipboard
 vim --version | grep +autocmd
 echo "if it has +clipboard, you can use ^A, ^C and ^V"

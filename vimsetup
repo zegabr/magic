@@ -3,7 +3,7 @@ syntax on
 set ruler nu title  noerrorbells hls
 
 
-set ts=4  sw=4 sts=4 noexpandtab
+set ts=4  sw=4 sts=4 noexpandtab autoindent
 
 source $VIMRUNTIME/mswin.vim
 behave mswin
