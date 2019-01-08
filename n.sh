@@ -1,4 +1,4 @@
-## cria só um rascunho
+## draft creation
 echo "#include <bits/stdc++.h>
 using namespace std;
 
@@ -21,39 +21,18 @@ int main(){
 }
 " > a.cpp
 cp a.cpp tmp.cpp
+echo "paste input here" > i
 
 ##gedit settings
-gsettings set org.gnome.gedit.preferences.print print-syntax-highlighting true
-gsettings set org.gnome.gedit.preferences.editor highlight-current-line true
-gsettings set org.gnome.gedit.preferences.editor bracket-matching true
-gsettings set org.gnome.gedit.preferences.editor scheme 'oblivion'
-gsettings set org.gnome.gedit.preferences.editor display-line-numbers true
-gsettings set org.gnome.gedit.preferences.editor insert-spaces false
-gsettings set org.gnome.gedit.preferences.editor auto-indent true
-gsettings set org.gnome.gedit.preferences.editor syntax-highlighting true
-gsettings set org.gnome.gedit.preferences.editor display-overview-map false
-gsettings set org.gnome.gedit.preferences.editor tabs-size 4 
-gsettings set org.gnome.gedit.preferences.editor wrap-mode 'none'
-wmctrl -r gedit -e 0,0,150,430,570 ##change gedit window position and dimensions
+source geditsetup.sh
 
 ##vim settings
-echo "
+cat m/vimsetup >  ~/.vimrc
+echo
+vim --version | grep +clipboard
+vim --version | grep +autocmd
+echo "if it has +clipboard, you can use ^A, ^C and ^V"
 
-syntax on
-set ruler nu title autoindent noerrorbells hls
 
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
-set smarttab
-se et
-
-source \$VIMRUNTIME/mswin.vim
-behave mswin
-
-" > ~/.vimrc
-
-echo "try gedit a.cpp i &"
-echo "or"
-echo "vim -O [+numerodalinhainicial] a.cpp i"
+echo "a.cpp and i (input file) added to your home folder"
 
