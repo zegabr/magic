@@ -3,8 +3,8 @@ echo "#include <bits/stdc++.h>
 using namespace std;
 #define pl '\n'
 #define sp ' '
-#define Y "YES"
-#define N "NO"
+#define Y \"YES\"
+#define N \"NO\"
 typedef long long ll;
 typedef pair<ll,ll> pll;
 
