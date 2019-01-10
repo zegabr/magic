@@ -26,7 +26,7 @@ int main(){
 }" > a.cpp
 cp a.cpp tmp.cpp
 echo "paste input here" > i
-
+echo "file for output"
 ##gedit settings
 bash geditsetup.sh 
 #echo
@@ -38,5 +38,7 @@ bash geditsetup.sh
 #echo "if it has +clipboard, you can use ^A, ^C and ^V"
 #echo
 
-echo "tmp.cpp, a.cpp and i (input file) added to your home folder"
+gedit a.cpp i o &
+
+
 
