@@ -26,7 +26,6 @@ int main(){
 }" > a.cpp
 cp a.cpp tmp.cpp
 echo "paste input here" > i
-echo "file for output"
 ##gedit settings
 bash geditsetup.sh 
 #echo
