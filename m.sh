@@ -8,13 +8,13 @@ rm ./remaper/README.md
 rm ./remaper/LICENSE
 
 
-mv ./remaper/remaper.sh ~/
-mv ./remaper/undo.sh ~/
+mv ./remaper/remaper.sh ./
+mv ./remaper/undo.sh ./
 rm -f -r ./remaper
 ls cp/
 
 echo -----to remap keys or undo remapping, use remaper.sh and undo.sh which are at ~/--------
 
 #cria aliases
-source ~/m/a.sh
-source ~/m/n.sh
+source ./m/a.sh
+source ./m/n.sh
