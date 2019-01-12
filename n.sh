@@ -27,7 +27,7 @@ int main(){
 cp a.cpp tmp.cpp
 echo "paste input here" > i
 ##gedit settings
-bash geditsetup.sh 
+bash ./m/geditsetup.sh 
 #echo
 ##vim settings
 #echo "cat m/vimsetup > ~/.vimrc for vimsetup"
