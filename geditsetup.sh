@@ -1,3 +1,4 @@
+#!/bin/bash
 gsettings set org.gnome.gedit.preferences.print print-syntax-highlighting true
 gsettings set org.gnome.gedit.preferences.editor highlight-current-line true
 gsettings set org.gnome.gedit.preferences.editor bracket-matching true
