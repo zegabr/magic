@@ -1,3 +1,4 @@
+#!/bin/bash
 #clona cp, remaper
 git clone https://github.com/zegabr/cp.git
 git clone https://github.com/zegabr/remaper.git
