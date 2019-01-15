@@ -1,3 +1,4 @@
+#!/bin/bash
 ## draft creation
 echo "#include <bits/stdc++.h>
 using namespace std;
