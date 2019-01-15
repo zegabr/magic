@@ -1,3 +1,4 @@
+#!/bin/bash
 #cria aliases
 unalias py
 alias py=python3
