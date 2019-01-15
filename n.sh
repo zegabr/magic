@@ -38,7 +38,7 @@ bash ./m/geditsetup.sh
 #echo "if it has +clipboard, you can use ^A, ^C and ^V"
 #echo
 
-gedit a.cpp i o &
+#gedit a.cpp i o &
 
 
 
