@@ -10,9 +10,6 @@
 #include <unordered_map>
 #include <bitset>
 #include <cmath>
-#include <climits>
-//#include <string>//testar swap sem este include
-//#include <utility>//testar pair sem este include
 
 #define pb(x) push_back(x) 
 #define sz(x) ((int)(x).size())
