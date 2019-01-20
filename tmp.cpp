@@ -19,12 +19,14 @@
 #define fi first
 #define se second
 
-using namespace std;
-
 #define pl '\n'
 #define sp ' '
 #define yes "YES\n"
 #define no "NO\n"
+
+#define inf INT64_MAX
+
+using namespace std;
 
 typedef long long ll;
 typedef pair<ll,ll> pll;
@@ -32,7 +34,6 @@ typedef pair<int,int> ii;
 
 const ll mod=1e9+7;
 const ll N=1e5+5;
-
 
 
 int main(){
