@@ -8,6 +8,6 @@ gsettings set org.gnome.gedit.preferences.editor insert-spaces false
 gsettings set org.gnome.gedit.preferences.editor auto-indent true
 gsettings set org.gnome.gedit.preferences.editor syntax-highlighting true
 gsettings set org.gnome.gedit.preferences.editor display-overview-map false
-gsettings set org.gnome.gedit.preferences.editor tabs-size 2 
+gsettings set org.gnome.gedit.preferences.editor tabs-size 4
 gsettings set org.gnome.gedit.preferences.editor wrap-mode 'none'
 wmctrl -r gedit -e 0,0,150,430,570 ##change gedit window position and dimensions
