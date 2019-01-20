@@ -14,8 +14,8 @@
 #define pb(x) push_back(x) 
 #define sz(x) ((int)(x).size())
 #define all(x) (x).begin(), (x).end()
-#define fr(i, l, r) for(int i=l;i<r;i++)//l..r-1
-#define frb(i, r, l) for(int i=r;i>l;i--)//r..l+1
+#define fr(i, a, b) for(int i=a;i<=b;i++)//a..b
+#define frb(i, b, a) for(int i=b;i>=a;i--)//b..a
 #define fi first
 #define se second
 
@@ -23,8 +23,8 @@ using namespace std;
 
 #define pl '\n'
 #define sp ' '
-#define yes "YES"
-#define no "NO"
+#define yes "YES\n"
+#define no "NO\n"
 
 typedef long long ll;
 typedef pair<ll,ll> pll;
