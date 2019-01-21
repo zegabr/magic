@@ -11,11 +11,15 @@
 #include <bitset>
 #include <cmath>
 
-#define pb(x) push_back(x) 
+#define debug 1
+#if debug == 1
+#endif
+
+#define pb push_back
 #define sz(x) ((int)(x).size())
 #define all(x) (x).begin(), (x).end()
-#define fr(i, a, b) for(int i=a;i<=b;i++)//a..b
-#define frb(i, b, a) for(int i=b;i>=a;i--)//b..a
+#define rep(i, a, b) for(int i=a;i<=b;i++)//a..b
+#define repb(i, b, a) for(int i=b;i>=a;i--)//b..a
 #define fi first
 #define se second
 
@@ -24,7 +28,7 @@
 #define yes "YES\n"
 #define no "NO\n"
 
-#define inf INT64_MAX
+#define inf INT32_MAX
 
 using namespace std;
 
