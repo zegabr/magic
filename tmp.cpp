@@ -12,7 +12,7 @@
 #include <cmath>
 
 #define debug 1
-#if debug == 1
+#if debug
 #endif
 
 #define pb push_back
