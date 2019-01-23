@@ -4,19 +4,14 @@
 #include <algorithm>
 #include <cmath>
 
+using namespace std;
 #define sp ' '
 #define pl '\n'
-#define no "NO\n"
-#define yes "YES\n"
 #define pb push_back
-#define sz(x) ((int)(x).size())
-#define all(x) (x).begin(), (x).end()
-#define rep(i, a, b) for(int i=a;i<=b;i++)
-
-using namespace std;
+#define all(x) (x).begin(),(x).end()
+#define rep(i, a, b) for(int i=a;i<=b;i++)//ri=a+b-i to revert loop
 
 typedef long long ll;
-
 const ll mod=1e9+7;
 const ll N=1e5+5;
 
