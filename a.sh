@@ -3,8 +3,8 @@
 unalias py
 alias py=python3
 
-unalias acpp
-alias acpp='g++ a.cpp -std=c++17 -Wfatal-errors -O3'
+unalias zcpp
+alias zcpp='g++ z.cpp -std=c++17 -Wfatal-errors -O3 -o z'
 
 unalias Desktop
 alias Desktop='cd && cd Desktop/'
