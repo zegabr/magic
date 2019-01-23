@@ -1,7 +1,7 @@
 #!/bin/bash
 ## draft creation
-cp  ./m/tmp.cpp ./z.cpp
-cp ./z.cpp ./tmp.cpp
+cp  ./m/tmp.cpp ./x.cpp
+cp ./x.cpp ./tmp.cpp
 
 
 ##gedit settings
