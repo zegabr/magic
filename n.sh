@@ -11,11 +11,11 @@ bash ./m/geditsetup.sh
 
 
 ##vim settings
-#echo "cat m/vimsetup > ~/.vimrc for vimsetup"
-#echo
-#vim --version | grep +clipboard
-#vim --version | grep +autocmd
-#echo "if it has +clipboard, you can use ^A, ^C and ^V"
+echo "cat m/vimsetup > ~/.vimrc for vimsetup"
+echo
+vim --version | grep +clipboard
+vim --version | grep +autocmd
+echo "if it has +clipboard, you can use ^A, ^C and ^V"
 
 
 
