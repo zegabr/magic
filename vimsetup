@@ -1,9 +1,24 @@
 set nocompatible
 syntax on
-set ruler nu title  noerrorbells hls
-
-
+hi Search ctermbg=yellow
+hi Search ctermfg=black
+set ruler 
+set title 
+set hls "search highlight
+set relativenumber "line numbers moving relatively
+set incsearch "cursor moves as soon as typing search
+set ignorecase "search ignore cases
+set smartcase "search start to not ignore cases if insert for uppercase letter
 set ts=4  sw=4 sts=4 noexpandtab autoindent
+
+
+
+
+
+
+
+
+
 
 source $VIMRUNTIME/mswin.vim
 behave mswin
