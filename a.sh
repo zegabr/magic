@@ -1,5 +1,5 @@
 #!/bin/bash
-#cria aliases
+#a de aliases
 unalias py
 alias py=python3
 
@@ -16,7 +16,8 @@ alias remaper='bash ~/remaper.sh'
 unalias undoremaper
 alias undoremaper='bash ~/undo.sh'
 
-echo "you now have new aliases"
-echo
-alias
+echo "
+------------you now have new aliases--------
+"
+
 

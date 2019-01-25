@@ -1,17 +1,12 @@
 #!/bin/bash
-## draft creation
+#n de rascunho + template
 cp  ./m/tmp.cpp ./x.cpp
 cp ./x.cpp ./tmp.cpp
 
-##gedit settings
-bash ./m/geditsetup.sh 
+source ./m/g.sh ##gedit settings
+source ./m/v.sh ##vim settings
 
-##vim settings
-cat m/vimsetup > ./.vimrc
-echo ".vimrc created at current directory"
-vim --version | grep +clipboard
-vim --version | grep +autocmd
-echo "if it has +clipboard, you can use ^A, ^C and ^V"
+
 
 
 
