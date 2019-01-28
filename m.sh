@@ -21,6 +21,6 @@ echo "
 
 source ./m/a.sh #aliases
 source ./m/n.sh #rascunho + template
-echo "
-cp folder has:"
+echo 
+echo "cp folder has:"
 ls cp/
