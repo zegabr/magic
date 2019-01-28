@@ -1,10 +1,10 @@
 #include<iostream>
 #include<algorithm>
 #include<vector>
-using namespace std; typedef long long ll;
 #define sp ' '
 #define pl '\n'
 #define rep(i,a,b) for(int i = a; (a>b? i>=b : i<=b) ; (a>b? i-- : i++) )
+using namespace std; typedef long long ll;
 const int N = 5 + 1e5 * 3;
 const int mod = 1e9+7;
 
