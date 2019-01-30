@@ -3,8 +3,6 @@
 git clone https://github.com/zegabr/cp.git
 git clone https://github.com/zegabr/remaper.git
 clear
-rm ./cp/README.md
-rm ./cp/LICENSE
 rm ./remaper/README.md
 rm ./remaper/LICENSE
 
