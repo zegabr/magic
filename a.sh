@@ -3,13 +3,6 @@
 unalias py
 alias py=python3
 
-unalias xcpp
-alias xcpp='g++ x.cpp -std=c++17 -Wfatal-errors -O3'
-
-unalias Desktop
-alias Desktop='cd && cd Desktop/'
-
-
 unalias remaper
 alias remaper='bash ~/remaper.sh'
 
