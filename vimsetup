@@ -29,6 +29,7 @@ set scrolloff=3 "scroll is off until cursor is 3 lines close to limits
 hi Search ctermbg=yellow
 hi Search ctermfg=black
 
+set shellcmdflag=-ic "make aliases usable
 
 
 
