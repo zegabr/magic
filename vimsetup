@@ -1,28 +1,39 @@
 set nocompatible
+
+"//========================useful for competitive==========
+"contrl C contrl A cnotrl V (windows like)
+source $VIMRUNTIME/mswin.vim
+behave mswin
+
 syntax on
-hi Search ctermbg=yellow
-hi Search ctermfg=black
-set ruler 
-set title 
 set hls "search highlight
 set relativenumber "line numbers moving relatively
 set number
+set ts=4  sw=4 sts=4 noexpandtab autoindent
 set incsearch "cursor moves as soon as typing search
 set ignorecase "search ignore cases
 set smartcase "search start to not ignore cases if search for uppercase letter
-set ts=4  sw=4 sts=4 noexpandtab autoindent
+set shortmess+=A "ignores swap files error
 colorscheme elflord
-set shortmess+=A
-set scrolloff=3
-set splitright
 
 "^x^o auto completion (does not work with c or c++ unless ctags is installed)
 filetype plugin on
 set omnifunc=syntaxcomplete#complete
+"//=========================================================
+
+set splitright
+set showcmd
+set ruler 
+set title 
+set scrolloff=3 "scroll is off until cursor is 3 lines close to limits
+hi Search ctermbg=yellow
+hi Search ctermfg=black
 
 
-source $VIMRUNTIME/mswin.vim
-behave mswin
+
+
+
+
 
 "below command is for vimrc testing while ediing it
 if has("autocmd")
@@ -33,3 +44,4 @@ if has("autocmd")
     autocmd Filetype html setlocal ts=2 sw=2 sts=2 expandtab
     autocmd Filetype css setlocal ts=2 sw=2 sts=2 expandtab
 endif
+
