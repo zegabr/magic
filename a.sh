@@ -3,14 +3,13 @@
 unalias py
 alias py=python3
 
-unalias remaper
-alias remaper='bash ~/remaper.sh'
-
-unalias undoremaper
-alias undoremaper='bash ~/undo.sh'
+#unalias remaper
+#alias remaper='bash ~/remaper.sh'
+#unalias undoremaper
+#alias undoremaper='bash ~/undo.sh'
 
 echo "
-------------you now have new aliases--------
+------------you have new aliases------------------------
 "
 
 

@@ -1,7 +1,7 @@
 set nocompatible
 
 "//========================useful for competitive==========
-"contrl C contrl A cnotrl V (windows like)
+"contrl C contrl A contrl V (windows like)
 source $VIMRUNTIME/mswin.vim
 behave mswin
 
