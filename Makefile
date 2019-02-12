@@ -1,4 +1,4 @@
-all: x.cpp
+a.out: x.cpp
 	g++ x.cpp -std=c++17 -o a.out 
 
 1: x.cpp
