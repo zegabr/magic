@@ -1,7 +1,6 @@
 #include<bits/stdc++.h>
 #define sp ' '
 #define pl '\n'
-#define rep(i,a,b) for(int i = a; (a>b? i>=b : i<=b) ; (a>b? i-- : i++) )
 using namespace std;
 typedef long long ll;
 
