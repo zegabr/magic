@@ -12,5 +12,5 @@ gsettings set org.gnome.gedit.preferences.editor display-overview-map false
 gsettings set org.gnome.gedit.preferences.editor tabs-size 4
 gsettings set org.gnome.gedit.preferences.editor wrap-mode 'none'
 echo "
--------------my gedit setup overrided yours--------------
+===========my gedit setup overrided yours===========
 "

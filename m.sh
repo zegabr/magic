@@ -17,6 +17,7 @@ git clone https://github.com/zegabr/cp.git
 
 source ./m/a.sh #aliases
 source ./m/n.sh #rascunho + template
+source ./m/b.sh #benchmark
 echo 
 echo "cp folder has:"
 ls cp/
