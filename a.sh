@@ -17,8 +17,6 @@ alias gcm='git commit -m '
 #unalias undoremaper
 #alias undoremaper='bash ~/undo.sh'
 
-echo "
-==============you have new aliases=============
-"
+echo "==============you have new aliases============="
 
 

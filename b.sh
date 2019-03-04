@@ -1,12 +1,13 @@
 #b de benchmark
-echo "=====benchmark====="
+echo "
+============benchmark============="
 
 echo "
 #include <iostream>
 using namespace std;
 int main(){
 	int c=0;
-	for(int i=0;i<450000000;i++){
+	for(int i=0;i<423000000;i++){
 		c++;
 	}
 
@@ -15,7 +16,10 @@ int main(){
 " > benchmark.cpp
 
 g++ benchmark.cpp -o b
-echo "this pc runs 4.5e8 operations in "
+echo "this PC runs 4.23e8 operations in "
 time ./b
 
 rm benchmark.cpp b
+
+echo "
+============benchmark ended======="
