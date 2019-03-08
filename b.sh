@@ -42,7 +42,7 @@ int main(){
 " > benchmark.cpp
 
 g++ benchmark.cpp -o b
-time ./b
+./b
 
 rm benchmark.cpp b
 
