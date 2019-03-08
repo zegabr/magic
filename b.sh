@@ -34,7 +34,8 @@ ll bs(int l, int r){
 int main(){
 	
 	ll m = bs(1,100);
-	cout<<\"this PC runs \"<<m<<\"e7 operations in 1 sec\n\";
+	long double m2 = (long double)m/10;
+	cout<<\"this PC runs \"<<m2<<\"e8 operations in 1 sec\n\";
 	
 	
 }
