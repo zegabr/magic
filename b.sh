@@ -5,6 +5,7 @@ echo "
 echo "
 #include<iostream>
 #include<time.h>
+#include<math.h>
 using namespace std;
 typedef long long ll;
 int check(int m){
@@ -15,9 +16,9 @@ int check(int m){
 	t=clock()-t;
 	double ans = (double)t/CLOCKS_PER_SEC;
 	cout<<m<<\"e7=>\"<<ans<<\"s\n\";
-	if(ans - 1.0 <= 5e-3) return 1;
-	else if(ans - 1.0 <=5e-1) return -1;
-	else return 0;
+	if(fabs(ans-1.0)  <= 1e-2) return 0;
+	else if(ans < 1.0) return -1;
+	else return 1;
 }
 
 ll bs(int l, int r){
@@ -25,7 +26,7 @@ ll bs(int l, int r){
 		ll m=(l+r)/2;
 		int k = check(m);
 		if(k==0) return m;
-		if(k==1) l=m+1;
+		if(k==-1) l=m+1;
 		else r=m-1;
 	}
 	return r;
