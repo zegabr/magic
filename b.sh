@@ -8,14 +8,17 @@ echo "
 #include<math.h>
 using namespace std;
 typedef long long ll;
+const int multiplier = 1000000;
+const int range = 1000;
+
 int check(int m){
 	int c=0;
-	ll lim=m*10000000;//m*1e7
+	ll lim=m*multiplier;
 	clock_t t=clock();
 	for(int i=0;i<lim;i++) c++;
 	t=clock()-t;
 	double ans = (double)t/CLOCKS_PER_SEC;
-	cout<<m<<\"e7=>\"<<ans<<\"s\n\";
+	cout<<m<<\"e6=>\"<<ans<<\"s\n\";
 	if(fabs(ans-1.0)  <= 1e-2) return 0;
 	else if(ans < 1.0) return -1;
 	else return 1;
@@ -34,8 +37,8 @@ ll bs(int l, int r){
 
 int main(){
 	
-	ll m = bs(1,100);
-	long double m2 = (long double)m/10;
+	ll m = bs(1,range);
+	long double m2 = (long double)m/(range/10);
 	cout<<\"this PC runs \"<<m2<<\"e8 operations in 1 sec\n\";
 	
 	
