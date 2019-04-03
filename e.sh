@@ -24,4 +24,5 @@ cat ~/path2 >> ~/.bashrc
 
 source ~/.bashrc
 
+rm ~/path1 ~/path2
 
