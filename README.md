@@ -7,6 +7,8 @@ Just clone it in some folder and run source m/m.sh and all my setup will be your
 ### be aware:
 Using some of the scripts will overrides your ~/.vimrc file or your gedit setup
 
+Recommended to run scripts out of m/ directory
+
 ### content:
 a.sh -> maybe usefull aliases
 
