@@ -21,4 +21,18 @@ m.sh -> main competitive setup (clones cp.git and runs: n.sh and a.sh)
 ### extra:
 b.sh -> benchmark made in c++
 
-e.sh -> enviroment setup for Systems and Software Engeneering setup at CIn - UFPE (run with `source` command for it to works properly)
+e.sh -> enviroment setup for Systems and Software Engeneering setup at CIn - UFPE 
+
+    (run `source e.sh` command for it to works properly) 
+    
+    (just need to run one time per lab PC, it will create ESS directory at Desktop)
+
+
+
+
+### how to use my competitive setup:
+-Run source m/m.sh
+
+-Code using x.cpp
+
+-Compile x.cpp with `make` command or compile until first error with `make 1` command
