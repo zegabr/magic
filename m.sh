@@ -1,5 +1,6 @@
 #!/bin/bash
 #m de magic(or main)
+rm -rf cp/
 git clone https://github.com/zegabr/cp.git
 
 
