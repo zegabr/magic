@@ -23,12 +23,6 @@ m.sh -> main competitive setup (clones cp.git and runs: n.sh and a.sh)
 ### extra:
 b.sh -> benchmark made in c++
 
-e.sh -> enviroment setup for Systems and Software Engeneering setup at CIn - UFPE 
-
-    (run `source e.sh` command for it to works properly) 
-    
-    (just need to run one time per lab PC, it will create ESS directory at Desktop)
-
 
 
 
