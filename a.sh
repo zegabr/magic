@@ -12,6 +12,8 @@ alias gaa='git add --all'
 unalias gcm
 alias gcm='git commit -m '
 
+unalias nt
+alias nt='gnome-terminal --tab'
 #unalias remaper
 #alias remaper='bash ~/remaper.sh'
 #unalias undoremaper
