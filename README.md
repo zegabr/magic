@@ -31,4 +31,6 @@ b.sh -> benchmark made in c++
 
 -Code using x.cpp
 
--Compile x.cpp with `make` command or compile until first error with `make 1` command
+-Compile x.cpp with `make` command to compile until first error
+
+-(incomplete) Run ´make t´ to run with 3 different inputs that you must save at i1, i2 and i3 files
