@@ -2,8 +2,11 @@ set nocompatible
 
 "//========================useful for competitive==========
 "contrl C contrl A contrl V (windows like)
-source $VIMRUNTIME/mswin.vim
-behave mswin
+set mouse=a
+:map <C-a> GVgg
+:map <C-s> :w<CR>
+:map <C-c> "+y
+:map <C-v> "+p
 
 syntax on
 set hls "search highlight
