@@ -28,10 +28,10 @@ set omnifunc=syntaxcomplete#complete
 
 "//===================mappings=============================
 "//compila x.cpp
-:nmap <Up>  :make<CR>
+:nmap <Up>  <C-O>
 
 "//identa
-:nmap <Right> jkgg=G<C-O><C-O>
+:nmap <Right> jkgg=G
 
 "//salva
 :nmap <Down> :w<CR>
