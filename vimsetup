@@ -27,7 +27,7 @@ set omnifunc=syntaxcomplete#complete
 
 
 "//===================mappings=============================
-"//compila x.cpp
+"//volta pra a ultima posicao de editada
 :nmap <Up>  <C-O>
 
 "//identa
@@ -49,11 +49,6 @@ hi Search ctermbg=yellow
 hi Search ctermfg=black
 
 set shellcmdflag=-ic "make aliases usable
-
-
-
-
-
 
 "below command is for vimrc testing while ediing it
 if has("autocmd")
