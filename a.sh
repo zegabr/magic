@@ -2,6 +2,8 @@
 #a de aliases
 unalias py
 alias py=python3
+unalias mm
+alias mm=make
 
 unalias gs
 alias gs='git status '
