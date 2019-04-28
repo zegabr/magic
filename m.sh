@@ -14,10 +14,9 @@ echo "
 "
 '
 
+clear
 
-
-source ./m/a.sh #aliases
-source ./m/n.sh #rascunho + template
+source ./m/n.sh #rascunho + template + aliases
 echo 
 echo "cp folder has:"
 ls cp/
