@@ -3,7 +3,7 @@
 unalias py
 alias py=python3
 unalias m
-alias m=make
+alias m='make && make t'
 
 unalias gs
 alias gs='git status '
