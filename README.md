@@ -29,8 +29,10 @@ b.sh -> benchmark made in c++
 ### how to use my competitive setup:
 -Run source m/m.sh
 
--Code using x.cpp
+-Code using x.cpp at training directory
 
 -Compile x.cpp with `make` command to compile until first error
 
--(incomplete) Run ´make t´ to run with 3 different inputs that you must save at i1, i2 and i3 files
+-Run ´make t´(or alias m) to run with 3 different inputs that you must save at i1, i2 and i3 files
+
+-Reset x.cpp (easily from training directory), alias etc using r.sh which is a copy of n.sh
