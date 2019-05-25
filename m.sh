@@ -12,3 +12,4 @@ cp ../m/n.sh ./r.sh
 echo 
 echo "cp folder has:"
 ls cp/
+touch i1 i2 i3
