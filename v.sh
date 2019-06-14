@@ -1,3 +1,3 @@
 #v de vim
-cp /m/STUFF/vimsetup ~/.vimrc
+cp ./STUFF/vimsetup ~/.vimrc
 echo "========my vim setup overrided yours======="
