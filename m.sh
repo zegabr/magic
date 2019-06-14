@@ -8,7 +8,7 @@ source /m/n.sh #rascunho + template + aliases
 mv Makefile training/
 mv tmp.cpp training/
 mv x.cpp training/
-
+cp ./m/STUFF training/STUFF
 
 
 cd training/

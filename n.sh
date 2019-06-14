@@ -1,8 +1,6 @@
 #!/bin/bash
 #n de rascunho + template
-cp  ./m/STUFF/tmp.cpp ./x.cpp
-cp ./m/STUFF/tmp.cpp ./tmp.cpp
-cp ./m/STUFF/Makefile ./Makefile
+cp -r  ./m/STUFF/ ./
 echo "==============x.cpp reseted================"
 source /m/g.sh ##gedit settings
 source /m/v.sh ##vim settings
