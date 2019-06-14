@@ -2,16 +2,18 @@
 #m de main
 mkdir training/
 
-source /m/n.sh #rascunho + template + aliases
+source ./m/n.sh #rascunho + template + aliases
 
 #copy other things here
-mv Makefile training/
-mv tmp.cpp training/
-mv x.cpp training/
-cp ./m/STUFF training/STUFF
-
+mv ./STUFF ./training/
 
 cd training/
+
+cp ./STUFF/Makefile ./
+cp ./STUFF/tmp.cpp ./
+cp ./STUFF/Tmp.cpp ./
+cp ./STUFF/r.sh ./
+
 rm -rf cp/
 git clone https://github.com/zegabr/cp.git
 echo 
