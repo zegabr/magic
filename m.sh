@@ -13,6 +13,7 @@ cp ./STUFF/Makefile ./
 cp ./STUFF/tmp.cpp ./
 cp ./STUFF/Tmp.cpp ./
 cp ./STUFF/r.sh ./
+bash r.sh
 
 rm -rf cp/
 git clone https://github.com/zegabr/cp.git
