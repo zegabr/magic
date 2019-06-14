@@ -1,14 +1,19 @@
 #!/bin/bash
-#m de magic(or main)
+#m de main
 mkdir training/
-cd training/
 
+source /m/n.sh #rascunho + template + aliases
+
+#copy other things here
+mv Makefile training/
+mv tmp.cpp training/
+mv x.cpp training/
+
+
+
+cd training/
 rm -rf cp/
 git clone https://github.com/zegabr/cp.git
-
-
-source ../m/n.sh #rascunho + template + aliases
-cp ../m/n.sh ./r.sh
 echo 
 echo "cp folder has:"
 ls cp/
