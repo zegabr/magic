@@ -21,4 +21,3 @@ git clone https://github.com/zegabr/cp.git
 echo 
 echo "cp folder has:"
 ls cp/
-touch i1 i2 i3
