@@ -1,4 +1,4 @@
-a.out: x.cpp i1 i2 i3
+a.out: x.cpp
 	g++ x.cpp -std=c++14 -Wfatal-errors -O2
 t:
 	./a.out < i1
