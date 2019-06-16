@@ -1,5 +1,6 @@
 #!/bin/bash
 #m de main
+rm -rf training/
 mkdir training/
 
 source ./m/n.sh #rascunho + template + aliases
