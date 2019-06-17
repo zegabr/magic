@@ -1,19 +1,27 @@
 #include<bits/stdc++.h>
+
+#define sp ' '
+#define pl '\n'
+#define pb(x) push_back(x)
+#define sci(x) scanf("%d",&x)
+#define scll(x) scanf("%lld",&x)
+#define all(x) (x).begin(),(x).end()
+#define bpopc(x) __builtin_popcount(x)
+#define mset(a,v) memset(a, v, sizeof a)
+#define db(x) cerr << #x<< " = " << x << endl
+#define fr(i,a,b) for(int i=a;(a>b?i>=b:i<=b);(a>b?i--:i++))
+#define x first
+#define y second
+
 using namespace std;
 typedef long long ll;
 // #define int ll
 
-#define sp ' '
-#define pl '\n'
-#define db(x) cerr << #x<< " = " << x << endl;
-#define fr(i,a,b) for(int i=a;(a>b?i>=b:i<=b);(a>b?i--:i++))
-#define bpopc(x) __builtin_popcount(x)
-#define all(x) (x).begin(),(x).end()
-#define sci(x) scanf("%d",&x)
-#define scll(x) scanf("%lld",&x)
-#define pb(x) push_back(x)
-#define x first
-#define y second
+typedef pair<int,int> pii;
+typedef vector<int> vi;
+typedef vector<pii> vpii;
+typedef priority_queue<int> Mheap;
+typedef priority_queue<int, vi, greater<int>> mheap;
 
 const int mx = 2e5+5;
 const int inf =0x3f3f3f3f;
