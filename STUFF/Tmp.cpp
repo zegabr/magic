@@ -7,17 +7,30 @@
 #define scll(x) scanf("%lld",&x)
 #define all(x) (x).begin(),(x).end()
 #define bpopc(x) __builtin_popcount(x)
+#define bpopcll(x) __builtin_popcountll(x)
+#define precision(n) cout<<fixed<<setprecision(n)
+#define biton(x,i) ((x>>i)&1)
+#define filein(f) freopen(f,"r",stdin)
+#define fileout(f) freopen(f,"w",stdout)
 #define mset(a,v) memset(a, v, sizeof a)
 #define db(x) cerr << #x<< " = " << x << endl
 #define fr(i,a,b) for(int i=a;(a>b?i>=b:i<=b);(a>b?i--:i++))
+#define getpos(c,x) (lower_bound(all(c),x)-c.begin())
+
 #define x first
 #define y second
 
 using namespace std;
 typedef long long ll;
+typedef unsigned long long ull;
+typedef unsigned int uint;
+typedef long double ld;
+
 // #define int ll
 
 typedef pair<int,int> pii;
+typedef pair<ll,ll> pll;
+typedef pair<ld,ld> pld;
 typedef vector<int> vi;
 typedef vector<pii> vpii;
 typedef priority_queue<int> Mheap;
@@ -26,6 +39,7 @@ typedef priority_queue<int, vi, greater<int>> mheap;
 const int mx = 2e5+5;
 const int inf =0x3f3f3f3f;
 const int mod = 1e9+7;
+const ld pi = acos(-1.0);
 
 
 main(){
