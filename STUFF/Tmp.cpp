@@ -6,6 +6,7 @@
 #define sci(x) scanf("%d",&x)
 #define scll(x) scanf("%lld",&x)
 #define all(x) (x).begin(),(x).end()
+#define rall(x) (x).rbegin(),(x).rend()
 #define bpopc(x) __builtin_popcount(x)
 #define bpopcll(x) __builtin_popcountll(x)
 #define precision(n) cout<<fixed<<setprecision(n)
