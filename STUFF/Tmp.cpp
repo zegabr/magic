@@ -22,23 +22,27 @@
 #define y second
 
 using namespace std;
-typedef long long ll;
+
 typedef unsigned long long ull;
 typedef unsigned int uint;
 typedef long double ld;
-
+typedef long long ll;
 // #define int ll
 
-typedef pair<int,int> pii;
-typedef pair<ll,ll> pll;
-typedef pair<ld,ld> pld;
+
 typedef vector<int> vi;
-typedef vector<pii> vpii;
+typedef pair<int,int> pii;
 typedef priority_queue<int> Mheap;
 typedef priority_queue<int, vi, greater<int>> mheap;
 
+typedef vector<ll> vll;
+typedef pair<ll,ll> pll;
+typedef pair<ld,ld> pld;
+typedef vector<pii> vpii;
+
 const int mx = 2e5+5;
-const int inf =0x3f3f3f3f;
+const int inf = 0x3f3f3f3f;
+const int infll = 0x3f3f3f3f3f3f3f3f
 const int mod = 1e9+7;
 const ld pi = acos(-1.0);
 
