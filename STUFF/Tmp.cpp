@@ -42,7 +42,7 @@ typedef vector<pii> vpii;
 
 const int mx = 2e5+5;
 const int inf = 0x3f3f3f3f;
-const int infll = 0x3f3f3f3f3f3f3f3f
+const int infll = 0x3f3f3f3f3f3f3f3f;
 const int mod = 1e9+7;
 const ld pi = acos(-1.0);
 
