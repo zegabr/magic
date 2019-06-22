@@ -4,6 +4,9 @@ unalias py
 alias py=python3
 unalias m
 alias m='make && make t'
+unalias g++
+alias g++='g++ -std=c++11 -O2 -Wfatal-errors'
+
 
 unalias gs
 alias gs='git status '
