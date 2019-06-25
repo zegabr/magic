@@ -28,6 +28,8 @@
 #define all(x) (x).begin(),(x).end()
 #define rall(x) (x).rbegin(),(x).rend()
 #define biton(x,i) ((x>>i)&1)
+#define setbit(x,i) x|=(1<<i)
+#define togglebit(x,i) x^=(1<<i)
 #define popcount(x) __builtin_popcount(x)
 #define popcountll(x) __builtin_popcountll(x)
 #define precision(n) cout<<fixed<<setprecision(n)
@@ -69,5 +71,5 @@ const ld pi = acos(-1.0);
 
 main(){
 	ios::sync_with_stdio(0); cin.tie(0);
-	
+
 }
