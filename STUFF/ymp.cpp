@@ -46,7 +46,7 @@
 using namespace std;
 
 typedef unsigned long long ull;
-typedef unsigned int uint;
+typedef unsigned int ui;
 typedef long double ld;
 typedef long long ll;
 // #define int ll
@@ -60,7 +60,7 @@ typedef priority_queue<int, vi, greater<int>> mheap;
 typedef vector<ll> vll;
 typedef pair<ll,ll> pll;
 typedef pair<ld,ld> pld;
-typedef vector<pii> vpii;
+typedef vector<pii> vii;
 
 const int mx = 2e5+5;
 const int inf = 0x3f3f3f3f;
