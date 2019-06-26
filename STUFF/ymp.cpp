@@ -29,7 +29,7 @@
 #define rall(x) (x).rbegin(),(x).rend()
 #define biton(x,i) ((x>>i)&1)
 #define setbit(x,i) x|=(1<<i)
-#define togglebit(x,i) x^=(1<<i)
+#define togbit(x,i) x^=(1<<i)
 #define popcount(x) __builtin_popcount(x)
 #define popcountll(x) __builtin_popcountll(x)
 #define precision(n) cout<<fixed<<setprecision(n)
