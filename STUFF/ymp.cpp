@@ -39,7 +39,7 @@
 #define db(x) cerr << #x<< " = " << x << endl
 #define getpos(c,x) (lower_bound(all(c),x)-c.begin())
 #define fr(i,a,b) for(int i=a;(a>b?i>=b:i<=b);(a>b?i--:i++))
-
+#define fastios 	ios::sync_with_stdio(0); cin.tie(0)
 #define x first
 #define y second
 
@@ -70,6 +70,6 @@ const ld pi = acos(-1.0);
 
 
 main(){
-	ios::sync_with_stdio(0); cin.tie(0);
+	fastios;
 
 }
