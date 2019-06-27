@@ -4,7 +4,6 @@
 #include <deque>
 #include <queue>
 #include <stack>
-#include <tuple>
 #include <bitset>
 #include <vector>
 #include <iomanip>
@@ -28,15 +27,13 @@
 #define popcount(x) __builtin_popcount(x)
 #define popcountll(x) __builtin_popcountll(x)
 #define precision(n) cout<<fixed<<setprecision(n)
-#define filein(f) freopen(f,"r",stdin)
-#define fileout(f) freopen(f,"w",stdout)
-#define memset(a,v) memset(a, v, sizeof a)
 #define db(x) cerr << #x<< " = " << x << endl
 #define getpos(c,x) (lower_bound(all(c),x)-c.begin())
 #define fr(i,a,b) for(int i=a;(a>b?i>=b:i<=b);(a>b?i--:i++))
 #define fastios 	ios::sync_with_stdio(0); cin.tie(0)
 #define x first
 #define y second
+
 #define pl endl
 #define endl '\n'
 
