@@ -6,15 +6,12 @@
 #include <stack>
 #include <tuple>
 #include <bitset>
-#include <limits>
-#include <string>
 #include <vector>
 #include <iomanip>
 #include <iostream>
 #include <algorithm>
 #include <unordered_map>
 #include <unordered_set>
-
 // #include <random>
 // #include <chrono>
 // #include <complex>
@@ -33,13 +30,14 @@
 #define precision(n) cout<<fixed<<setprecision(n)
 #define filein(f) freopen(f,"r",stdin)
 #define fileout(f) freopen(f,"w",stdout)
-#define mset(a,v) memset(a, v, sizeof a)
+#define memset(a,v) memset(a, v, sizeof a)
 #define db(x) cerr << #x<< " = " << x << endl
 #define getpos(c,x) (lower_bound(all(c),x)-c.begin())
 #define fr(i,a,b) for(int i=a;(a>b?i>=b:i<=b);(a>b?i--:i++))
 #define fastios 	ios::sync_with_stdio(0); cin.tie(0)
 #define x first
 #define y second
+#define pl endl
 #define endl '\n'
 
 using namespace std;
@@ -52,22 +50,20 @@ typedef long long ll;
 
 typedef vector<int> vi;
 typedef pair<int,int> pii;
+typedef vector<ll> vll;
+typedef pair<ll,ll> pll;
 typedef priority_queue<int> Mheap;
 typedef priority_queue<int, vi, greater<int>> mheap;
 
-typedef vector<ll> vll;
-typedef pair<ll,ll> pll;
-typedef pair<ld,ld> pld;
-typedef vector<pii> vii;
-
-const int mx = 2e5+5;
-const int inf = 0x3f3f3f3f;
-const ll infll = 0x3f3f3f3f3f3f3f3f;
-const int mod = 1e9+7;
+const int N = 2e5+5;
+const int inf = INT32_MAX;
+const ll infll = INT64_MAX;
 const ld pi = acos(-1.0);
+const int mod = 1e9+7;
 
 
 main(){
 	fastios;
+
 
 }
