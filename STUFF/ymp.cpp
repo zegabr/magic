@@ -20,8 +20,6 @@
 // #include <complex>
 // #include <sstream>
 
-#define sp ' '
-#define pl '\n'
 #define pb(x) push_back(x)
 #define sci(x) scanf("%d",&x)
 #define scll(x) scanf("%lld",&x)
@@ -42,6 +40,7 @@
 #define fastios 	ios::sync_with_stdio(0); cin.tie(0)
 #define x first
 #define y second
+#define endl '\n'
 
 using namespace std;
 
@@ -50,7 +49,6 @@ typedef unsigned int ui;
 typedef long double ld;
 typedef long long ll;
 // #define int ll
-
 
 typedef vector<int> vi;
 typedef pair<int,int> pii;
