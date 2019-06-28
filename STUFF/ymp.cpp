@@ -17,7 +17,8 @@
 // #include <complex>
 // #include <sstream>
 
-#define pb(x) push_back(x)
+#define pb push_back
+#define mp make_pair
 #define sci(x) scanf("%d",&x)
 #define scll(x) scanf("%lld",&x)
 #define all(x) (x).begin(),(x).end()
@@ -28,9 +29,6 @@
 #define popcount(x) __builtin_popcount(x)
 #define popcountll(x) __builtin_popcountll(x)
 #define precision(n) cout<<fixed<<setprecision(n)
-#define filein(f) freopen(f,"r",stdin)
-#define fileout(f) freopen(f,"w",stdout)
-#define memset(a,v) memset(a, v, sizeof a)
 #define db(x) cerr << #x<< " = " << x << endl
 #define getpos(c,x) (lower_bound(all(c),x)-c.begin())
 #define fr(i,a,b) for(int i=a;(a>b?i>=b:i<=b);(a>b?i--:i++))
@@ -64,6 +62,6 @@ const int mod = 1e9+7;
 
 main(){
 	fastios;
-
+	
 
 }
