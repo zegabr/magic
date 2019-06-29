@@ -18,7 +18,7 @@ v.sh -> vim setup (vimsetup is a copy of my vimrc file)
 
 n.sh -> c++ competitive setup (runs g.sh and v.sh)
 
-m.sh -> main competitive setup (clones cp.git and runs: n.sh and a.sh)
+m.sh -> main competitive setup (clones cp.git and teleports)
 
 ### extra:
 b.sh -> benchmark made in c++
@@ -27,7 +27,7 @@ b.sh -> benchmark made in c++
 
 
 ### how to use my competitive setup:
--Run source m/m.sh
+-Run `source m/m.sh`
 
 -Code using x.cpp at training directory
 
@@ -35,4 +35,4 @@ b.sh -> benchmark made in c++
 
 -Run `m`(this is an alias at a.sh) to run with 3 different inputs that you must save at i1, i2 and i3 files
 
--Reset x.cpp running `bash r.sh` at training folder (which you will be at end of m.sh)
+-Reset x.cpp by running `bash r.sh` at training folder (which you will be at end of m.sh)

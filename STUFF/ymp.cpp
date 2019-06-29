@@ -16,7 +16,8 @@
 // #include <complex>
 // #include <sstream>
 
-#define pb(x) push_back(x)
+#define pb push_back
+#define mp make_pair
 #define sci(x) scanf("%d",&x)
 #define scll(x) scanf("%lld",&x)
 #define all(x) (x).begin(),(x).end()
@@ -61,6 +62,6 @@ const int mod = 1e9+7;
 
 main(){
 	fastios;
-
+	
 
 }
