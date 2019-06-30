@@ -6,6 +6,7 @@
 #include <stack>
 #include <bitset>
 #include <vector>
+#include <cstring>
 #include <iomanip>
 #include <iostream>
 #include <algorithm>
