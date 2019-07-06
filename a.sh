@@ -24,6 +24,7 @@ alias gcm='git commit -m'
 #unalias undoremaper
 #alias undoremaper='bash ~/undo.sh'
 
+echo
 echo "============you have new aliases==========="
-
-
+alias | grep 'g++'
+echo
