@@ -46,7 +46,10 @@ const int mod = 1e9+7;
 
 
 main(){
+	//freopen("input","r",stdin);
+	//freopen("output","w",stdout);
 	iofast;
-	
+
+
 
 }
