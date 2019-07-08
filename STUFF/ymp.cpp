@@ -38,6 +38,8 @@ typedef unsigned long long ull;
 // #define int ll
 
 #define heap priority_queue
+#define hashset unordered_set
+#define hashmap unordered_map
 typedef vector<int> vi;
 typedef pair<int,int> pii;
 const int N = 2e5+5;
