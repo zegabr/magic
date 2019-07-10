@@ -1,3 +1,4 @@
+#define debug 1
 #include <set>
 #include <map>
 #include <cmath>
@@ -17,7 +18,7 @@
 // #include <complex>
 // #include <sstream>
 
-
+#define DEBUG if(debug)
 #define pl endl
 #define endl '\n'
 #define x first
@@ -51,7 +52,6 @@ main(){
 	//freopen("input","r",stdin);
 	//freopen("output","w",stdout);
 	iofast;
-
 
 
 }
