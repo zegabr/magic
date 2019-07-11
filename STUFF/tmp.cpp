@@ -10,7 +10,7 @@
 
 using namespace std;
 
-typedef long long ll;
+using ll = long long;
 #define int ll
 
 

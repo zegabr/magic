@@ -30,17 +30,17 @@
 #define getpos(c,k) (lower_bound(all(c),k)-c.begin())
 #define fr(i,a,b) for(int i=a;(a>b?i>=b:i<=b);(a>b?i--:i++))
 using namespace std;
-typedef long long ll;
-typedef long double ld;
-typedef unsigned int uint;
-typedef unsigned long long ull;
+using ll = long long;
+using ld = long double;
+using uint = unsigned int;
+using ull = unsigned long long;
 // #define int ll
 
 #define heap priority_queue
 #define hashset unordered_set
 #define hashmap unordered_map
-typedef vector<int> vi;
-typedef pair<int,int> pii;
+using vi = vector<int>;
+using pii = pair<int,int>;
 const int N = 2e5+5;
 const int MOD = 1e9+7;
 const double PI = acos(-1);
