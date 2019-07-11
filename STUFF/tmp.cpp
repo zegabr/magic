@@ -2,10 +2,10 @@
 #include <map>
 #include <cmath>
 #include <vector>
+#include <cstring>
 #include <iostream>
 #include <algorithm>
 
-#define pl endl
 #define endl '\n'
 
 using namespace std;

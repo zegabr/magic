@@ -18,7 +18,6 @@
 // #include <complex>
 // #include <sstream>
 
-#define pl endl
 #define endl '\n'
 #define x first
 #define y second
@@ -43,14 +42,15 @@ typedef unsigned long long ull;
 typedef vector<int> vi;
 typedef pair<int,int> pii;
 const int N = 2e5+5;
-const int mod = 1e9+7;
-
+const int MOD = 1e9+7;
+const double PI = acos(-1);
 
 
 main(){
 	//freopen("input","r",stdin);
 	//freopen("output","w",stdout);
 	iofast;
+
 
 
 }
