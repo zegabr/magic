@@ -18,7 +18,6 @@
 // #include <complex>
 // #include <sstream>
 
-#define DEBUG if(debug)
 #define pl endl
 #define endl '\n'
 #define x first
