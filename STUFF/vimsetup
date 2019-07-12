@@ -2,7 +2,7 @@ set nocompatible
 
 "//========================useful for competitive==========
 "contrl C contrl A contrl V (windows like)
-set mouse=a
+set mouse=a "ativa click na tela
 :map <C-a> GVgg
 :map <C-s> :w<CR>
 :map <C-c> "+y
@@ -18,12 +18,6 @@ set ignorecase "search ignore cases
 set smartcase "search start to not ignore cases if search for uppercase letter
 set shortmess+=A "ignores swap files error
 colorscheme elflord
-
-"^x^o auto completion (does not work with c or c++ unless ctags is installed)
-filetype plugin on
-set omnifunc=syntaxcomplete#complete
-
-
 
 
 "//===================mappings=============================
@@ -47,6 +41,14 @@ set title
 set scrolloff=3 "scroll is off until cursor is 3 lines close to limits
 hi Search ctermbg=yellow
 hi Search ctermfg=black
+
+
+
+"//============================usefull for life==========================
+"^x^o auto completion (does not work with c or c++ unless ctags is installed)
+filetype plugin on
+set omnifunc=syntaxcomplete#complete
+
 
 set shellcmdflag=-ic "make aliases usable
 
