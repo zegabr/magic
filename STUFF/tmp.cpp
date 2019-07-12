@@ -11,11 +11,11 @@
 using namespace std;
 
 using ll = long long;
-#define int ll
+//#define int ll
 
 
 
-main(){
+int main(){
 	ios::sync_with_stdio(0); cin.tie(0);
 	
 
