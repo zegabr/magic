@@ -1,4 +1,4 @@
-#define debug 1
+#define debug 
 #include <set>
 #include <map>
 #include <cmath>
@@ -29,6 +29,10 @@
 #define iofast 	ios::sync_with_stdio(0); cin.tie(0)
 #define getpos(c,k) (lower_bound(all(c),k)-c.begin())
 #define fr(i,a,b) for(int i=a;(a>b?i>=b:i<=b);(a>b?i--:i++))
+
+#define heap priority_queue
+#define hashset unordered_set
+#define hashmap unordered_map
 using namespace std;
 using ll = long long;
 using ld = long double;
@@ -36,14 +40,11 @@ using uint = unsigned int;
 using ull = unsigned long long;
 // #define int ll
 
-#define heap priority_queue
-#define hashset unordered_set
-#define hashmap unordered_map
 using vi = vector<int>;
 using pii = pair<int,int>;
-const int N = 2e5+5;
-const int MOD = 1e9+7;
 const double PI = acos(-1);
+const int MOD = 1e9+7;
+const int N = 2e5+5;
 
 
 main(){
