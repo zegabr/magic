@@ -17,7 +17,6 @@
 // #include <chrono>
 // #include <complex>
 // #include <sstream>
-
 #define endl '\n'
 #define x first
 #define y second
@@ -28,6 +27,7 @@
 #define db(k) cerr << #k<< " = " << k << endl
 #define getpos(c,k) (lower_bound(all(c),k)-c.begin())
 #define fr(i,a,b) for(int i=a;(a>b?i>=b:i<=b);(a>b?i--:i++))
+#define PI acos(-1)
 
 #define heap priority_queue
 #define hashset unordered_set
@@ -35,15 +35,10 @@
 #define ld long double
 #define ll long long
 // #define int ll
-
 using namespace std;
 
-const double PI = acos(-1);
-const int MOD = 1e9+7;
-const int N = 2e5+5;
 
-
-int main(){
+ main(){
  	ios::sync_with_stdio(0); cin.tie(0);
 	//freopen("input","r",stdin);
 

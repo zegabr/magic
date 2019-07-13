@@ -7,11 +7,11 @@
 #include <algorithm>
 
 #define endl '\n'
+#define ll long long
+#define ld long double
+//#define int ll
 
 using namespace std;
-
-using ll = long long;
-//#define int ll
 
 
 
