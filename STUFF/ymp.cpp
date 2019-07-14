@@ -18,6 +18,7 @@
 // #include <complex>
 // #include <sstream>
 #define endl '\n'
+#define dif !=
 #define x first
 #define y second
 #define pb push_back
@@ -27,6 +28,7 @@
 #define db(k) cerr << #k<< " = " << k << endl
 #define getpos(c,k) (lower_bound(all(c),k)-c.begin())
 #define fr(i,a,b) for(int i=a;(a>b?i>=b:i<=b);(a>b?i--:i++))
+#define fauto(k,c) for(auto &k : c)
 #define PI acos(-1)
 
 #define heap priority_queue
@@ -40,7 +42,9 @@ using namespace std;
 
  main(){
  	ios::sync_with_stdio(0); cin.tie(0);
+	cout<<fixed<<setprecision(20);
 	//freopen("input","r",stdin);
+	
 
 
 
