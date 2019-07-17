@@ -25,6 +25,7 @@
 #define pb push_back
 #define mp make_pair
 #define all(k) (k).begin(),(k).end()
+#define rall(k) (k).rbegin(),(k).rend()
 #define db(k) cerr << #k<< " = " << k << endl
 #define popcount(a) __builtin_popcountll((long long)(a))
 #define fr(i,a,b) for(int i=a;(a>b?i>=b:i<=b);(a>b?i--:i++))
