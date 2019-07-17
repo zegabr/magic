@@ -7,16 +7,17 @@
 #include <stack>
 #include <bitset>
 #include <vector>
+#include <complex>
 #include <cstring>
 #include <iomanip>
+#include <sstream>
 #include <iostream>
 #include <algorithm>
-// #include <unordered_map>
-// #include <unordered_set>
-// #include <random>
-// #include <chrono>
-// #include <complex>
-// #include <sstream>
+#include <unordered_map>
+#include <unordered_set>
+//#include <random>
+//#include <chrono>
+
 #define endl '\n'
 #define dif !=
 #define x first
@@ -24,16 +25,15 @@
 #define pb push_back
 #define mp make_pair
 #define all(k) (k).begin(),(k).end()
-#define rall(k) (k).rbegin(),(k).rend()
 #define db(k) cerr << #k<< " = " << k << endl
-#define getpos(c,k) (lower_bound(all(c),k)-c.begin())
+#define popcount(a) __builtin_popcountll((long long)(a))
 #define fr(i,a,b) for(int i=a;(a>b?i>=b:i<=b);(a>b?i--:i++))
 #define fauto(k,c) for(auto &k : c)
 #define PI acos(-1)
 
-#define heap priority_queue
-#define hashset unordered_set
-#define hashmap unordered_map
+#define pqueue priority_queue
+#define uset unordered_set
+#define umap unordered_map
 #define ld long double
 #define ll long long
 // #define int ll
@@ -45,7 +45,6 @@ using namespace std;
 	cout<<fixed<<setprecision(20);
 	//freopen("input","r",stdin);
 	
-
 
 
 
