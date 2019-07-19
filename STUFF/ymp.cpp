@@ -28,7 +28,8 @@
 #define rall(k) (k).rbegin(),(k).rend()
 #define db(k) cerr << #k<< " = " << k << endl
 #define popcount(a) __builtin_popcountll((long long)(a))
-#define fr(i,a,b) for(int i=a;(a>b?i>=b:i<=b);(a>b?i--:i++))
+#define fr(i,a,b) for(int i=a; i<=b; i++) 
+#define rf(i,a,b) for(int i=a; i>=b; i--) 
 #define fauto(k,c) for(auto &k : c)
 #define PI acos(-1)
 
@@ -46,7 +47,6 @@ main(){
 	cout<<fixed<<setprecision(20);
 	//freopen("input","r",stdin);
 	
-
 
 
 }
