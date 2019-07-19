@@ -6,6 +6,8 @@ unalias m
 alias m='make && make t'
 unalias g
 alias g='g++ -std=c++11 -O2'
+unalias tg
+alias tg='time g++ -std=c++11 -O2'
 unalias gw
 alias gw='g++ -std=c++11 -O2 -Wfatal-errors'
 
