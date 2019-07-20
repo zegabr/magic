@@ -12,9 +12,21 @@ print(a,b,c)
 '''set() interface: add, discard, clear, in, not in, |, &, ^,update(iteralbe)'''
 '''dict() interface: d[key]=value, key in d, key not in d, clear, update(iteralbe)'''
 
+def read1int():
+	a = int(stdin.readline().strip())
+	return a
 
+def read2int():
+	a,b = [int(x) for x in stdin.readline().strip().split()]
+	return a,b
 
+def read3int():
+	a,b,c = [int(x) for x in stdin.readline().strip().split()]
+	return a,b,c
 
+def read4int():
+	a,b,c,d = [int(x) for x in stdin.readline().strip().split()]
+	return a,b,c,d
 
 #==========main===========
 
