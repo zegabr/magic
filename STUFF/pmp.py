@@ -3,7 +3,6 @@ from sys import stdin
 '''
 allinput = stdin.read() #read all input as string (till EOF)
 line = stdin.readline() #read one line as string (do not cause errors if eof)
-line = input() #read one line as string (do cause errors if eof)
 char = stdin.read(1) #read one char
 file = open("arq.in",'r') #now file has read() and readline()
 a,b,c = sorted([int(x) for x in input().strip().split()]) #multiple init
@@ -18,8 +17,6 @@ print(a,b,c)
 
 
 #==========main===========
-
-
 
 
 
