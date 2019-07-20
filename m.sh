@@ -13,6 +13,7 @@ cd training/
 cp ./STUFF/Makefile ./
 cp ./STUFF/tmp.cpp ./
 cp ./STUFF/ymp.cpp ./
+cp ./STUFF/pmp.py ./
 cp ./STUFF/r.sh ./
 bash r.sh
 
