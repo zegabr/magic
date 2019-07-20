@@ -20,12 +20,12 @@ set shortmess+=A "ignores swap files error
 colorscheme elflord
 
 
-"//===================mappings=============================
+"//===================mappings=============================good for c++
 "//volta pra a ultima posicao de editada
 :nmap <Up>  <C-O>
 
 "//identa
-:nmap <Right> jkgg=G
+:nmap <Right> jkgg=G #VERY BAD FOR PYTHON, DO A IF STATEMENT HERE or do not use pyton on vim
 
 "//salva
 :nmap <Down> :w<CR>
