@@ -24,8 +24,8 @@ colorscheme elflord
 "//volta pra a ultima posicao de editada
 :nmap <Up>  <C-O>
 
-"//identa
-:nmap <Right> jkgg=G #VERY BAD FOR PYTHON, DO A IF STATEMENT HERE or do not use pyton on vim
+"//identa (DO NOT USE ON A PYTHON CODE)
+:nmap <Right> jkgg=G <C-O> <C-O>
 
 "//salva
 :nmap <Down> :w<CR>
