@@ -23,6 +23,8 @@
 #define y second
 #define pb push_back
 #define fauto(k,c) for(auto &k : c)
+#define fr(i,a,b) for(int i=a; i<=b; i++) 
+#define rf(i,a,b) for(int i=a; i>=b; i--)
 #define all(k) (k).begin(),(k).end()
 #define rall(k) (k).rbegin(),(k).rend()
 #define db(k) cerr << #k<< " = " << k << endl
