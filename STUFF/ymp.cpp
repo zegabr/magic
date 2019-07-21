@@ -27,7 +27,6 @@
 #define all(k) (k).begin(),(k).end()
 #define rall(k) (k).rbegin(),(k).rend()
 #define db(k) cerr << #k<< " = " << k << endl
-#define popcount(a) __builtin_popcountll((long long)(a))
 #define fr(i,a,b) for(int i=a; i<=b; i++) 
 #define rf(i,a,b) for(int i=a; i>=b; i--) 
 #define fauto(k,c) for(auto &k : c)
