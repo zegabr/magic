@@ -4,4 +4,5 @@ t:
 	./a.out < i1
 	./a.out < i2
 	./a.out < i3
+	./a.out < i4
 
