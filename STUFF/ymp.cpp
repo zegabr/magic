@@ -15,7 +15,13 @@
 #include <algorithm>
 #include <unordered_map>
 #include <unordered_set>
+using namespace std;
 
+
+#define sc1(a) scanf("%d", &(a))
+#define sc2(a,b) scanf("%d%d", &(a),&(b))
+#define sc3(a,b,c) scanf("%d%d%d", &(a),&(b),&(c))
+#define pri(a) printf("%d\n",(a))
 
 #define endl '\n'
 #define dif !=
@@ -26,7 +32,6 @@
 #define all(k) (k).begin(),(k).end()
 #define rall(k) (k).rbegin(),(k).rend()
 #define db(k) cerr << #k<< " = " << k << endl
-using namespace std;
 #define pqueue priority_queue
 #define uset unordered_set
 #define umap unordered_map
@@ -40,6 +45,6 @@ main(){
 	cout<<fixed<<setprecision(20);
 	//freopen("input","r",stdin);
 	
-
+	
 
 }
