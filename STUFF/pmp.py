@@ -12,8 +12,11 @@ def readstrs(): #many strs
 	return map(str,line().split())
 
 
-#==========main===========
+def solve():
+	return
 
+#==========main===========
+solve()
 
 
 
