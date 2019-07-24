@@ -28,6 +28,7 @@ using namespace std;
 #define x first
 #define y second
 #define pb push_back
+#define sz(x) (int)(x).size()
 #define fauto(k,c) for(auto &k : c)
 #define all(k) (k).begin(),(k).end()
 #define rall(k) (k).rbegin(),(k).rend()
