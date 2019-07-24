@@ -32,6 +32,7 @@ using namespace std;
 #define all(k) (k).begin(),(k).end()
 #define rall(k) (k).rbegin(),(k).rend()
 #define db(k) cerr << #k<< " = " << k << endl
+#define popcount(a) __builtin_popcountll((long long)a)
 #define pqueue priority_queue
 #define uset unordered_set
 #define umap unordered_map
