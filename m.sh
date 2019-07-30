@@ -1,5 +1,11 @@
 #!/bin/bash
 #m de main
+
+cd
+rm -rf remaper/
+git clone https://github.com/zegabr/remaper
+cd -
+
 rm -rf training/
 mkdir training/
 

@@ -21,10 +21,10 @@ alias gaa='git add --all'
 unalias gcm
 alias gcm='git commit -m'
 
-#unalias remaper
-#alias remaper='bash ~/remaper.sh'
-#unalias undoremaper
-#alias undoremaper='bash ~/undo.sh'
+unalias remap
+alias remap='bash ~/remaper/remaper.sh'
+unalias unremap
+alias unremap='bash ~/remaper/undo.sh'
 
 echo
 echo "============you have new aliases==========="
