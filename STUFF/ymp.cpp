@@ -24,7 +24,6 @@ using namespace std;
 #define pri(a) printf("%d\n",(a))
 
 #define endl '\n'
-#define dif !=
 #define x first
 #define y second
 #define pb push_back
@@ -47,6 +46,6 @@ main(){
 	cout<<fixed<<setprecision(20);
 	//freopen("input","r",stdin);
 	
-	
+		
 
 }
