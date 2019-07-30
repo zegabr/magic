@@ -12,13 +12,15 @@ Using some of the scripts will overrides your ~/.vimrc file or your gedit setup
 ### content:
 a.sh -> maybe usefull aliases
 
+gitclone.sh -> handy script to clone repos via https. (run anywhere `gitclone github-user/github-repo`)
+
 g.sh -> gedit setup
 
 v.sh -> vim setup (vimsetup is a copy of my vimrc file)
 
-n.sh -> c++ competitive setup (runs g.sh and v.sh)
+n.sh -> not competitive setup (runs g.sh, v.sh, a.sh)
 
-m.sh -> main competitive setup (clones cp.git and teleports)
+m.sh -> c++ competitive setup (clones cp.git, run all scripts and teleports)
 
 ### extra:
 b.sh -> benchmark made in c++
@@ -33,6 +35,6 @@ b.sh -> benchmark made in c++
 
 -Compile x.cpp with `make` command to compile until first error
 
--Run `m`(this is an alias at a.sh) to run with 3 different inputs that you must save at i1, i2 and i3 files
+-Run `m`(this is an alias at a.sh) to run inputs that you must save at i1 file
 
--Reset x.cpp by running `bash r.sh` at training folder (which you will be at end of m.sh)
+-Reset x.cpp by running `bash r.sh` at training folder (which you will be after teleports)
