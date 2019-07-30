@@ -1,5 +1,5 @@
 #!/bin/bash
-#a de aliases
+#a for aliases
 unalias py
 alias py=python3
 unalias m
@@ -21,7 +21,7 @@ alias gaa='git add --all'
 unalias gcm
 alias gcm='git commit -m'
 unalias gitclone
-alias gitclone='source ~/gitclone.sh'
+alias gitclone='source ~/clonegithub.sh'
 
 unalias remap
 alias remap='bash ~/remaper/remaper.sh'
