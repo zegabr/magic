@@ -38,6 +38,9 @@ using namespace std;
 #define umap unordered_map
 #define ld long double
 #define ll long long
+#define ii pair<int,int>
+#define vi vector<int>
+#define vii vector<ii>
 // #define int ll
 
 
@@ -45,7 +48,6 @@ main(){
  	ios::sync_with_stdio(0); cin.tie(0);
 	cout<<fixed<<setprecision(20);
 	//freopen("input","r",stdin);
-	
 		
 
 }
