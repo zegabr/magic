@@ -20,6 +20,8 @@ unalias gaa
 alias gaa='git add --all'
 unalias gcm
 alias gcm='git commit -m'
+unalias gitclone
+alias gitclone='source ~/gitclone.sh'
 
 unalias remap
 alias remap='bash ~/remaper/remaper.sh'
