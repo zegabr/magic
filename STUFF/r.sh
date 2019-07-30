@@ -13,4 +13,4 @@ else
 	echo "competitive"
 fi
 
-touch i1 i2 i3 i4
+touch i1
