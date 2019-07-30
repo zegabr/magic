@@ -1,7 +1,8 @@
 #!/bin/bash
-#n de rascunho + template
-cp -r  ./m/STUFF/ ./
+#n not competitive
+
+cp ./m/clonegithub.sh ~/clonegithub.sh #this is important to run gitclone alias properly
 echo "==============x.cpp reseted================"
-source ./m/g.sh ##gedit settings
-source ./m/v.sh ##vim settings
-source ./m/a.sh ##alias
+source ./m/g.sh ##gedit setup
+source ./m/v.sh ##vim setup
+source ./m/a.sh ##aliases
