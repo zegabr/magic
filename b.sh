@@ -1,11 +1,11 @@
-#b de benchmark
+#b for benchmark
 
 echo "
 ============benchmark============="
 
-g++ STUFF/benchmark.cpp -o b
+g++ ./m/STUFF/benchmark.cpp -o b
 time ./b
-rm b
+rm ./b
 
 echo "
 ============benchmark ended======="
