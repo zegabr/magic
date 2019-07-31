@@ -1,4 +1,3 @@
-#define debug 
 #include <set>
 #include <map>
 #include <cmath>

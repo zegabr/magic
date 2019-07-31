@@ -1,23 +1,11 @@
-#include <set>
-#include <map>
-#include <cmath>
-#include <deque>
-#include <queue>
-#include <stack>
-#include <bitset>
-#include <vector>
-#include <complex>
-#include <cstring>
-#include <iomanip>
-#include <sstream>
-#include <iostream>
-#include <algorithm>
-#include <unordered_map>
-#include <unordered_set>
+#include <bits/stdc++.h>
 
 #define endl '\n'
 #define ll long long
 #define ld long double
+#define ii pair<int,int>
+#define vi vector<int>
+#define vii vector<ii>
 //#define int ll
 
 using namespace std;
