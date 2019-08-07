@@ -5,8 +5,6 @@
 #include <vector>
 #include <iostream>
 #include <algorithm>
-#include <unordered_map>
-#include <unordered_set>
 using namespace std;
 
 #define sc1(a) scanf("%d", &(a))
@@ -22,19 +20,17 @@ using namespace std;
 #define rall(k) (k).rbegin(),(k).rend()
 #define db(k) cerr << #k<< " = " << k << endl
 #define popcount(a) __builtin_popcountll((long long)a)
-#define pqueue priority_queue
-#define uset unordered_set
-#define umap unordered_map
-#define ld long double
+
 #define ll long long
-#define ii pair<int,int>
+#define ld long double
 #define vi vector<int>
+#define ii pair<int,int>
 #define vii vector<ii>
 // #define int ll
 
 
 main(){
  	ios::sync_with_stdio(0); cin.tie(0);
-		
+	
 
 }
