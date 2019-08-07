@@ -20,7 +20,6 @@ using namespace std;
 #define sc1(a) scanf("%d", &(a))
 #define sc2(a,b) scanf("%d%d", &(a),&(b))
 #define sc3(a,b,c) scanf("%d%d%d", &(a),&(b),&(c))
-#define pri(a) printf("%d\n",(a))
 
 #define endl '\n'
 #define x first
