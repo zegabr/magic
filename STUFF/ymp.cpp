@@ -18,8 +18,10 @@ using namespace std;
 #define x first
 #define y second
 #define pb push_back
-#define fauto(k,c) for(auto &k : c)
+#define each(k,c) for(auto &k : c)
 #define all(k) (k).begin(),(k).end()
+#define fr(i,a,b) for(int i=a;i<=int(b);i++)
+#define rf(i,a,b) for(int i=a;i>=int(b);i--)
 #define db(k) cerr << #k<< " = " << k << endl
 
 
