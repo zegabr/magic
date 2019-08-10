@@ -12,7 +12,7 @@ using namespace std;
 #define vi vector<int>
 #define ii pair<int,int>
 #define vii vector<ii>
-#define int ll
+//#define int ll
 
 #define endl '\n'
 #define x first
