@@ -6,10 +6,10 @@
 #include <algorithm>
 using namespace std;
 
-#define ll long long
 #define ld long double
-#define vi vector<int>
+#define ll long long
 #define ii pair<int,int>
+#define vi vector<int>
 #define vii vector<ii>
 //#define int ll
 
