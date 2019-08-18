@@ -1,8 +1,8 @@
 #include <bits/stdc++.h>
 
 #define endl '\n'
-#define ll long long
 #define ld long double
+#define ll long long
 #define ii pair<int,int>
 #define vi vector<int>
 #define vii vector<ii>
@@ -15,8 +15,6 @@ using namespace std;
 
 int32_t main(){
 	ios::sync_with_stdio(0); cin.tie(0);
-	cout<<fixed<<setprecision(20);	
-	//freopen("input","r",stdin);
 
 
 
