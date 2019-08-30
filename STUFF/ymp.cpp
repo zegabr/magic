@@ -11,7 +11,6 @@ using namespace std;
 #define ii pair<int,int>
 #define vi vector<int>
 #define vii vector<ii>
-//#define int ll
 
 #define endl '\n'
 #define x first
