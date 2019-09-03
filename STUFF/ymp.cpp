@@ -4,6 +4,8 @@
 #include <deque>
 #include <cmath>
 #include <iostream>
+#include <iomanip>
+#include <cstring>
 #include <algorithm>
 using namespace std;
 #define endl '\n'
@@ -13,6 +15,11 @@ using namespace std;
 #define ppb pop_back
 #define pf push_front
 #define ppf pop_front
+#define ll long long
+#define ld long double
+#define vi vector<int>
+#define ii pair<int,int>
+#define vii vector<ii>
 #define si(d) scanf("%d",&d) 
 #define sll(d) scanf("%lld",&d) 
 #define each(a,c) for(auto &a:c)
@@ -20,11 +27,6 @@ using namespace std;
 #define fr(i,a,b) for(int i=a;i<=(int)b;i++)
 #define rf(i,a,b) for(int i=a;i>=(int)b;i--)
 #define db(k) cerr << #k<< " = " << k << endl
-#define ll long long
-#define ld long double
-#define vi vector<int>
-#define ii pair<int,int>
-#define vii vector<ii>
 
 
 
