@@ -1,11 +1,11 @@
 #include <set>
 #include <map>
-#include <vector>
 #include <deque>
 #include <cmath>
-#include <iostream>
+#include <vector>
 #include <iomanip>
 #include <cstring>
+#include <iostream>
 #include <algorithm>
 using namespace std;
 #define endl '\n'
@@ -22,32 +22,6 @@ using namespace std;
 #define all(k) (k).begin(),(k).end()
 #define fr(i,a,b) for(int i=a;i<=(int)b;i++)
 #define rf(i,a,b) for(int i=a;i>=(int)b;i--)
-#define db(k) cerr << #k<< " = " << k << endl
-#define getchar getchar_unlocked
-void sc(int &num){//scan int
-	num=0;bool neg=0;
-	register int c = getchar();
-	if(c=='-'){
-		neg=1;
-		c=getchar();
-	}
-	for(;c<='9' and c>='0';c=getchar())
-		num=(num<<1)+(num<<3)+c-'0';
-	if(neg)num*=-1;
-}
-void sc(ll &num){//scan ll
-	num=0ll;
-	bool neg=0;
-	register int c = getchar();
-	if(c=='-'){
-		neg=1;
-		c=getchar();
-	}
-	for(;c<='9' and c>='0';c=getchar())
-		num=(num<<1)+(num<<3)+c-'0';
-	if(neg)num*=-1ll;
-}
-
 
 
 
