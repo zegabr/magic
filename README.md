@@ -32,12 +32,12 @@ b.sh -> benchmark made in c++ (run `bash m/b.sh`)
 ### how to use my competitive setup:
 -Run `source m/m.sh`
 
--Code using x.cpp at training directory
+-Code using x.cpp at competitive directory
 
 -Compile x.cpp with `make` command to compile until first error
 
 -Run `m`(this is an alias at a.sh) to run inputs that you must save at i1 file
 
--Reset x.cpp by running `bash r.sh` at training folder (which you will be after teleports)
+-Reset x.cpp by running `bash r.sh` at competitive folder (which you will be after teleports)
 
 -There is 2 templates named tmp.cpp and ymp.cpp (also a little python3 cheatsheet named pmp.py)

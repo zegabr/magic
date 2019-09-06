@@ -9,17 +9,17 @@ rm -rf remaper/
 git clone https://github.com/zegabr/remaper
 cd - #go back to parent of m/
 
-#creates training/ at parent of m/
-rm -rf training/
-mkdir training/
+#creates competitive/ at parent of m/
+rm -rf competitive/
+mkdir competitive/
 
 
 source ./m/n.sh #setups+aliases
 
-#move STUFF from parent of m/ to inside of training/
-mv ./STUFF ./training/
+#move STUFF from parent of m/ to inside of competitive/
+mv ./STUFF ./competitive/
 
-cd training/
+cd competitive/
 
 cp ./STUFF/Makefile ./
 cp ./STUFF/tmp.cpp ./
