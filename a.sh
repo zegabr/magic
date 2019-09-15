@@ -30,5 +30,4 @@ alias unremap='bash ~/remaper/undo.sh'
 
 echo
 echo "============you have new aliases==========="
-alias | grep 'g++'
 echo
