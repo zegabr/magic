@@ -11,7 +11,10 @@ alias tg='time g++ -std=c++11 -O2'
 unalias gw
 alias gw='g++ -std=c++11 -O2 -Wfatal-errors'
 
-
+unalias pull
+alias pull='git pull'
+unalias push
+alias push='git push'
 unalias gs
 alias gs='git status'
 unalias ga
