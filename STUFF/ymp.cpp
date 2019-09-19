@@ -1,27 +1,33 @@
 #include <set>
 #include <map>
-#include <deque>
 #include <cmath>
+#include <deque>
+#include <queue>
+#include <stack>
 #include <vector>
 #include <iomanip>
 #include <cstring>
 #include <iostream>
 #include <algorithm>
+#include <unordered_map>
+#include <unordered_set>
 using namespace std;
-#define endl '\n'
 #define x first
 #define y second
 #define pb push_back
-#define ppb pop_back
 #define pf push_front
+#define ppb pop_back
 #define ppf pop_front
+#define each(a,c) for(auto &a:c)
+#define all(k) k.begin(),k.end()
+#define fr(i,a,b) for(int i=a;i<=(int)b;i++)
+#define rf(i,a,b) for(int i=a;i>=(int)b;i--)
 #define ll long long
 #define ld long double
 #define ii pair<int,int>
-#define each(a,c) for(auto &a:c)
-#define all(k) (k).begin(),(k).end()
-#define fr(i,a,b) for(int i=a;i<=(int)b;i++)
-#define rf(i,a,b) for(int i=a;i>=(int)b;i--)
+#define umap unordered_map
+#define uset unordered_set
+#define heap priority_queue
 
 
 
