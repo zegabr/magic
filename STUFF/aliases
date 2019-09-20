@@ -1,0 +1,20 @@
+##ALIASES
+
+alias py=python3
+alias m='make && make t'
+alias g='g++ -std=c++11 -O2'
+alias tg='time g++ -std=c++11 -O2'
+alias gw='g++ -std=c++11 -O2 -Wfatal-errors'
+
+alias pull='git pull'
+alias push='git push'
+alias gs='git status'
+alias ga='git add'  
+alias gaa='git add --all'
+alias gcm='git commit -m'
+alias gitclone='source ~/clonegithub.sh'
+
+alias remap='bash ~/remaper/remaper.sh'
+alias unremap='bash ~/remaper/undo.sh'
+
+##ALIASES
