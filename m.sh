@@ -26,7 +26,7 @@ cp ./STUFF/tmp.cpp ./
 cp ./STUFF/ymp.cpp ./
 cp ./STUFF/pmp.py ./
 cp ./STUFF/r.sh ./
-bash r.sh 42
+bash r.sh
 
 #copy my competitive code lib
 rm -rf cp/
