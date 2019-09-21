@@ -1,10 +1,15 @@
 #include <cmath>
+#include <deque>
 #include <vector>
 #include <iostream>
 #include <algorithm>
 using namespace std;
 #define x first
 #define y second
+#define pb push_back
+#define pf push_front
+#define ppb pop_back
+#define ppf pop_front
 #define ll long long
 #define ld long double
 #define ii pair<int,int>
