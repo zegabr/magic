@@ -7,10 +7,10 @@ Just clone it in some folder and run `source m/m.sh` and all my setup will be yo
 ### be aware:
 Using some of the scripts will overrides your ~/.vimrc file or your gedit setup
 
-**Important**: Scripts work if you run from outside m/
+**Important**: Scripts work if you run from the directory wich contains m/ (this repo) 
 
 ### content:
-a.sh -> maybe usefull aliases
+a.sh -> copy some (maybe) usefull aliases which are in STUFF/aliases into .bashrc so that they stay permanent
 
 clonegithub.sh -> handy script to clone repos via https. (run anywhere `gitclone github-user/github-repo` after copying it for home folder and running a.sh)
 
