@@ -12,7 +12,7 @@ syntax on
 set hls "search highlight
 set relativenumber "line numbers moving relatively
 set number
-set ts=2  sw=2 sts=2 noexpandtab autoindent
+set ts=4  sw=4 sts=4 noexpandtab autoindent
 set incsearch "cursor moves as soon as typing search
 set ignorecase "search ignore cases
 set smartcase "search start to not ignore cases if search for uppercase letter
