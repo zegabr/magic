@@ -9,14 +9,28 @@ set mouse=a "ativa click na tela
 :map <C-v> "+p
 
 syntax on
-set hls "search highlight
-set relativenumber "line numbers moving relatively
+"search highlight
+set hls 
+
+"line numbers moving relatively
+set relativenumber 
+
 set number
+
 set ts=4  sw=4 sts=4 noexpandtab autoindent
-set incsearch "cursor moves as soon as typing search
-set ignorecase "search ignore cases
-set smartcase "search start to not ignore cases if search for uppercase letter
-set shortmess+=A "ignores swap files error
+
+"cursor moves as soon as typing search
+set incsearch 
+
+"search ignore cases
+set ignorecase 
+
+"search start to not ignore cases if search for uppercase letter
+set smartcase 
+
+"ignores swap files error
+set shortmess+=A 
+
 colorscheme elflord
 
 
@@ -25,7 +39,7 @@ colorscheme elflord
 :nmap <Up>  <C-O>
 
 "//identa (DO NOT USE ON A PYTHON CODE)
-:nmap <Right> jkgg=G <C-O> <C-O>
+":nmap <Right> jkgg=G <C-O> <C-O>
 
 "//salva
 :nmap <Down> :w<CR>
@@ -38,7 +52,8 @@ set splitright
 set showcmd
 set ruler 
 set title 
-set scrolloff=3 "scroll is off until cursor is 3 lines close to limits
+"scroll is off until cursor is 3 lines close to limits
+set scrolloff=3
 hi Search ctermbg=yellow
 hi Search ctermfg=black
 
@@ -50,7 +65,8 @@ filetype plugin on
 set omnifunc=syntaxcomplete#complete
 
 
-set shellcmdflag=-ic "make aliases usable
+"make aliases usable
+set shellcmdflag=-ic
 
 "below command is for vimrc testing while ediing it
 if has("autocmd")
