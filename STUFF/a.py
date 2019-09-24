@@ -39,9 +39,12 @@ bash_com_alias.append('##ALIASES')#bash com aliases completo
 ##############################################
 texto_final=""
 for linha in bash_com_alias:
-	texto_final += linha + "\n"
+	if linha != '\n' and linha !="":
+		texto_final += linha + "\n"
 
+#print("inicio")
 #print(texto_final)##debug
+#print("fim")
 
 bashrc = open(home+'/.bashrc','w')#abre bashrc pra escrita
 bashrc.write(texto_final)
