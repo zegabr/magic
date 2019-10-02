@@ -5,7 +5,6 @@
 #include <vector>
 #include <iostream>
 #include <algorithm>
-#include <unordered_map>
 using namespace std;
 #define x first
 #define y second
@@ -20,7 +19,6 @@ using namespace std;
 #define ll long long
 #define ld long double
 #define ii pair<int,int>
-#define umap unordered_map
 #define heap priority_queue
 
 
