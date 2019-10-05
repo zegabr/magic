@@ -18,8 +18,6 @@ using namespace std;
 #define fall(a,c) for(auto &a:c)
 #define all(k) k.begin(),k.end()
 #define rall(k) rbegin(k),rend(k)
-#define fr(i,a,b) for(int i=a;i<=(int)b;i++)
-#define rf(i,a,b) for(int i=a;i>=(int)b;i--)
 #define heap priority_queue
 
 
