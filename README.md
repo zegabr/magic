@@ -40,4 +40,4 @@ b.sh -> benchmark made in c++ (run `bash m/b.sh`)
 
 -Reset x.cpp by running `bash r.sh` at competitive folder (which you will be after teleports)
 
--There is 2 templates named tmp.cpp and ymp.cpp (also a little python3 cheatsheet named pmp.py)
+-There is a template named tmp.cpp (also a little python3 cheatsheet named pmp.py)
