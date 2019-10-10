@@ -4,10 +4,10 @@
 #copy STUFF to parent of m/
 cp -r  ./m/STUFF/ ./
 
-cd
-rm -rf remaper/
-git clone https://github.com/zegabr/remaper
-cd - #go back to parent of m/
+#cd
+#rm -rf remaper/
+#git clone https://github.com/zegabr/remaper
+#cd - #go back to parent of m/
 
 #creates competitive/ at parent of m/
 rm -rf competitive/
