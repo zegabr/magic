@@ -3,6 +3,7 @@
 #include <deque>
 #include <queue>
 #include <vector>
+#include <cstring>
 #include <iostream>
 #include <algorithm>
 using namespace std;
