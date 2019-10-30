@@ -19,7 +19,7 @@ using namespace std;
 #define ii pair<int,int>
 #define fall(a,c) for(auto &a:c)
 #define all(k) k.begin(),k.end()
-#define rall(k) rbegin(k),rend(k)
+#define rall(k) k.rbegin(),k.rend()
 #define heap priority_queue
 
 
