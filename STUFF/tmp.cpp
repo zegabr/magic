@@ -14,12 +14,13 @@ using namespace std;
 #define pf push_front
 #define ppb pop_back
 #define ppf pop_front
-#define ll long long
-#define ld long double
-#define ii pair<int,int>
 #define fall(a,c) for(auto &a:c)
 #define all(k) k.begin(),k.end()
 #define rall(k) k.rbegin(),k.rend()
+#define db(x) cerr<<#x<<" = "<<x<<endl
+#define ll long long
+#define ld long double
+#define ii pair<int,int>
 #define heap priority_queue
 
 
