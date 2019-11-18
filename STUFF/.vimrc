@@ -38,8 +38,8 @@ colorscheme elflord
 "//volta pra a ultima posicao de editada
 :nmap <Up>  <C-O>
 
-"//identa (DO NOT USE ON A PYTHON CODE)
-":nmap <Right> jkgg=G <C-O> <C-O>
+"//identa (TODO: unset this for python code)
+:nmap <Right> jkgg=G <C-O> <C-O>
 
 "//salva
 :nmap <Down> :w<CR>
