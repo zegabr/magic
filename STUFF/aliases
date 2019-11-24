@@ -1,4 +1,6 @@
 ##ALIASES
+alias desktop='cd ~/Desktop'
+alias downloads='cd ~/Downloads'
 
 alias py=python3
 alias m='make && make t'
