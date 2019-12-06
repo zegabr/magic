@@ -17,8 +17,8 @@ using namespace std;
 #define fall(a,c) for(auto &a:c)
 #define all(k) k.begin(),k.end()
 #define rall(k) k.rbegin(),k.rend()
-#define yes cout<<"yes"<<endl;
-#define no cout<<"no"<<endl;
+#define yes cout<<"yes"<<endl
+#define no cout<<"no"<<endl
 #define ll long long
 #define ld long double
 #define ii pair<int,int>
