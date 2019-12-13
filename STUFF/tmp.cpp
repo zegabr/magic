@@ -25,7 +25,7 @@ using namespace std;
 #define ld long double
 #define ii pair<int,int>
 #define heap priority_queue
-
+#define endl '\n'
 
 
 
