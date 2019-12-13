@@ -18,6 +18,8 @@ using namespace std;
 #define yes cout<<"yes"<<endl
 #define all(k) k.begin(),k.end()
 #define rall(k) k.rbegin(),k.rend()
+#define fr(i,a,b) for(int i=a;i<=b;i++)
+#define rf(i,a,b) for(int i=b;i>=a;i++)
 #define fall(a,c) for(auto &a:c)
 #define ll long long
 #define ld long double
