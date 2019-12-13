@@ -1,3 +1,5 @@
+#include <iostream>
+//#define endl '\n'
 #include <set>
 #include <map>
 #include <cmath>
@@ -5,7 +7,6 @@
 #include <queue>
 #include <vector>
 #include <cstring>
-#include <iostream>
 #include <algorithm>
 using namespace std;
 #define x first
