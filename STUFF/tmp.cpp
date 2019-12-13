@@ -14,18 +14,15 @@ using namespace std;
 #define ppb pop_back
 #define pf push_front
 #define ppf pop_front
-#define no cout<<"no"<<endl
-#define yes cout<<"yes"<<endl
+#define fall(a,c) for(auto &a:c)
 #define all(k) k.begin(),k.end()
 #define rall(k) k.rbegin(),k.rend()
 #define fr(i,a,b) for(int i=a;i<=b;i++)
 #define rf(i,a,b) for(int i=a;i>=b;i--)
-#define fall(a,c) for(auto &a:c)
 #define ll long long
 #define ld long double
 #define ii pair<int,int>
 #define heap priority_queue
-#define endl '\n'
 
 
 
