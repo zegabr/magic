@@ -16,7 +16,6 @@ using namespace std;
 #define ppf pop_front
 #define fall(a,c) for(auto &a:c)
 #define all(k) k.begin(),k.end()
-#define sz(k) (int)k.size()
 #define rall(k) k.rbegin(),k.rend()
 #define yes cout<<"yes"<<endl
 #define no cout<<"no"<<endl
