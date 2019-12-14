@@ -1,5 +1,5 @@
 #include <iostream>
-//#define endl '\n'
+#define endl '\n'
 #include <set>
 #include <map>
 #include <cmath>
