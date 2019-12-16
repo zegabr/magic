@@ -15,10 +15,10 @@ using namespace std;
 #define pf push_front
 #define ppf pop_front
 #define fall(a,c) for(auto &a:c)
-#define all(k) k.begin(),k.end()
-#define rall(k) k.rbegin(),k.rend()
 #define fr(i,a,b) for(int i=a;i<=b;i++)
 #define rf(i,a,b) for(int i=a;i>=b;i--)
+#define all(k) k.begin(),k.end()
+#define rall(k) k.rbegin(),k.rend()
 #define ll long long
 #define ld long double
 #define ii pair<int,int>
