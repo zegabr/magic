@@ -21,7 +21,7 @@ using namespace std;
 #define rall(k) k.rbegin(),k.rend()
 #define fr(i,a,b) for(int i=a;i<=b;i++)
 #define rf(i,a,b) for(int i=a;i>=b;i--)
-#define fall(a,c) for(auto &a:c)
+#define fa(a,c) for(auto &a:c)
 #define heap priority_queue
 
 
