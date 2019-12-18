@@ -17,10 +17,10 @@ using namespace std;
 #define ll long long
 #define ld long double
 #define ii pair<int,int>
+#define heap priority_queue
 #define all(k) k.begin(),k.end()
 #define rall(k) k.rbegin(),k.rend()
 #define fa(a,c) for(auto &a:c)
-#define heap priority_queue
 
 
 
