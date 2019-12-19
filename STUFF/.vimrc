@@ -17,7 +17,11 @@ set relativenumber
 
 set number
 
-set ts=2  sw=2 sts=2 noexpandtab autoindent
+set ts=2  
+set sw=2 
+set sts=2 
+set expandtab 
+set autoindent
 
 "cursor moves as soon as typing search
 set incsearch 
