@@ -6,7 +6,7 @@ if hash gedit 2>/dev/null; then
 	gsettings set org.gnome.gedit.preferences.editor bracket-matching true
 	gsettings set org.gnome.gedit.preferences.editor scheme 'oblivion'
 	gsettings set org.gnome.gedit.preferences.editor display-line-numbers true
-	gsettings set org.gnome.gedit.preferences.editor insert-spaces false
+	gsettings set org.gnome.gedit.preferences.editor insert-spaces true
 	gsettings set org.gnome.gedit.preferences.editor auto-indent true
 	gsettings set org.gnome.gedit.preferences.editor syntax-highlighting true
 	gsettings set org.gnome.gedit.preferences.editor display-overview-map false
