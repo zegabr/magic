@@ -21,6 +21,8 @@ using namespace std;
 #define all(k) k.begin(),k.end()
 #define rall(k) k.rbegin(),k.rend()
 #define fa(a,c) for(auto &a:c)
+#define yes "YES"
+#define no "NO"
 
 
 
