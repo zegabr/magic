@@ -51,6 +51,7 @@ colorscheme elflord
 "//salva e sai
 :nmap <Left> :wq<CR>
 "//=========================================================
+"// TODO: unmap arrows from insert mode and try harder
 
 set splitright
 set showcmd
