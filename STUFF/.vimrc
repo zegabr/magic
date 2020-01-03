@@ -26,6 +26,14 @@ set shortmess+=A "ignores swap files error
 
 
 "//===================mappings==============================
+"//cntrl A, cntrl C e cntrl V
+:map <C-a> GVgg
+:map <C-s> :w<CR>
+:map <C-c> "+y
+:map <C-v> "+p
+
+
+
 "//volta pra a ultima posicao de editada
 :nmap <Up>  <C-O> 
 
