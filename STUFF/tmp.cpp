@@ -19,17 +19,14 @@ using namespace std;
 #define ii pair<int,int>
 #define heap priority_queue
 #define all(k) k.begin(),k.end()
-#define rall(k) k.rbegin(),k.rend()
 #define fa(a,c) for(auto &a:c)
-#define yes "YES"
-#define no "NO"
 
 
 
 
 int32_t main(){
 	ios::sync_with_stdio(0); cin.tie(0);
-
+  
 
 
 
