@@ -18,6 +18,7 @@ using namespace std;
 #define ld long double
 #define ii pair<int,int>
 #define heap priority_queue
+#define sz(v) ((int)(v).size())
 #define all(k) k.begin(),k.end()
 #define fa(a,c) for(auto &a:c)
 
