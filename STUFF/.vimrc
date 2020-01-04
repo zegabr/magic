@@ -65,7 +65,7 @@ autocmd FileType javascript setlocal ts=4 sw=4 sts=4 noexpandtab
 autocmd FileType python setlocal ts=4 sw=4 sts=4 noexpandtab 
 autocmd Filetype html setlocal ts=2 sw=2 sts=2 expandtab
 autocmd Filetype css setlocal ts=2 sw=2 sts=2 expandtab
-autocmd Filetype cpp setlocal ts=2 sw=2 sts=0 expandtab autoindent
-autocmd Filetype c setlocal ts=2 sw=2 sts=0 expandtab autoindent
+autocmd Filetype cpp setlocal ts=2 sw=2 sts=2 expandtab autoindent
+autocmd Filetype c setlocal ts=2 sw=2 sts=2 expandtab autoindent
 endif
 
