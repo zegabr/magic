@@ -23,7 +23,7 @@ using namespace std;
 #define len(v) ((int)v.size())
 #define fa(a,c) for(auto &a:c)
 #define int ll
-//#define endl '\n'
+#define endl '\n'
 
 
 
