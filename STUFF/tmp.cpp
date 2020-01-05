@@ -18,9 +18,14 @@ using namespace std;
 #define ld long double
 #define ii pair<int,int>
 #define heap priority_queue
-#define sz(v) ((int)(v).size())
 #define all(k) k.begin(),k.end()
+#define rall(k) k.rbegin(),k.rend()
+#define len(v) ((int)v.size())
 #define fa(a,c) for(auto &a:c)
+#define fr(i,a,b) for(int i=(int)a;i<=(int)b;i++)
+#define rf(i,a,b) for(int i=(int)a;i>=(int)b;i--)
+//#define endl '\n'
+
 
 
 
