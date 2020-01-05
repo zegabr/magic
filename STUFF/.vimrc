@@ -38,7 +38,7 @@ set shortmess+=A "ignores swap files error
 :nmap <Up>  <C-O> 
 
 "//identa (TODO: unset this for python code)
-:nmap <Right> mijkgg=G'i
+:nmap <Right> mijkgg=G'izz
 
 "//salva
 :nmap <Down> :w<CR>
