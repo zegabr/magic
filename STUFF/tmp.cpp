@@ -24,6 +24,7 @@ using namespace std;
 #define fa(a,c) for(auto &a:c)
 #define fr(i,a,b) for(int i=(int)a;i<=(int)b;i++)
 #define rf(i,a,b) for(int i=(int)a;i>=(int)b;i--)
+#define int ll
 //#define endl '\n'
 
 
