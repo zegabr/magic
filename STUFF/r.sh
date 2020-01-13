@@ -4,6 +4,7 @@
 
 
 cp tmp.cpp x.cpp
-echo "tmp.cpp copied to x.cpp"
+cp pmp.py z.py
+echo "x.cpp and p.py reseted"
 touch i
 
