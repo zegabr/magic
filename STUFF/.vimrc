@@ -5,11 +5,13 @@ nmap <C-s> :w<CR>
 nmap <C-c> "+y
 nmap <C-v> "+p
 
-"go up, go down, ident, save
-nmap <Up> ddkP
-nmap <Down> ddp
+"go up, go down, ident, save&quit, last edit pos, save
+nmap <C-Up> ddkP
+nmap <C-Down> ddp
 nmap <Right> mijkgg=G'izz
-nmap <Left> :w<CR>
+nmap <Left> :wq<CR>
+nmap <up> <C-o>
+nmap <down> :w<CR>
 
 "center things
 nmap G Gzz
