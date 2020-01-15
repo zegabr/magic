@@ -1,20 +1,18 @@
-
-"//===================mappings==============================
-"//cntrl A, cntrl C e cntrl V
+"===================mappings==============================
+"cntrl A, cntrl C e cntrl V
 nmap <C-a> GVgg
 nmap <C-s> :w<CR>
 nmap <C-c> "+y
 nmap <C-v> "+p
 
-"//sobe,desce, identa, salva e sai
-nmap <Up> ddkP 
+"go up, go down, ident, save&quit
+nmap <Up> ddkP
 nmap <Down> ddp
 nmap <Right> mijkgg=G'izz
 nmap <Left> :wq<CR>
 
-
-"//=======================================================
-"//  unmap arrows from insert mode and try harder
+"=======================================================
+"  unmap arrows from insert mode and try harder
 ino <Up> <Nop>
 ino <Down> <Nop>
 ino <Right> <Nop>
@@ -25,8 +23,12 @@ vno <Down> <Nop>
 vno <Right> <Nop>
 vno <Left> <Nop>
 
-
-
+"center things
+nmap G Gzz
+nmap n nzz
+nmap N Nzz
+nmap } }zz
+nmap { {zz
 
 set nocompatible
 set mouse=a "ativa clique com mouse
@@ -54,12 +56,10 @@ set smartcase "search start to not ignore cases if search for uppercase letter
 
 set shortmess+=A "ignores swap files error
 
-"//============================usefull for life==========================
+"============================usefull for life==========================
 "^x^o auto completion (does not work with c or c++ unless ctags is installed)
 filetype plugin on
 set omnifunc=syntaxcomplete#complete
-
-set shellcmdflag=-ic "make aliases usable
 
 "below command is for vimrc testing while ediing it
 if has("autocmd")
