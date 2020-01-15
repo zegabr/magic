@@ -9,7 +9,7 @@ nmap <C-v> "+p
 nmap <Up> ddkP
 nmap <Down> ddp
 nmap <Right> mijkgg=G'izz
-nmap <Left> :q<CR>
+nmap <Left> :w<CR>
 
 "center things
 nmap G Gzz
@@ -61,20 +61,28 @@ function! PYSET()
   setlocal smarttab
   set ts=4 sw=4 sts=4 noexpandtab
   nmap <right> <Nop> 
-
 endfunction
 
+function! HTMLCSSSET()
+  set ts=2 sw=2 sts=2 expandtab
+  nmap <right> <Nop>
+endfunction
+
+function! JSSET()
+  set ts=4 sw=4 sts=4 noexpandtab
+  nmap <right> <Nop> 
+endfunction
 
 "below command is for vimrc testing while ediing it
 if has("autocmd")
 autocmd bufwritepost .vimrc source $MYVIMRC
 filetype on
-autocmd FileType javascript setlocal ts=4 sw=4 sts=4 noexpandtab
+autocmd FileType javascript call JSSET()
 autocmd FileType python call PYSET() 
-autocmd Filetype html setlocal ts=2 sw=2 sts=2 expandtab
-autocmd Filetype css setlocal ts=2 sw=2 sts=2 expandtab
+autocmd Filetype html call HTMLCSSSET()
+autocmd Filetype css  call HTMLCSSSET()
 autocmd Filetype cpp call CPPSET()
-autocmd Filetype c setlocal ts=2 sw=2 sts=2 expandtab autoindent
+autocmd Filetype c call CPPSET()
 endif
 
 
