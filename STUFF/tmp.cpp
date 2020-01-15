@@ -2,8 +2,6 @@
 #include <map>
 #include <cmath>
 #include <queue>
-#include <deque>
-#include <vector>
 #include <cstring>
 #include <iomanip>
 #include <iostream>
