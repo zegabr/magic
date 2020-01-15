@@ -1,4 +1,5 @@
 "===================mappings==============================
+"
 "cntrl A, cntrl C e cntrl V
 nmap <C-a> GVgg
 nmap <C-s> :w<CR>
@@ -20,6 +21,13 @@ nmap N Nzz
 nmap } }zz
 nmap { {zz
 
+"quick pairs
+imap '' ''<ESC>i
+imap "" ""<ESC>i
+imap { {}<ESC>i<CR><CR><CR><ESC>kko
+imap [ []<ESC>i
+
+"settings
 set nocompatible
 set mouse=a "ativa clique com mouse
 set splitright
@@ -39,12 +47,11 @@ set ignorecase "search ignore cases
 set smartcase "search start to not ignore cases if search for uppercase letter
 set shortmess+=A "ignores swap files error
 
-"============================usefull for life==========================
 "^x^o auto completion (does not work with c or c++ unless ctags is installed)
 filetype plugin on
 set omnifunc=syntaxcomplete#complete
 
-"settings
+
 " C/C++
 function! CPPSET()
   set makeprg=g++\ -std=c++14\ -O2\ -Wall\ %;
@@ -65,11 +72,13 @@ function! PYSET()
   nmap <right> <Nop> 
 endfunction
 
+"HTML CSS
 function! HTMLCSSSET()
   set ts=2 sw=2 sts=2 expandtab
   nmap <right> <Nop>
 endfunction
 
+"Javascript
 function! JSSET()
   set ts=4 sw=4 sts=4 noexpandtab
   nmap <right> <Nop> 
