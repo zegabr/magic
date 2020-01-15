@@ -1,3 +1,33 @@
+
+"//===================mappings==============================
+"//cntrl A, cntrl C e cntrl V
+nmap <C-a> GVgg
+nmap <C-s> :w<CR>
+nmap <C-c> "+y
+nmap <C-v> "+p
+
+"//sobe,desce, identa, salva e sai
+nmap <Up> ddkP 
+nmap <Down> ddp
+nmap <Right> mijkgg=G'izz
+nmap <Left> :wq<CR>
+
+
+"//=======================================================
+"//  unmap arrows from insert mode and try harder
+ino <Up> <Nop>
+ino <Down> <Nop>
+ino <Right> <Nop>
+ino <Left> <Nop>
+
+vno <Up> <Nop>
+vno <Down> <Nop>
+vno <Right> <Nop>
+vno <Left> <Nop>
+
+
+
+
 set nocompatible
 set mouse=a "ativa clique com mouse
 set splitright
@@ -23,32 +53,6 @@ set ignorecase "search ignore cases
 set smartcase "search start to not ignore cases if search for uppercase letter
 
 set shortmess+=A "ignores swap files error
-
-
-"//===================mappings==============================
-"//cntrl A, cntrl C e cntrl V
-:map <C-a> GVgg
-:map <C-s> :w<CR>
-:map <C-c> "+y
-:map <C-v> "+p
-
-
-
-"//volta pra a ultima posicao de editada
-:nmap <Up>  <C-O> 
-
-"//identa (TODO: unset this for python code)
-:nmap <Right> mijkgg=G'izz
-
-"//salva
-:nmap <Down> :w<CR>
-
-"//salva e sai
-:nmap <Left> :wq<CR>
-"//=======================================================
-"// TODO: unmap arrows from insert mode and try harder
-
-
 
 "//============================usefull for life==========================
 "^x^o auto completion (does not work with c or c++ unless ctags is installed)
