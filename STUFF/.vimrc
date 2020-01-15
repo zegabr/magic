@@ -1,5 +1,4 @@
 "===================mappings==============================
-"
 "cntrl A, cntrl C e cntrl V
 nmap <C-a> GVgg
 nmap <C-s> :w<CR>
