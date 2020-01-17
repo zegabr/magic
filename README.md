@@ -12,7 +12,7 @@ Using some of the scripts will overrides your ~/.vimrc file or your gedit setup
 ### content:
 a.sh -> copy some (maybe) usefull aliases which are in STUFF/aliases into .bashrc so that they stay permanent
 
-clonegithub.sh -> handy script to clone repos via https. (run anywhere `gitclone github-user/github-repo` after copying it for home folder and running a.sh)
+clonegithub.sh -> handy script to clone repos via https. (run anywhere `gclone github-user/github-repo` after copying it for home folder and running a.sh)
 
 g.sh -> gedit setup
 
@@ -32,11 +32,11 @@ b.sh -> benchmark made in c++ (run `bash m/b.sh`)
 ### how to use my competitive setup:
 -Run `source m/m.sh`
 
--Code using x.cpp at competitive directory
+-Code using x.cpp at competitive/ directory
 
 -Compile x.cpp with `make` command to compile until first error
 
--Run `m`(this is an alias at a.sh) to run inputs that you must save at i1 file
+-Run `m`(this is an alias at a.sh) to run inputs that you must save at i file
 
 -Reset x.cpp by running `bash r.sh` at competitive folder (which you will be after teleports)
 
