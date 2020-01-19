@@ -23,7 +23,7 @@ nmap { {zz
 "quick pairs
 imap '' ''<ESC>i
 imap "" ""<ESC>i
-imap { {}<ESC>i<CR><CR><CR><ESC>kko
+imap { {}<ESC>i<CR><ESC>ko
 imap [ []<ESC>i
 
 "settings
