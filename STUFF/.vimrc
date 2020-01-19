@@ -1,31 +1,3 @@
-"===================mappings==============================
-"cntrl A, cntrl C e cntrl V
-nmap <C-a> GVgg
-nmap <C-s> :w<CR>
-nmap <C-c> "+y
-nmap <C-v> "+p
-
-"go up, go down, ident, save&quit, last edit pos, save
-nmap <C-Up> ddkP
-nmap <C-Down> ddp
-nmap <Right> mijkgg=G'izz
-nmap <Left> :wq<CR>
-nmap <up> <C-o>
-nmap <down> :w<CR>
-
-"center things
-nmap G Gzz
-nmap n nzz
-nmap N Nzz
-nmap } }zz
-nmap { {zz
-
-"quick pairs
-imap '' ''<ESC>i
-imap "" ""<ESC>i
-imap { {}<ESC>i<CR><ESC>ko
-imap [ []<ESC>i
-
 "settings
 set nocompatible
 set mouse=a "ativa clique com mouse
@@ -50,6 +22,34 @@ set shortmess+=A "ignores swap files error
 filetype plugin on
 set omnifunc=syntaxcomplete#complete
 
+
+"===================mappings==============================
+"cntrl A, cntrl C e cntrl V
+map <C-a> GVgg
+map <C-s> :w<CR>
+map <C-c> "+y
+map <C-v> "+p
+
+"go up, go down, ident, save&quit, last edit pos, save
+nmap <C-Up> ddkP
+nmap <C-Down> ddp
+nmap <Right> mijkgg=G'izz
+nmap <Left> :wq<CR>
+nmap <up> <C-o>
+nmap <down> :w<CR>
+
+"center things
+nmap G Gzz
+nmap n nzz
+nmap N Nzz
+nmap } }zz
+nmap { {zz
+
+"quick pairs
+imap '' ''<ESC>i
+imap "" ""<ESC>i
+imap { {}<ESC>i<CR><ESC>ko
+imap [ []<ESC>i
 
 " C/C++
 function! CPPSET()
