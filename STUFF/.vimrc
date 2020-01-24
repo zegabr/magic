@@ -49,7 +49,6 @@ nmap { {zz
 imap '' ''<ESC>i
 imap "" ""<ESC>i
 imap { {}<ESC>i<CR><ESC>ko
-imap [ []<ESC>i
 
 " C/C++
 function! CPPSET()
