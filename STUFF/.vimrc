@@ -33,6 +33,8 @@ map <C-v> "+p
 "go up, go down, ident, save&quit, last edit pos, save
 nmap <C-Up> ddkP
 nmap <C-Down> ddp
+imap <C-Up> <ESC>ddkPi
+imap <C-Down> <ESC>ddpi
 nmap <Right> mijkgg=G'izz
 nmap <Left> :wq<CR>
 nmap <up> <C-o>
@@ -48,7 +50,8 @@ nmap { {zz
 "quick pairs
 imap '' ''<ESC>i
 imap "" ""<ESC>i
-imap { {}<ESC>i<CR><ESC>ko
+imap { {}<ESC>i<CR><ESC>a<CR><ESC>kko
+
 
 " C/C++
 function! CPPSET()
