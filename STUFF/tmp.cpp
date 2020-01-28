@@ -17,6 +17,7 @@ using namespace std;
 #define ld long double
 #define ii pair<int,int>
 #define heap priority_queue
+#define ull unsigned long long
 #define all(k) k.begin(),k.end()
 #define rall(k) k.rbegin(),k.rend()
 #define len(v) ((int)v.size())
