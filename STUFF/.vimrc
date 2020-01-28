@@ -48,9 +48,8 @@ nmap } }zz
 nmap { {zz
 
 "quick pairs
-imap '' ''<ESC>i
-imap "" ""<ESC>i
-imap { {}<ESC>i<CR><ESC>a<CR><ESC>kko
+imap { {}<ESC>i<CR><ESC>O
+
 
 
 " C/C++
