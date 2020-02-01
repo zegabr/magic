@@ -24,8 +24,6 @@ cd competitive/
 rm -rf cp/
 git clone https://github.com/zegabr/cp.git
 echo 
-echo "cp folder has:"
-ls cp/
 
 
 cp ./cp/STUFF/Makefile ./
@@ -34,3 +32,5 @@ cp ./cp/STUFF/pmp.py ./
 cp ./cp/STUFF/r.sh ./
 bash r.sh
 
+echo "cp folder has:"
+ls cp/
