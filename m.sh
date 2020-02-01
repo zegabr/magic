@@ -16,16 +16,6 @@ mkdir competitive/
 
 source ./m/n.sh #setups+aliases
 
-#move STUFF from parent of m/ to inside of competitive/
-mv ./STUFF ./competitive/
-
-cd competitive/
-
-cp ./STUFF/Makefile ./
-cp ./STUFF/tmp.cpp ./
-cp ./STUFF/pmp.py ./
-cp ./STUFF/r.sh ./
-bash r.sh
 
 #copy my competitive code lib
 rm -rf cp/
@@ -33,3 +23,14 @@ git clone https://github.com/zegabr/cp.git
 echo 
 echo "cp folder has:"
 ls cp/
+
+#move STUFF from parent of m/ to inside of competitive/
+
+cd competitive/
+
+cp ./cp/STUFF/Makefile ./
+cp ./cp/STUFF/tmp.cpp ./
+cp ./cp/STUFF/pmp.py ./
+cp ./cp/STUFF/r.sh ./
+bash r.sh
+
