@@ -70,6 +70,8 @@ function! PYSET()
   setlocal smarttab
   set ts=4 sw=4 sts=4 noexpandtab
   nmap <right> <Nop> 
+  imap { {
+
 endfunction
 
 "HTML CSS
