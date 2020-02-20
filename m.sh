@@ -25,9 +25,9 @@ rm -rf cp/
 git clone https://github.com/zegabr/cp.git
 echo 
 
-
-./cp/STUFF/r.sh ./
-bash r.sh
+pwd
+cp ./cp/STUFF/r.sh ./r.sh
+source r.sh
 
 echo "cp folder has:"
 ls cp/
