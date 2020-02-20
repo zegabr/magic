@@ -26,10 +26,7 @@ git clone https://github.com/zegabr/cp.git
 echo 
 
 
-cp ./cp/STUFF/Makefile ./
-cp ./cp/STUFF/tmp.cpp ./
-cp ./cp/STUFF/pmp.py ./
-cp ./cp/STUFF/r.sh ./
+./cp/STUFF/r.sh ./
 bash r.sh
 
 echo "cp folder has:"
