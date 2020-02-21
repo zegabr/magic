@@ -48,7 +48,9 @@ nmap } }zz
 nmap { {zz
 
 "quick pairs
-imap { {}<ESC>i<CR><ESC>O
+imap { {}<ESC>i
+imap ( ()<ESC>i
+imap [ []<ESC>i
 
 
 
@@ -70,7 +72,6 @@ function! PYSET()
   setlocal smarttab
   set ts=4 sw=4 sts=4 noexpandtab
   nmap <right> <Nop> 
-  imap { {
 
 endfunction
 
