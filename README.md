@@ -16,7 +16,7 @@ clonegithub.sh -> handy script to clone repos via https. (run anywhere `gclone g
 
 g.sh -> gedit setup
 
-v.sh -> vim setup (vimsetup is a copy of my vimrc file)
+v.sh -> vim setup (STUFF/.vimrc is a copy of my vimrc file)
 
 n.sh -> not competitive setup (runs g.sh, v.sh, a.sh)
 
