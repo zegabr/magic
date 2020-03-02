@@ -29,6 +29,7 @@ map <C-a> GVgg
 map <C-s> :w<CR>
 map <C-c> "+y
 map <C-v> "+p
+map <c-d> dd
 
 "go up, go down, ident, save&quit, last edit pos, save
 nmap <C-Up> ddkP
