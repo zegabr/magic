@@ -1,6 +1,6 @@
 "settings
-set nocompatible
 set mouse=a "ativa clique com mouse
+set nocompatible
 set splitright
 set showcmd
 set ruler 
@@ -32,10 +32,12 @@ map <C-v> "+p
 map <c-d> dd
 
 "go up, go down, ident, save&quit, last edit pos, save
-nmap <C-Up> ddkP
-nmap <C-Down> ddp
-imap <C-Up> <ESC>ddkPi
-imap <C-Down> <ESC>ddpi
+nmap <M-Up> ddkP
+"TODO	put an if statement above to do it only if line number is not 1
+
+nmap <M-Down> ddp
+imap <M-Up> <ESC>ddkPi
+imap <M-Down> <ESC>ddpi
 nmap <Right> mijkgg=G'izz
 nmap <Left> :wq<CR>
 nmap <up> <C-o>
