@@ -30,6 +30,7 @@ map <C-s> :w<CR>
 map <C-c> "+y
 map <C-v> "+p
 map <c-d> dd
+imap <c-d> <esc>ddi
 
 "go up, go down, ident, save&quit, last edit pos, save
 nmap <M-Up> ddkP
@@ -38,6 +39,8 @@ nmap <M-Up> ddkP
 nmap <M-Down> ddp
 imap <M-Up> <ESC>ddkPi
 imap <M-Down> <ESC>ddpi
+imap <c-u> <esc>ve~<esc>wi
+nmap <c-u> ve~<esc>
 nmap <Right> mijkgg=G'izz
 nmap <Left> :wq<CR>
 nmap <up> <C-o>
