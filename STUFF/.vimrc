@@ -1,4 +1,5 @@
 "settings
+"    testar coisas aqui
 set mouse=a "ativa clique com mouse
 set nocompatible
 set splitright
@@ -39,8 +40,8 @@ nmap <M-Up> ddkP
 nmap <M-Down> ddp
 imap <M-Up> <ESC>ddkPi
 imap <M-Down> <ESC>ddpi
-imap <c-u> <esc>ve~<esc>wi
-nmap <c-u> ve~<esc>
+imap <c-u> <esc>lviw~<esc>
+nmap <c-u> viw~<esc>
 nmap <Right> mijkgg=G'izz
 nmap <Left> :wq<CR>
 nmap <up> <C-o>
