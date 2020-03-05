@@ -26,39 +26,33 @@ set omnifunc=syntaxcomplete#complete
 
 "===================mappings==============================
 "cntrl A, cntrl C e cntrl V
-map <C-a> GVgg
-map <C-s> :w<CR>
-map <C-c> "+y
-map <C-v> "+p
-map <c-d> dd
-imap <c-d> <esc>ddi
+noremap <C-a> GVgg
+noremap <C-s> :w<CR>
+noremap <C-c> "+y
+noremap <C-v> "+p
+noremap <c-d> dd
+inoremap <c-d> <esc>ddi
 
 "go up, go down, ident, save&quit, last edit pos, save
-nmap <M-Up> ddkP
+nnoremap <M-Up> ddkP
 "TODO	put an if statement above to do it only if line number is not 1
 
-nmap <M-Down> ddp
-imap <M-Up> <ESC>ddkPi
-imap <M-Down> <ESC>ddpi
-imap <c-u> <esc>lviw~<esc>
-nmap <c-u> viw~<esc>
-nmap <Right> mijkgg=G'izz
-nmap <Left> :wq<CR>
-nmap <up> <C-o>
-nmap <down> :w<CR>
+nnoremap <M-Down> ddp
+inoremap <M-Up> <ESC>ddkPi
+inoremap <M-Down> <ESC>ddpi
+inoremap <c-u> <esc>lviw~<esc>
+nnoremap <c-u> viw~<esc>
+nnoremap <Right> mijkgg=G'izz
+nnoremap <Left> :wq<CR>
+nnoremap <up> <C-o>
+nnoremap <down> :w<CR>
 
 "center things
-nmap G Gzz
-nmap n nzz
-nmap N Nzz
-nmap } }zz
-nmap { {zz
-
-"quick pairs
-imap { {}<ESC>i
-imap ( ()<ESC>i
-imap [ []<ESC>i
-
+nnoremap G Gzz
+nnoremap n nzz
+nnoremap N Nzz
+nnoremap } }zz
+nnoremap { {zz
 
 
 " C/C++
@@ -78,20 +72,20 @@ function! PYSET()
   setlocal expandtab
   setlocal smarttab
   set ts=4 sw=4 sts=4 noexpandtab
-  nmap <right> <Nop> 
+  nnoremap <right> <Nop> 
 
 endfunction
 
 "HTML CSS
 function! HTMLCSSSET()
   set ts=2 sw=2 sts=2 expandtab
-  nmap <right> <Nop>
+  nnoremap <right> <Nop>
 endfunction
 
 "Javascript
 function! JSSET()
   set ts=4 sw=4 sts=4 noexpandtab
-  nmap <right> <Nop> 
+  nnoremap <right> <Nop> 
 endfunction
 
 "below command is for vimrc testing while ediing it
