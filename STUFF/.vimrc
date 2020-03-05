@@ -2,9 +2,9 @@
 "    testar coisas aqui
 set mouse=a "ativa clique com mouse
 set nocompatible
-set splitright
 set showcmd
 set ruler 
+set splitright
 set title 
 set scrolloff=3
 hi Search ctermbg=yellow
@@ -34,12 +34,12 @@ noremap <c-d> dd
 inoremap <c-d> <esc>ddi
 
 "go up, go down, ident, save&quit, last edit pos, save
-nnoremap <M-Up> ddkP
+nnoremap <M-up> ddkP
 "TODO	put an if statement above to do it only if line number is not 1
-
-nnoremap <M-Down> ddp
-inoremap <M-Up> <ESC>ddkPi
-inoremap <M-Down> <ESC>ddpi
+"TODO  substitute up down with j and k, MAKE IT WORK
+nnoremap <M-down> ddp
+inoremap <M-up> <ESC>ddkPi
+inoremap <M-down> <ESC>ddpi
 inoremap <c-u> <esc>lviw~<esc>
 nnoremap <c-u> viw~<esc>
 nnoremap <Right> mijkgg=G'izz
