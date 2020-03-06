@@ -1,8 +1,8 @@
 #!/bin/bash
 #m for main
 
-#copy STUFF to parent of m/
-cp -r  ./m/STUFF/ ./
+#copy stuff to parent of m/
+cp -r  ./m/stuff/ ./
 
 #cd
 #rm -rf remaper/
@@ -26,7 +26,7 @@ git clone https://github.com/zegabr/cp.git
 echo 
 
 pwd
-cp ./cp/STUFF/r.sh ./r.sh
+cp ./cp/stuff/r.sh ./r.sh
 source r.sh
 
 echo "cp folder has:"
