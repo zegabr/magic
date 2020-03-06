@@ -35,11 +35,16 @@ inoremap <c-d> <esc>ddi
 
 "go up, go down, ident, save&quit, last edit pos, save
 nnoremap <M-up> ddkP
+nnoremap <c-k> ddkP
 "TODO	put an if statement above to do it only if line number is not 1
-"TODO  substitute up down with j and k, MAKE IT WORK
 nnoremap <M-down> ddp
+nnoremap <c-j> ddp
+
 inoremap <M-up> <ESC>ddkPi
+inoremap <c-k> ddkP
 inoremap <M-down> <ESC>ddpi
+inoremap <c-j> ddp
+
 inoremap <c-u> <esc>lviw~<esc>
 nnoremap <c-u> viw~<esc>
 nnoremap <Right> mijkgg=G'izz
