@@ -57,7 +57,7 @@ nnoremap { {zz
 
 " C/C++
 function! CPPSET()
-  set makeprg=g++\ -std=c++14\ -O2\ -Wall\ %;
+  set makeprg=g++\ -std=c++14\ -O2\ -Wfatal-errors\ %;
   set errorformat=%f:%l:\ %m
   set cindent
   set tw=0
