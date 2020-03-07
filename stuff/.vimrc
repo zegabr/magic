@@ -41,9 +41,9 @@ nnoremap <M-down> ddp
 nnoremap <c-j> ddp
 
 inoremap <M-up> <ESC>ddkPi
-inoremap <c-k> ddkP
+inoremap <c-k> <esc>ddkPi
 inoremap <M-down> <ESC>ddpi
-inoremap <c-j> ddp
+inoremap <c-j> <esc>ddpi
 
 inoremap <c-u> <esc>lviw~<esc>
 nnoremap <c-u> viw~<esc>
