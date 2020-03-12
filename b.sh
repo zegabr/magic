@@ -3,7 +3,7 @@
 echo "
 ============benchmark============="
 
-g++ ./m/STUFF/benchmark.cpp -o b
+g++ ./m/stuff/benchmark.cpp -o b
 time ./b
 rm ./b
 
