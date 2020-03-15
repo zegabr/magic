@@ -67,7 +67,7 @@ function! CPPSET()
   set cindent
   set tw=0
   set nowrap
-  set ts=4 sw=4 sts=4 expandtab autoindent
+  set ts=2 sw=2 sts=2 expandtab autoindent
 endfunction
 
 " Python
