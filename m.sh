@@ -16,8 +16,6 @@ mkdir competitive/
 
 source ./m/n.sh #setups+aliases
 
-
-
 cd competitive/
 
 #copy my competitive code lib
@@ -27,6 +25,7 @@ echo
 
 pwd
 cp ./cp/stuff/r.sh ./r.sh
+cp ./cp/stuff/cj.sh ./cj.sh
 source r.sh
 
 echo "cp folder has:"
