@@ -26,11 +26,12 @@ set omnifunc=syntaxcomplete#complete
 
 "===================mappings==============================
 "cntrl A, cntrl C e cntrl V
-noremap <C-a> GVgg
-noremap <C-s> :w<CR>
-noremap <C-c> "+y
-noremap <C-v> "+p
-noremap <c-d> dd
+:let mapleader = "-"
+noremap <leader>a GVgg
+noremap <leader>s :w<CR>
+noremap <leader>c "+y
+noremap <leader>v "+p
+noremap <leader>d dd
 inoremap <c-d> <esc>ddi
 
 "go up, go down, ident, save&quit, last edit pos, save
@@ -59,50 +60,35 @@ nnoremap N Nzz
 nnoremap } }zz
 nnoremap { {zz
 
+"edit my vimrc
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 
 " C/C++
 function! CPPSET()
-  set makeprg=g++\ -std=c++14\ -O2\ -Wfatal-errors\ %;
-  set errorformat=%f:%l:\ %m
-  set cindent
-  set tw=0
-  set nowrap
-  set ts=4 sw=4 sts=4 expandtab autoindent
+set makeprg=g++\ -std=c++14\ -O2\ -Wfatal-errors\ %;
+set errorformat=%f:%l:\ %m
+set cindent
+set tw=0
+set nowrap
+set ts=4 sw=4 sts=4 expandtab autoindent
 endfunction
 
 " Python
 function! PYSET()
-  set tw=0
-  set nowrap
-  setlocal expandtab
-  setlocal smarttab
-  set ts=4 sw=4 sts=4 noexpandtab
-  nnoremap <right> <Nop> 
-
+set tw=0
+set nowrap
+setlocal expandtab
+setlocal smarttab
+set ts=4 sw=4 sts=4 noexpandtab
+nnoremap <right> <Nop> 
 endfunction
-
-"HTML CSS
-function! HTMLCSSSET()
-  set ts=2 sw=2 sts=2 expandtab
-  nnoremap <right> <Nop>
-endfunction
-
-"Javascript
-function! JSSET()
-  set ts=4 sw=4 sts=4 noexpandtab
-  nnoremap <right> <Nop> 
-endfunction
-
+		
 "below command is for vimrc testing while ediing it
 if has("autocmd")
 autocmd bufwritepost .vimrc source $MYVIMRC
 filetype on
-autocmd FileType javascript call JSSET()
 autocmd FileType python call PYSET() 
-autocmd Filetype html call HTMLCSSSET()
-autocmd Filetype css  call HTMLCSSSET()
 autocmd Filetype cpp call CPPSET()
 autocmd Filetype c call CPPSET()
 endif
-
 
