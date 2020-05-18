@@ -34,6 +34,19 @@ noremap <leader>v "+p
 noremap <leader>d dd
 inoremap <c-d> <esc>ddi
 
+"stronger left and right
+nnoremap L A<esc>
+nnoremap H 0
+inoremap jk <esc>
+"turning off esc button and arrow keys
+inoremap <esc> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
+
+
+
 "go up, go down, ident, save&quit, last edit pos, save
 nnoremap <M-up> ddkP
 nnoremap <c-k> ddkP
@@ -48,7 +61,7 @@ inoremap <c-j> <esc>ddpi
 
 inoremap <c-u> <esc>lviw~<esc>
 nnoremap <c-u> viw~<esc>
-nnoremap <Right> mijkgg=G'izz
+"nnoremap <Right> mijkgg=G'izz
 nnoremap <Left> :wq<CR>
 nnoremap <up> <C-o>
 nnoremap <down> :w<CR>
@@ -60,35 +73,45 @@ nnoremap N Nzz
 nnoremap } }zz
 nnoremap { {zz
 
-"edit my vimrc
-nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+    "edit my vimrc
+        nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 
-" C/C++
-function! CPPSET()
-set makeprg=g++\ -std=c++14\ -O2\ -Wfatal-errors\ %;
-set errorformat=%f:%l:\ %m
-set cindent
-set tw=0
-set nowrap
-set ts=4 sw=4 sts=4 expandtab autoindent
-endfunction
+        "surrounds word with "
+        nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel
 
-" Python
-function! PYSET()
-set tw=0
-set nowrap
-setlocal expandtab
-setlocal smarttab
-set ts=4 sw=4 sts=4 noexpandtab
-nnoremap <right> <Nop> 
-endfunction
-		
-"below command is for vimrc testing while ediing it
-if has("autocmd")
-autocmd bufwritepost .vimrc source $MYVIMRC
-filetype on
-autocmd FileType python call PYSET() 
-autocmd Filetype cpp call CPPSET()
-autocmd Filetype c call CPPSET()
-endif
+        " C/C++
+        function! CPPSET()
+        set makeprg=g++\ -std=c++14\ -O2\ -Wfatal-errors\ %;
+    set errorformat=%f:%l:\ %m
+        set cindent
+        set tw=0
+        set nowrap
+        set ts=4 sw=4 sts=4 expandtab autoindent
+
+        "abbreviations here
+        :iabbrev adn and
+        :iabbrev endk endl
+        :iabbrev enld endl
+        :iabbrev fauto for(auto &
+                :iabbrev ee &
+                endfunction
+
+                " Python
+                function! PYSET()
+                set tw=0
+                set nowrap
+                setlocal expandtab
+                setlocal smarttab
+                set ts=4 sw=4 sts=4 noexpandtab
+                nnoremap <right> <Nop> 
+                endfunction
+
+                "below command is for vimrc testing while ediing it
+                if has("autocmd")
+                autocmd bufwritepost .vimrc source $MYVIMRC
+                filetype on
+                autocmd FileType python call PYSET() 
+                autocmd Filetype cpp call CPPSET()
+                autocmd Filetype c call CPPSET()
+                endif
 
