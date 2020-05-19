@@ -38,8 +38,6 @@ inoremap <c-d> <esc>ddi
 nnoremap L A<esc>
 nnoremap H 0
 inoremap jk <esc>
-"turning off esc
-inoremap <esc> <nop>
 
 "go up, go down, ident, save&quit, last edit pos, save
 nnoremap <M-up> ddkP
