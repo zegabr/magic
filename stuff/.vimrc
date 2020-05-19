@@ -1,7 +1,7 @@
 "settings
 "    testar coisas aqui
 set mouse=a "ativa clique com mouse
-set nocompatible
+"set nocompatible
 set showcmd
 set ruler 
 set splitright
@@ -38,14 +38,8 @@ inoremap <c-d> <esc>ddi
 nnoremap L A<esc>
 nnoremap H 0
 inoremap jk <esc>
-"turning off esc button and arrow keys
+"turning off esc
 inoremap <esc> <nop>
-inoremap <up> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
-
-
 
 "go up, go down, ident, save&quit, last edit pos, save
 nnoremap <M-up> ddkP
@@ -103,7 +97,6 @@ nnoremap { {zz
                 setlocal expandtab
                 setlocal smarttab
                 set ts=4 sw=4 sts=4 noexpandtab
-                nnoremap <right> <Nop> 
                 endfunction
 
                 if has("autocmd")
