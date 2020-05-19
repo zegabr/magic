@@ -106,9 +106,10 @@ nnoremap { {zz
                 nnoremap <right> <Nop> 
                 endfunction
 
-                "below command is for vimrc testing while ediing it
                 if has("autocmd")
+                "below command is for vimrc testing while ediing it
                 autocmd bufwritepost .vimrc source $MYVIMRC
+                autocmd bufwritepre,bufread *.cpp :normal gg=G
                 filetype on
                 autocmd FileType python call PYSET() 
                 autocmd Filetype cpp call CPPSET()
