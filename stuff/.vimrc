@@ -37,6 +37,8 @@ inoremap <c-d> <esc>ddi
 "stronger left and right
 nnoremap L A<esc>
 nnoremap H 0
+
+"esc in jk 
 inoremap jk <esc>
 
 "go up, go down, ident, save&quit, last edit pos, save
@@ -51,8 +53,11 @@ inoremap <c-k> <esc>ddkPi
 inoremap <M-down> <ESC>ddpi
 inoremap <c-j> <esc>ddpi
 
+"toggle word case
 inoremap <c-u> <esc>lviw~<esc>
 nnoremap <c-u> viw~<esc>
+
+"normal mode arrow keys
 "nnoremap <Right> mijkgg=G'izz
 nnoremap <Left> :wq<CR>
 nnoremap <up> <C-o>
@@ -65,45 +70,45 @@ nnoremap N Nzz
 nnoremap } }zz
 nnoremap { {zz
 
-    "edit my vimrc
-        nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+"edit my vimrc
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 
-        "surrounds word with "
-        nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel
+"surrounds word with "
+nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel
 
-        " C/C++
-        function! CPPSET()
-        set makeprg=g++\ -std=c++14\ -O2\ -Wfatal-errors\ %;
-    set errorformat=%f:%l:\ %m
-        set cindent
-        set tw=0
-        set nowrap
-        set ts=4 sw=4 sts=4 expandtab autoindent
+" C/C++
+function! CPPSET()
+set makeprg=g++\ -std=c++14\ -O2\ -Wfatal-errors\ %;
+set errorformat=%f:%l:\ %m
+set cindent
+set tw=0
+set nowrap
+set ts=4 sw=4 sts=4 expandtab autoindent
 
-        "abbreviations here
-        :iabbrev adn and
-        :iabbrev endk endl
-        :iabbrev enld endl
-        :iabbrev fauto for(auto &
-                :iabbrev ee &
-                endfunction
+"abbreviations here
+:iabbrev adn and
+:iabbrev endk endl
+:iabbrev enld endl
+:iabbrev fauto for(auto &
+:iabbrev ee &
+endfunction
 
-                " Python
-                function! PYSET()
-                set tw=0
-                set nowrap
-                setlocal expandtab
-                setlocal smarttab
-                set ts=4 sw=4 sts=4 noexpandtab
-                endfunction
+" Python
+function! PYSET()
+set tw=0
+set nowrap
+setlocal expandtab
+setlocal smarttab
+set ts=4 sw=4 sts=4 noexpandtab
+endfunction
 
-                if has("autocmd")
-                "below command is for vimrc testing while ediing it
-                autocmd bufwritepost .vimrc source $MYVIMRC
-                autocmd bufwritepre,bufread *.cpp :normal gg=G
-                filetype on
-                autocmd FileType python call PYSET() 
-                autocmd Filetype cpp call CPPSET()
-                autocmd Filetype c call CPPSET()
-                endif
+if has("autocmd")
+"below command is for vimrc testing while ediing it
+autocmd bufwritepost .vimrc source $MYVIMRC
+autocmd bufwritepre,bufread *.cpp :normal gg=G
+filetype on
+autocmd FileType python call PYSET() 
+autocmd Filetype cpp call CPPSET()
+autocmd Filetype c call CPPSET()
+endif
 
