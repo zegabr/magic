@@ -1,7 +1,13 @@
-"settings
-"    testar coisas aqui
+"Vimscript file settings -------------{{{
+augroup fyletype_vim
+    autocmd!
+    autocmd Filetype vim setlocal foldmethod=marker
+augroup END
+"}}}
+
+"Default settings---------{{{
 set mouse=a "ativa clique com mouse
-"set nocompatible
+set nocompatible
 set showcmd
 set ruler 
 set splitright
@@ -25,20 +31,18 @@ set omnifunc=syntaxcomplete#complete
 
 set statusline=File:\ %F\  
 set statusline+=--Line:\ %l/%L
+"}}}
 
-"===================mappings==============================
-"cntrl A, cntrl C e cntrl V
+"Mappings--------------{{{
 :let mapleader = "-"
+
+"ctrl A, ctrl C, ctrl V, ctrl S and ctrl D equivalents
 noremap <leader>a GVgg
-noremap <leader>s :w<CR>
 noremap <leader>c "+y
 noremap <leader>v "+p
+noremap <leader>s :w<CR>
 noremap <leader>d dd
 inoremap <c-d> <esc>ddi
-
-"stronger left and right
-nnoremap L A<esc>
-nnoremap H 0
 
 "esc in jk 
 inoremap jk <esc>
@@ -77,8 +81,9 @@ nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 
 "surrounds word with "
 nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel
+"}}}
 
-" C/C++
+" C/C++------------{{{
 function! CPPSET()
 set makeprg=g++\ -std=c++14\ -O2\ -Wfatal-errors\ %;
 set errorformat=%f:%l:\ %m
@@ -94,8 +99,9 @@ set ts=4 sw=4 sts=4 expandtab autoindent
 :iabbrev fauto for(auto &
 :iabbrev ee &
 endfunction
+"}}}
 
-" Python
+" Python--------{{{
 function! PYSET()
 set tw=0
 set nowrap
@@ -103,8 +109,9 @@ setlocal expandtab
 setlocal smarttab
 set ts=4 sw=4 sts=4 noexpandtab
 endfunction
+"}}}
 
-if has("autocmd")
+"autocmd defaults-------{{{
 "below command is for vimrc testing while ediing it
 autocmd bufwritepost .vimrc source $MYVIMRC
 autocmd bufwritepre,bufread *.cpp :normal gg=G
@@ -112,12 +119,6 @@ filetype on
 autocmd FileType python call PYSET() 
 autocmd Filetype cpp call CPPSET()
 autocmd Filetype c call CPPSET()
-endif
-
-"Vimscript file settings -------------{{{
-augroup fyletype_vim
-    autocmd!
-    autocmd Filetype vim setlocal foldmethod=marker
-augroup END
 "}}}
+
 
