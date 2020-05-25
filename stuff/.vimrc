@@ -114,3 +114,10 @@ autocmd Filetype cpp call CPPSET()
 autocmd Filetype c call CPPSET()
 endif
 
+"Vimscript file settings -------------{{{
+augroup fyletype_vim
+    autocmd!
+    autocmd Filetype vim setlocal foldmethod=marker
+augroup END
+"}}}
+
