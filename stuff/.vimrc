@@ -23,6 +23,8 @@ set shortmess+=A "ignores swap files error
 filetype plugin on
 set omnifunc=syntaxcomplete#complete
 
+set statusline=File:\ %F\  
+set statusline+=--Line:\ %l/%L
 
 "===================mappings==============================
 "cntrl A, cntrl C e cntrl V
