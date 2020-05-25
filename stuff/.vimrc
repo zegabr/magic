@@ -17,7 +17,7 @@ hi Search ctermbg=yellow
 hi Search ctermfg=black
 colorscheme elflord
 syntax on
-set hls "search highlight
+set hlsearch "search highlight
 set relativenumber "line numbers moving relatively
 set number
 set incsearch "cursor moves as soon as typing search
@@ -88,9 +88,13 @@ function! CPPSET()
 set makeprg=g++\ -std=c++14\ -O2\ -Wfatal-errors\ %;
 set errorformat=%f:%l:\ %m
 set cindent
-set tw=0
+set textwidth=0
 set nowrap
-set ts=4 sw=4 sts=4 expandtab autoindent
+set ts=4 
+set sw=4 
+set sts=4 
+set expandtab 
+set autoindent
 
 "abbreviations here
 :iabbrev adn and
@@ -107,7 +111,10 @@ set tw=0
 set nowrap
 setlocal expandtab
 setlocal smarttab
-set ts=4 sw=4 sts=4 noexpandtab
+set ts=4 
+set sw=4 
+set sts=4 
+set noexpandtab
 endfunction
 "}}}
 
