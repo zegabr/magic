@@ -9,22 +9,6 @@ cp -r  ./m/stuff/ ./
 #git clone https://github.com/zegabr/remaper
 #cd - #go back to parent of m/
 
-#creates competitive/ at parent of m/
-rm -rf competitive/
-mkdir competitive/
-
-
 source ./m/n.sh #setups+aliases
 
-cd competitive/
-
-#copy my competitive code lib
-rm -rf cp/
-git clone https://github.com/zegabr/cp.git
-echo 
-
-pwd
-source cp/init.sh
-
-echo "cp folder has:"
-ls cp/
+source ./m/c.sh #competitive setup
