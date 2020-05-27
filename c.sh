@@ -1,4 +1,4 @@
-
+#competitive setup
 #creates competitive/ at parent of m/
 rm -rf competitive/
 mkdir competitive/
