@@ -1,4 +1,6 @@
 ##ALIASES
+alias atualiza='sudo apt update && sudo apt -u upgrade -y && sudo apt autoclean -y && sudo apt clean -y && sudo apt autoremove -y'
+
 alias desktop='cd ~/Desktop'
 alias downloads='cd ~/Downloads'
 
@@ -18,5 +20,5 @@ alias gclone='source ~/clonegithub.sh'
 
 alias remap='bash ~/remaper/remaper.sh'
 alias unremap='bash ~/remaper/undo.sh'
-
+alias lag='alias | grep'
 ##ALIASES
