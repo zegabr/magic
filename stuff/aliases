@@ -6,7 +6,7 @@ alias downloads='cd ~/Downloads'
 
 alias py=python3
 alias m='make && make t'
-alias g='g++ -std=c++14 -O2'
+alias g='g++ -std=c++14 -O2 -Wshadow -Wall -Who-unused-result'
 alias tg='time g++ -std=c++14 -O2'
 alias gw='g++ -std=c++14 -O2 -Wfatal-errors'
 
