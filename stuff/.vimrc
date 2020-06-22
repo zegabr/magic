@@ -100,8 +100,12 @@ set autoindent
 :iabbrev adn and
 :iabbrev endk endl
 :iabbrev enld endl
+:iabbrev flush cout.flush();
 :iabbrev fauto for(auto &
 :iabbrev ee &
+:iabbrev nope cout << "NO" << endl;
+:iabbrev yup cout << "YES" << endl;
+:iabbrev codejam cout << "Case #" << test_case << ": ";
 endfunction
 "}}}
 
