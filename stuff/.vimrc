@@ -97,34 +97,39 @@ set expandtab
 set autoindent
 
 "abbreviations here
+:iabbrev sp ' '
+:iabbrev pl '\n'
 :iabbrev ee &
 :iabbrev adn and
 :iabbrev endk endl
 :iabbrev enld endl
+
 :iabbrev flush cout.flush();
 :iabbrev forin for(auto&
-:iabbrev manycases int t;<CR>cin>>t;<CR>for(int i=1;i<=t;i++){<CR>solve();<CR>}<CR>
+
+:iabbrev manycases int t;<CR>cin>>t;<CR>for(int i=1;i<=t;i++){<CR>solve(i);<CR>}<CR>
+:iabbrev solve void solve(test_case = 1){<CR><CR>}<ESC>O
+:iabbrev codejam cout << "Case #" << test_case << ": ";
 
 :iabbrev nope cout << "NO" << endl;
 :iabbrev yup cout << "YES" << endl;
-:iabbrev codejam cout << "Case #" << test_case << ": ";
 :iabbrev precision cout << fixed << setprecision(48);
-
-:iabbrev sp ' '
-:iabbrev pl '\n'
-
-:iabbrev pb push_back
-:iabbrev pf push_front
-:iabbrev ppb pop_back
-:iabbrev ppf pop_front
 
 :iabbrev ll long long
 :iabbrev ld long double
 :iabbrev ii pair<int,int>
 :iabbrev vecint vector<int>
 :iabbrev vecll vector<long long>
+
+"TODO : see how to do snippets to these
 :iabbrev vec vector< ><esc>hi
 :iabbrev pair pair< ><esc>hi
+:iabbrev pb push_back
+:iabbrev pf push_front
+:iabbrev ppb pop_back
+:iabbrev ppf pop_front
+"do a snippet to for loops
+
 
 endfunction
 "}}}
