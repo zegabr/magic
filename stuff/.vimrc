@@ -97,15 +97,35 @@ set expandtab
 set autoindent
 
 "abbreviations here
+:iabbrev ee &
 :iabbrev adn and
 :iabbrev endk endl
 :iabbrev enld endl
 :iabbrev flush cout.flush();
-:iabbrev fauto for(auto &
-:iabbrev ee &
+:iabbrev forin for(auto&
+:iabbrev manycases int t;<CR>cin>>t;<CR>for(int i=1;i<=t;i++){<CR>solve();<CR>}<CR>
+
 :iabbrev nope cout << "NO" << endl;
 :iabbrev yup cout << "YES" << endl;
 :iabbrev codejam cout << "Case #" << test_case << ": ";
+:iabbrev precision cout << fixed << setprecision(48);
+
+:iabbrev sp ' '
+:iabbrev pl '\n'
+
+:iabbrev pb push_back
+:iabbrev pf push_front
+:iabbrev ppb pop_back
+:iabbrev ppf pop_front
+
+:iabbrev ll long long
+:iabbrev ld long double
+:iabbrev ii pair<int,int>
+:iabbrev vecint vector<int>
+:iabbrev vecll vector<long long>
+:iabbrev vec vector< ><esc>hi
+:iabbrev pair pair< ><esc>hi
+
 endfunction
 "}}}
 
