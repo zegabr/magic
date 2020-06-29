@@ -8,5 +8,8 @@ sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install
 
 source ~/m/zsha.sh
 
+cat "ZSH_THEME="af-magic" " >> ~/.zshrc
+cat "CASE_SENSITIVE="true" " >> ~/.zshrc
 
-echo "unlog and relog on pc"
+
+echo "unlog and relog on terminal"
