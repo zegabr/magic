@@ -21,10 +21,10 @@ const int range = 1000;
 
 ll bs(int l){
  auto start = high_resolution_clock::now(); 
-    long  operations = 0;
+    ll operations = 0;
     
     while(duration_cast<milliseconds> (high_resolution_clock::now()-start).count()< l*1000){
-        operations++;
+        operations++;//+=8;
     }
 	return operations;
 }
@@ -66,21 +66,21 @@ int main(){
 */
 int main(){
 	ll answer = 0;
-	
-	cout<<processor_count<<" threads available \n";
-	int secounds = 5;
+	uint threadCount = processor_count;
+	cout<<threadCount<<" threads available \n";
+	int seconds = 16;
 	//initialize the threads array
-	thread threads  [processor_count];
+	thread threads  [threadCount];
 	//start every thread
-	for(int i=0;i< processor_count;i++){
+	for(int i=0;i< threadCount;i++){
 
-		threads[i] = thread(threaderedBenchmark, secounds, &answer, i);
+		threads[i] = thread(threaderedBenchmark, seconds, &answer, i);
 	}
 //	wait for each thread to finish
 	for (auto& th : threads) th.join();
 
 	long double m2 = (long double)answer;
-	cout<<"this PC runs "<< m2 /secounds<<" operations per secound \n";
+	cout<<"This PC runs "<< m2 /seconds<<" operations per secound \n";
 	
 }
 
