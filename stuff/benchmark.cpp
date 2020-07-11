@@ -1,25 +1,31 @@
-#include<iostream>
-#include<time.h>
-#include<math.h>
+#include <iostream>
+#include <time.h>
+#include <math.h>
 using namespace std;
 
-#define FIXED_ITERATIONS_QUANTITY 1e9 //good enough to be near 10 sec
+const long long FIXED_ITERATIONS_QUANTITY = 1e9; //good enough to be near 1 sec
 
-double getSecondsToIterate(int iterations = FIXED_ITERATIONS_QUANTITY){
-    int c = 0;
+double getSecondsToIterate(long long iterations = FIXED_ITERATIONS_QUANTITY){
+    long long c = 0;
     clock_t t = clock();
-    for(int i = 0; i < iterations; i++){
+
+    for(long long i = 0; i < iterations; i++){
         c++;
     }
+    
     t = clock() - t;
-    return (double)t/CLOCKS_PER_SEC;
+    return (double)t / CLOCKS_PER_SEC;
 }
 
 
 int main(){
-    int iterations = FIXED_ITERATIONS_QUANTITY;
-    double sec = getSecondsToIterate(iterations);
-    cout<<"this PC runs "<< (double)iterations << " operations in " << sec <<" seconds" << endl ;
-    cout<< "then, it runs "<< (double)iterations/sec << " operations in 1 sec." << endl ;
+    cout << "-------------Single Thread--------------"<< endl ;
+    long long iterations = FIXED_ITERATIONS_QUANTITY;
+    
+    double timeElapsedInSeconds = getSecondsToIterate(iterations);
+    
+    cout << "This PC runs "<< (double)iterations << " operations in " << timeElapsedInSeconds <<" seconds" << endl;
+    cout << "Then, it runs "<< (double)iterations/timeElapsedInSeconds << " operations in 1 sec." << endl;
+    cout << endl; 
 }
 
