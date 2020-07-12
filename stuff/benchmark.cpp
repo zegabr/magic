@@ -14,18 +14,24 @@ double getSecondsToIterate(long long iterations = FIXED_ITERATIONS_QUANTITY){
         c++;
     }
     return (double)duration_cast<milliseconds> (high_resolution_clock::now()-start).count() / 1000;
-    
 }
 
 int main(){
     cout << "-------------Single Thread--------------"<< endl ;
     long long iterations = FIXED_ITERATIONS_QUANTITY;
-    
-    double timeElapsedInSeconds = getSecondsToIterate(iterations);
-    
-    cout << "This PC runs "<< (double)iterations << " operations in " << timeElapsedInSeconds <<" sec." << endl;
-    cout << "Then, it runs "<< (double)iterations/timeElapsedInSeconds << " operations in 1 sec." << endl;
-    cout << endl; 
+    int testSize = 10;
+    double timeElapsedInSeconds, average = 0;
 
+    cout << "iterations\tseconds" << endl;
+
+    for(int i = 0; i < testSize; i++){
+        timeElapsedInSeconds = getSecondsToIterate(iterations);
+        average += (double)iterations / timeElapsedInSeconds;
+        cout << (double)iterations << "\t\t" << timeElapsedInSeconds <<endl;
+        
+        iterations += FIXED_ITERATIONS_QUANTITY;//becomes 1e8, 2e8, 3e8 ... 1e9
+    }
+
+    cout << "Average iterations in 1 sec is: " << (double)average / testSize / timeElapsedInSeconds << endl;
 }
 
