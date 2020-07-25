@@ -121,7 +121,7 @@ set autoindent
 :iabbrev vecll vector<long long>
 
 "TODO : see how to do snippets to these
-:iabbrev solve void solve(test_case = 1){<CR><CR>}<ESC>O
+:iabbrev solve void solve(int test_case = 1){<CR><CR>}<ESC>O
 :iabbrev vec vector< ><esc>hi
 :iabbrev pair pair< ><esc>hi
 :iabbrev pb push_back
