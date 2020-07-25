@@ -108,7 +108,6 @@ set autoindent
 :iabbrev forin for(auto&
 
 :iabbrev manycases int t;<CR>cin>>t;<CR>for(int i=1;i<=t;i++){<CR>solve(i);<CR>}<CR>
-:iabbrev solve void solve(test_case = 1){<CR><CR>}<ESC>O
 :iabbrev codejam cout << "Case #" << test_case << ": ";
 
 :iabbrev nope cout << "NO" << endl;
@@ -122,6 +121,7 @@ set autoindent
 :iabbrev vecll vector<long long>
 
 "TODO : see how to do snippets to these
+:iabbrev solve void solve(test_case = 1){<CR><CR>}<ESC>O
 :iabbrev vec vector< ><esc>hi
 :iabbrev pair pair< ><esc>hi
 :iabbrev pb push_back
