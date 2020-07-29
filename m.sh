@@ -11,4 +11,4 @@ cp -r  ./m/stuff/ ./
 
 source ./m/n.sh #setups+aliases
 
-source ./m/c.sh #competitive setup
+#source ./m/c.sh #competitive setup
