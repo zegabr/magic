@@ -21,4 +21,15 @@ alias gclone='source ~/clonegithub.sh'
 alias remap='bash ~/remaper/remaper.sh'
 alias unremap='bash ~/remaper/undo.sh'
 alias lag='alias | grep'
+
+
+
+
+
+
+#show git branch on terminal prompt
+parse_git_branch() {
+     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+export PS1="\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
 ##ALIASES
