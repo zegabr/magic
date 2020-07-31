@@ -28,7 +28,7 @@ b.sh -> benchmark made in c++ (run `bash b.sh)
 -Run `source n.sh`
 
 ### how to use my competitive setup:
--Run `source m.sh`
+-Run `source c.sh` 
 
 -Code using x.cpp at competitive/ directory
 

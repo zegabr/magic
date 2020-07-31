@@ -8,4 +8,3 @@ cd m/
 
 source ./n.sh #setups+aliases
 
-source ./c.sh #competitive setup
