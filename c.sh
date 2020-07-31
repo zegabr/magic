@@ -16,3 +16,6 @@ source cp/init.sh
 
 echo "cp folder has:"
 ls cp/
+
+# go back to root
+cd

@@ -11,4 +11,4 @@ cd - #go back to parent of m/
 
 source ./m/n.sh #setups+aliases
 
-#source ./m/c.sh #competitive setup
+source ./m/c.sh #competitive setup
