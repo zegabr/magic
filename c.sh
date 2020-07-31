@@ -1,4 +1,7 @@
 #competitive setup
+#initial setup
+source m.sh
+
 #creates competitive/ at parent of m/
 cd ../
 rm -rf competitive/
