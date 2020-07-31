@@ -1,7 +1,7 @@
 from os.path import expanduser
 home = expanduser("~")
 
-origin=open('./stuff/aliases','r')
+origin=open('./stuff/aliases.sh','r')
 aliases=origin.read().split('\n')
 origin.close()
 
