@@ -28,10 +28,34 @@ alias unremap='bash ~/remaper/undo.sh'
 
 
 
-#show git branch on terminal prompt
+#show git stuff on terminal prompt
+COLOR_RED="\033[0;31m"
+COLOR_YELLOW="\033[0;33m"
+COLOR_GREEN="\033[01;32m"
+COLOR_OCHRE="\033[38;5;37m"
+COLOR_BLUE="\033[01;34m"
+COLOR_WHITE="\033[0;37m"
+COLOR_RESET="\033[0m"
+
+function git_color {
+  local git_status="$(git status 2> /dev/null)"
+
+  if [[ $git_status =~ "Changes not staged" ]]; then
+    echo -e $COLOR_RED
+  elif [[ $git_status =~ "Changes to be committed" ]]; then
+    echo -e $COLOR_OCHRE
+  else
+     echo -e $COLOR_GREEN
+  fi
+}
+
 parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
-export PS1="\[\033[01;34m\]\w\[\033[01;32m\]\$(parse_git_branch)\[\033[00m\] $ "
+PS1="\[$COLOR_BLUE\]\w"
+PS1+="\[\$(git_color)\]"
+PS1+="\$(parse_git_branch)"
+PS1+="\[\033[00m\] $ "
+export PS1
 
 ##ALIASES
