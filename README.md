@@ -1,5 +1,5 @@
 # m
-This is stuff that I found to be usefull for competitive programming and other not competitive stuff.
+This is stuff that I found to be usefull for linux productivity (mostly competitive programming).
 
 ### how to:
 Just clone it in some folder and run `source m/m.sh` and all my setup will be yours.
@@ -7,23 +7,23 @@ Just clone it in some folder and run `source m/m.sh` and all my setup will be yo
 ### be aware:
 Using some of the scripts will overrides your ~/.vimrc file or your gedit setup
 
-**Important**: Scripts work if you run from the directory wich contains m/ (this repo) 
+**Important**: Scripts work if you run from the parent directory of m/ (this repo) 
 
 ### content:
-a.sh -> copy some (maybe) usefull aliases which are in STUFF/aliases into .bashrc so that they stay permanent
+a.sh -> copy some usefull aliases which are in STUFF/aliases into .bashrc
 
-clonegithub.sh -> handy script to clone repos via https. (run anywhere `gclone github-user/github-repo` after copying it for home folder and running a.sh)
+clonegithub.sh -> handy script to clone repos via https. (run anywhere `gclone github-user/github-repo` after running m.sh)
 
 g.sh -> gedit setup
 
-v.sh -> vim setup (STUFF/.vimrc is a copy of my vimrc file)
+v.sh -> vim setup (STUFF/.vimrc is copied to ~/.vimrc)
 
 n.sh -> not competitive setup (runs g.sh, v.sh, a.sh)
 
-m.sh -> c++ competitive setup (clones cp.git, run all scripts and teleports)
+m.sh -> c++ competitive setup (clones cp.git, run all scripts)
 
 ### extra:
-b.sh -> benchmark made in c++ (run `bash m/b.sh`)
+b.sh -> benchmark made in c++ (run `bash m/b.sh)
 
 
 ### how to use my not competitive setup (vim, gedit and aliases):
@@ -34,10 +34,10 @@ b.sh -> benchmark made in c++ (run `bash m/b.sh`)
 
 -Code using x.cpp at competitive/ directory
 
--Compile x.cpp with `make` command to compile until first error
+-Compile x.cpp with `gw x.cpp` command to compile until first error
 
--Run `m`(this is an alias at a.sh) to run inputs that you must save at i file
+-Run `m`(this is an alias at a.sh) to run inputs that you must save at file named "i"
 
--Reset x.cpp by running `bash r.sh` at competitive folder (which you will be after teleports)
+-Reset x.cpp by running `bash r.sh` at m/../competitive/ folder
 
 -There is a template named tmp.cpp (also a little python3 cheatsheet named pmp.py)
