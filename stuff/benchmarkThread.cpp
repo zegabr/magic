@@ -42,12 +42,12 @@ int main(){
 
     cout << processor_count << " threads available" << endl << endl;
     cout << "iterations\tseconds" << endl;
-    
+
     for(int i = 0; i < testSize; i++){
         timeElapsedInSeconds = getSecondsToIterateManyThreads(processor_count, iterations);
         average += (double)iterations * processor_count / timeElapsedInSeconds;
         cout << (double)iterations * processor_count << "\t\t" << timeElapsedInSeconds << endl;
-        
+
         iterations += FIXED_ITERATIONS_QUANTITY;//becomes (1e9, 2e9, 3e9 ... 1e10) * processor_count
     }
 

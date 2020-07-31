@@ -2,12 +2,10 @@
 This is stuff that I found to be usefull for linux productivity (mostly competitive programming).
 
 ### how to:
-Just clone it in some folder and run `source m/m.sh` and all my setup will be yours.
+Just clone it in some folder and run `source m.sh` and all my setup will be yours.
 
 ### be aware:
 Using some of the scripts will overrides your ~/.vimrc file or your gedit setup
-
-**Important**: Scripts work if you run from the parent directory of m/ (this repo) 
 
 ### content:
 a.sh -> copy some usefull aliases which are in STUFF/aliases into .bashrc
@@ -23,14 +21,14 @@ n.sh -> not competitive setup (runs g.sh, v.sh, a.sh)
 m.sh -> c++ competitive setup (clones cp.git, run all scripts)
 
 ### extra:
-b.sh -> benchmark made in c++ (run `bash m/b.sh)
+b.sh -> benchmark made in c++ (run `bash b.sh)
 
 
 ### how to use my not competitive setup (vim, gedit and aliases):
--Run `source m/n.sh`
+-Run `source n.sh`
 
 ### how to use my competitive setup:
--Run `source m/m.sh`
+-Run `source m.sh`
 
 -Code using x.cpp at competitive/ directory
 

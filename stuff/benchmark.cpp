@@ -4,7 +4,7 @@
 using namespace std;
 using namespace std::chrono;
 
-const long long FIXED_ITERATIONS_QUANTITY = 1e9; //good enough to be near 1 sec
+const long long FIXED_ITERATIONS_QUANTITY = 1e8; //good enough to be near 1 sec
 
 double getSecondsToIterate(long long iterations = FIXED_ITERATIONS_QUANTITY){
     long long c = 0;
@@ -28,7 +28,7 @@ int main(){
         timeElapsedInSeconds = getSecondsToIterate(iterations);
         average += (double)iterations / timeElapsedInSeconds;
         cout << (double)iterations << "\t\t" << timeElapsedInSeconds <<endl;
-        
+
         iterations += FIXED_ITERATIONS_QUANTITY;//becomes 1e8, 2e8, 3e8 ... 1e9
     }
 

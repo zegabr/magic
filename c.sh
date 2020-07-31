@@ -1,8 +1,8 @@
 #competitive setup
 #creates competitive/ at parent of m/
+cd ../
 rm -rf competitive/
 mkdir competitive/
-
 
 cd competitive/
 
@@ -18,4 +18,4 @@ echo "cp folder has:"
 ls cp/
 
 # go back to root
-cd
+cd ../m/
