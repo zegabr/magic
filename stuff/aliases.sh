@@ -52,10 +52,11 @@ function git_color {
 parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
-PS1="\[$COLOR_BLUE\]\w"
+
+PS1="\[$COLOR_BLUE\]\w" #working directory
 PS1+="\[\$(git_color)\]"
 PS1+="\$(parse_git_branch)"
-PS1+="\[\033[00m\] $ "
+PS1+="\[$COLOR_RESET\] $ "   # '#' for root, else '$'
 export PS1
 
 ##ALIASES
