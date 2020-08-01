@@ -22,6 +22,7 @@ m.sh -> c++ competitive setup (clones cp.git, run all scripts)
 
 ### extra:
 b.sh -> benchmark made in c++ (run `bash b.sh)
+reset-bashrc.sh -> backups current .bashrc into .bashrc.bak
 
 
 ### how to use my not competitive setup (vim, gedit and aliases):
