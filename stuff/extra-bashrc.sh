@@ -1,4 +1,4 @@
-##ALIASES
+##EXTRA BASHRC
 alias atualiza='sudo apt update && sudo apt -u upgrade -y && sudo apt autoclean -y && sudo apt clean -y && sudo apt autoremove -y'
 
 #chore
@@ -59,4 +59,4 @@ PS1+="\$(parse_git_branch)"
 PS1+="\[$COLOR_RESET\] $ "   # '#' for root, else '$'
 export PS1
 
-##ALIASES
+##EXTRA BASHRC
