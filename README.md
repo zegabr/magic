@@ -8,7 +8,7 @@ Just clone it in some folder and run `source m.sh` and all my setup will be your
 Using some of the scripts will overrides your ~/.vimrc file or your gedit setup
 
 ### content:
-a.sh -> copy some usefull aliases which are in STUFF/aliases into .bashrc
+a.sh -> copy some usefull bashrc additionals which are in STUFF/extra-bashrc into .bashrc
 
 clonegithub.sh -> handy script to clone repos via https. (run anywhere `gclone github-user/github-repo` after running m.sh)
 
