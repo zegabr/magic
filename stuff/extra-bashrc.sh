@@ -14,8 +14,12 @@ alias g='g++ -std=c++14 -O2 -Wshadow -Wall -Wno-unused-result'
 alias tg='time g++ -std=c++14 -O2'
 alias gw='g++ -std=c++14 -O2 -Wfatal-errors'
 
-#git-aliases from https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/git/git.plugin.zsh
+#remaper
+alias remap-keys='bash ~/remaper/remaper.sh'
+alias undo-remap-keys='bash ~/remaper/undo.sh'
 
+
+#git-aliases from https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/git/git.plugin.zsh
 # Pretty log messages
 function _git_log_prettily(){
   if ! [ -z $1 ]; then
@@ -209,9 +213,6 @@ alias gams='git am --skip'
 alias gama='git am --abort'
 alias gamscp='git am --show-current-patch'
 
-#remaper
-alias remap='bash ~/remaper/remaper.sh'
-alias unremap='bash ~/remaper/undo.sh'
 
 #show git stuff on terminal prompt
 COLOR_RED="\033[0;31m"
