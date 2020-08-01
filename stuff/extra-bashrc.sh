@@ -244,7 +244,7 @@ parse_git_branch() {
 PS1="\[$COLOR_BLUE\]\w" #working directory
 PS1+="\[\$(git_color)\]"
 PS1+="\$(parse_git_branch)"
-PS1+="\[$COLOR_RESET\] $ "   # '#' for root, else '$'
+PS1+="\[$COLOR_RESET\]$ "   # '#' for root, else '$'
 export PS1
 
 ##EXTRA BASHRC
