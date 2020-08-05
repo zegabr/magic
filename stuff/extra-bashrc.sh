@@ -247,4 +247,12 @@ PS1+="\$(parse_git_branch)"
 PS1+="\[$COLOR_RESET\]$ "   # '#' for root, else '$'
 export PS1
 
+
+
+##aliases for moto
+alias gpohrfm='git push origin HEAD:refs/for/master'
+
+
+
+
 ##EXTRA BASHRC
