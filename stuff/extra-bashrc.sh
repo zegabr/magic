@@ -250,8 +250,8 @@ export PS1
 
 
 ##aliases for moto
-alias gpohrfm='git push origin HEAD:refs/for/master'
-
+alias gphrfm='git push origin HEAD:refs/for/master'
+alias start-env='source ~/env/bin/activate'
 
 
 
