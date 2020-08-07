@@ -38,10 +38,6 @@ function git_current_branch() {
   echo ${ref#refs/heads/}
 }
 
-function current_branch() {
-  git_current_branch
-}
-
 # Check if main exists and use instead of master
 function git_main_branch() {
   if [[ -n "$(git branch --list main)" ]]; then
