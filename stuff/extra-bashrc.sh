@@ -19,7 +19,7 @@ alias remap-keys='bash ~/remaper/remaper.sh'
 alias undo-remap-keys='bash ~/remaper/undo.sh'
 
 
-#git-aliases from https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/git/git.plugin.zsh
+#git-aliases and functions from https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/git/git.plugin.zsh
 # Pretty log messages
 function _git_log_prettily(){
   if ! [ -z $1 ]; then
@@ -28,14 +28,7 @@ function _git_log_prettily(){
 }
 
 function git_current_branch() {
-  local ref
-  ref=$(__git_prompt_git symbolic-ref --quiet HEAD 2> /dev/null)
-  local ret=$?
-  if [[ $ret != 0 ]]; then
-    [[ $ret == 128 ]] && return  # no git repo.
-    ref=$(__git_prompt_git rev-parse --short HEAD 2> /dev/null) || return
-  fi
-  echo ${ref#refs/heads/}
+  git branch --show
 }
 
 # Check if main exists and use instead of master
