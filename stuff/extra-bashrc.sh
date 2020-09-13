@@ -10,9 +10,9 @@ alias gclone='source ~/clonegithub.sh'
 #competitive
 alias py=python3
 alias m='make && make t'
-alias g='g++ -std=c++14 -O2 -Wshadow -Wall -Wno-unused-result'
-alias tg='time g++ -std=c++14 -O2'
-alias gw='g++ -std=c++14 -O2 -Wfatal-errors'
+alias g='g++ -std=c++17 -O2 -Wshadow -Wall -Wno-unused-result'
+alias tg='time g++ -std=c++17 -O2'
+alias gw='g++ -std=c++17 -O2 -Wfatal-errors'
 
 #remaper
 alias remap-keys='bash ~/remaper/remaper.sh'
