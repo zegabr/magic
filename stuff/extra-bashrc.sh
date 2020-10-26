@@ -254,7 +254,8 @@ export PS1
 
 
 ##aliases for moto
-alias gphrfm='git push origin HEAD:refs/for/master'
+alias pushmaster='git push origin HEAD:refs/for/master'
+alias pushdev='git push origin HEAD:refs/for/experiences_adx'
 alias start-env='source ~/env/bin/activate'
 
 
