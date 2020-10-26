@@ -104,7 +104,7 @@ set autoindent
 :iabbrev endk endl
 :iabbrev enld endl
 
-:iabbrev manycases int t;<CR>cin>>t;<CR>for(int i=1;i<=t;i++){<CR>solve(i);<CR>}<CR>
+:iabbrev many int t;<CR>cin>>t;<CR>for(int i=1;i<=t;i++){<CR>solve(i);<CR>}<CR>
 :iabbrev codejam cout << "Case #" << test_case << ": ";
 :iabbrev solve void solve(int test_case = 1){<CR><CR>}<ESC>O
 
