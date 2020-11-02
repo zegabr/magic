@@ -10,7 +10,7 @@ echo
 
 echo "=============BENCHMARK 2=============="
 
-g++ -std=c++11 -pthread /stuff/benchmarkThread.cpp -o b
+g++ -std=c++11 -pthread stuff/benchmarkThread.cpp -o b
 time ./b
 rm ./b
 

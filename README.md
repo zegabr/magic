@@ -10,22 +10,22 @@ Using some of the scripts will overrides your ~/.vimrc file or your gedit setup
 ### content:
 a.sh -> copy some usefull bashrc additionals which are in STUFF/extra-bashrc into .bashrc
 
-clonegithub.sh -> handy script to clone repos via https. (run anywhere `gclone github-user/github-repo` after running m.sh)
+clonegithub.sh -> handy script to clone repos via https. (run anywhere `gclone <github-user>/<github-repo>` after running m.sh)
 
-g.sh -> gedit setup
+unused/g.sh -> gedit setup
 
 v.sh -> vim setup (STUFF/.vimrc is copied to ~/.vimrc)
 
-n.sh -> not competitive setup (runs g.sh, v.sh, a.sh)
+n.sh -> not competitive setup (runs v.sh and a.sh)
 
-m.sh -> c++ competitive setup (clones cp.git, run all scripts)
+m.sh -> c++ competitive setup (runs c.sh and n.sh)
 
 ### extra:
-b.sh -> benchmark made in c++ (run `bash b.sh)
+b.sh -> benchmark made in c++ that average number of operations your pc does in 1 sec. TODO: move this to cp repository
 reset-bashrc.sh -> backups current .bashrc into .bashrc.bak
 
 
-### how to use my not competitive setup (vim, gedit and aliases):
+### how to use my not competitive setup (vim and aliases):
 -Run `source n.sh`
 
 ### how to use my competitive setup:
