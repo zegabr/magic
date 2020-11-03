@@ -1,4 +1,5 @@
-#b for benchmark
+#!/bin/bash
+# b for benchmark
 
 echo "=============BENCHMARK 1=============="
 g++ -std=c++11 stuff/benchmark.cpp -o b

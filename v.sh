@@ -1,3 +1,6 @@
-#v for vim
+#!/bin/bash
+# v for vim
 cp ./stuff/.vimrc ~/.vimrc
+echo
 echo "========my vim setup overrided yours======="
+echo

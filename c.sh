@@ -1,6 +1,7 @@
-#competitive setup
+# competitive setup
+
 #initial setup
-source m.sh
+source ./a.sh # aliases
 
 #creates competitive/ at parent of m/
 cd ../
@@ -20,5 +21,4 @@ source cp/init.sh
 echo "cp folder has:"
 ls cp/
 
-# go back to root
-cd ../m/
+pwd
