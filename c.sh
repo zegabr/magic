@@ -12,7 +12,7 @@ cd competitive/
 
 #copy my competitive code lib
 rm -rf cp/
-git clone https://github.com/zegabr/cp.git
+git clone git@github.com:zegabr/cp.git
 echo 
 
 pwd
