@@ -13,13 +13,12 @@ python3 pyutils/replace_line_with_content.py ~/.zshrc "DISABLE_UPDATE_PROMPT" "D
 python3 pyutils/replace_line_with_content.py ~/.zshrc "source /etc/zsh_command_not_found" "source /etc/zsh_command_not_found"
 
 # Cloning extra plugins
-cd ~/.oh-my-zsh/custom/plugins
-git clone https://github.com/zsh-users/zsh-syntax-highlighting
-git clone https://github.com/zsh-users/zsh-autosuggestions
-cd -
+git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+git clone https://github.com/supercrabtree/k ~/.oh-my-zsh/custom/plugins/k
 
 # Add plugins below
-python3 pyutils/replace_line_with_content.py ~/.zshrc "plugins=(" "plugins=(git zsh-syntax-highlighting zsh-autosuggestions)"
+python3 pyutils/replace_line_with_content.py ~/.zshrc "plugins=(" "plugins=(git zsh-syntax-highlighting zsh-autosuggestions k)"
 
 
 source ~/.zshrc
@@ -29,8 +28,8 @@ rm -rf pyutils/
 
 echo """
 =================================================
-PLS OPEN ANOTHER TERMINAL FOR CHANGES TAKE EFFECT
+PLS OPEN ANOTHER TERMINAL FOR CHANGES TAKE EFFECT (this terminal will close in 5 sec)
 =================================================
 """
-sleep 3
+sleep 5
 exit
