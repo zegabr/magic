@@ -8,7 +8,7 @@ xclip -selection clipboard < ~/.ssh/id_rsa.pub
 
 echo """
 ===================================================
-he ssh key is in clipboard, add it to github client
+The ssh key is in clipboard, add it to github client
 profile->settings->ssh->new ssh key
 ===================================================
 """
