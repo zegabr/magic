@@ -2,8 +2,6 @@
 # a for aliases
 # add aliases for bash terminal
 
-git clone https://github.com/zegabr/pyutils
-
 python3 pyutils/replace_content_in_tag.py ~/.bashrc ./stuff/aliases.sh "##ALIASES"
 
 FILE=~/.oh-my-zsh/oh-my-zsh.sh
@@ -17,7 +15,4 @@ else
     echo "============you have new aliases for bash==========="
     source ~/.bashrc
 fi
-
-echo "removing pyutils"
-rm -rf pyutils
 

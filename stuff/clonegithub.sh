@@ -1,1 +1,1 @@
-git clone git@github.com:$@.git
+git clone --recurse-submodules git@github.com:$@.git
