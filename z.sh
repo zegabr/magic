@@ -21,16 +21,15 @@ git clone https://github.com/supercrabtree/k ~/.oh-my-zsh/custom/plugins/k
 # Add plugins below
 python3 pyutils/replace_line_with_content.py ~/.zshrc "plugins=(" "plugins=(git zsh-syntax-highlighting zsh-autosuggestions k copydir copyfile extract debian)"
 
-
 source ~/.zshrc
 
 echo "removing pyutils"
 rm -rf pyutils/
 
 echo """
-=================================================
-PLS OPEN ANOTHER TERMINAL FOR CHANGES TAKE EFFECT (this terminal will close in 5 sec)
-=================================================
+===============================================================================================
+PLS OPEN ANOTHER TERMINAL FOR CHANGES TAKE EFFECT (this one will close in 5 sec)
+===============================================================================================
 """
 sleep 5
 exit
