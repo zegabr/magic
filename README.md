@@ -17,4 +17,6 @@ Run `source a.sh` to update you aliases with the aliases at stuff/aliases.sh (ed
 Run `source m.sh` to run last four scripts (ssh.sh, z.sh, v.sh and a.sh)
 
 # Extra
-After running m.sh, stuff/clonegithub.sh will be added to root directory and alias `gclone` will be created. Use it to clone repos by running `gclone <github_user_name>/<repo_name>` (it will clone via ssh)
+After running m.sh, stuff/clonegithub.sh will be added to root directory and alias `gclone` will be created. Use it to clone repos by running `gclone <github_user_name>/<repo_name>`. This will give you a prompt asking if you want to use ssh.
+
+After running a.sh, use `lag word` to search for aliases that has word on it.

@@ -3,7 +3,7 @@
 #chore
 alias atualiza='sudo apt update && sudo apt -u upgrade -y && sudo apt autoclean -y && sudo apt clean -y && sudo apt autoremove -y'
 alias lag='alias | grep'
-alias gclone='source ~/clonegithub.sh'
+alias gclone='bash ~/clonegithub.sh'
 alias gs='git status'
 
 #competitive
