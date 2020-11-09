@@ -19,7 +19,8 @@ git clone https://github.com/supercrabtree/k ~/.oh-my-zsh/custom/plugins/k
 # git clone git://github.com/gradle/gradle-completion ~/.oh-my-zsh/plugins/gradle-completion
 
 # Add plugins below
-python3 pyutils/replace_line_with_content.py ~/.zshrc "plugins=(" "plugins=(git zsh-syntax-highlighting zsh-autosuggestions k copydir copyfile extract debian)"
+# interesting ones are: git, zsh-syntax-highlighting, zsh-autosuggestions, copydir, copyfile, extract, debian, k
+python3 pyutils/replace_line_with_content.py ~/.zshrc "plugins=(" "plugins=(git zsh-syntax-highlighting zsh-autosuggestions copydir copyfile extract)"
 
 source ~/.zshrc
 
