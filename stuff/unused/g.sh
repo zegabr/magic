@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 #gedit setup
 #g de gedit(ubuntu) e xed(mint)
 if hash gedit 2>/dev/null; then

@@ -1,3 +1,4 @@
+#!/bin/sh
 ############TIME CORRECTION FOR DUAL BOOT WITH WINDOWS#####################
 read -p "Type y if you are having issues with dual-boot clocks (windows-linux)? (y/n): " ans
 if [ "$ans" == "y" ]; then

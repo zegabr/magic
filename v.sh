@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 # v for vim
 cp ./stuff/.vimrc ~/.vimrc
 echo

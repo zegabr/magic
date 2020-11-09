@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 # FULL LINUX SETUP
 bash stuff/apps.sh # for app instalation
 source a.sh # for aliases setup

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 read -p "Type y if you want to setup ssh for git? (y/n): " ans
 if [ "$ans" == "y" ]; then
 

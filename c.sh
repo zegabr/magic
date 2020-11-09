@@ -1,4 +1,7 @@
+#!/bin/sh
 # competitive setup
+
+bash v.sh
 
 #creates competitive/ at parent of m/
 cd ../

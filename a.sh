@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 # a for aliases
 # add aliases for bash terminal
 

@@ -1,4 +1,4 @@
-
+#!/bin/sh
 cd ~/Downloads
 
 # GTIHUB CLI
