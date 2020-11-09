@@ -6,6 +6,7 @@ alias gs='git status'
 alias bashrc='vim ~/.bashrc'
 alias zshrc='vim ~/.zshrc'
 alias ohmyzsh='vim ~/.oh-my-zsh/oh-my-zsh.sh'
+alias vimrc='vim ~/.vimrc'
 
 function gclssh(){ 
     # clone github repo via ssh
