@@ -9,24 +9,32 @@ fi
 
 git clone https://github.com/zegabr/pyutils
 
-# Change theme here
-THEME=af-magic
+#===================== Change settings here for future instalations
+ZSH_THEME=af-magic
+CASE_SENSITIVE="true"
+DISABLE_UPDATE_PROMPT="true" # updates zsh without asking
 
-python3 pyutils/replace_line_with_content.py ~/.zshrc "ZSH_THEME" "ZSH_THEME=\"$THEME\""
-python3 pyutils/replace_line_with_content.py ~/.zshrc "CASE_SENSITIVE" "CASE_SENSITIVE=\"true\""
-python3 pyutils/replace_line_with_content.py ~/.zshrc "DISABLE_UPDATE_PROMPT" "DISABLE_UPDATE_PROMPT=\"true\""
-python3 pyutils/replace_line_with_content.py ~/.zshrc "source /etc/zsh_command_not_found" "source /etc/zsh_command_not_found"
 
+python3 pyutils/add_attribution.py ~/.zshrc "ZSH_THEME=$ZSH_THEME"
+python3 pyutils/add_attribution.py ~/.zshrc "CASE_SENSITIVE=\"$CASE_SENSITIVE\""
+python3 pyutils/add_attribution.py ~/.zshrc "DISABLE_UPDATE_PROMPT=\"$DISABLE_UPDATE_PROMPT\""
+python3 pyutils/add_attribution.py ~/.zshrc "source /etc/zsh_command_not_found" # this makes zsh suggest uninstalled apt packages when command not found
+#==================================================================
+
+
+#============================================================================= Add plugins below
 # Clone extra plugins here
 git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 git clone https://github.com/supercrabtree/k ~/.oh-my-zsh/custom/plugins/k
 git clone git://github.com/gradle/gradle-completion ~/.oh-my-zsh/plugins/gradle-completion
 
-# Add plugins below
+# Add wanted plugins here
 PLUGINS="plugins=(git zsh-syntax-highlighting copydir copyfile extract zsh-autosuggestions k)"
 
-python3 pyutils/replace_line_with_content.py ~/.zshrc "plugins=(" $PLUGINS
+python3 pyutils/add_attribution.py ~/.zshrc $PLUGINS
+#=============================================================================================
+
 
 source ~/.zshrc
 
