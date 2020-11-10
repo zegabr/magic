@@ -4,9 +4,9 @@ alias atualiza='sudo apt update && sudo apt -u upgrade -y && sudo apt autoclean 
 alias lag='alias | grep'
 alias gs='git status'
 alias bashrc='vim ~/.bashrc'
-alias zshrc='vim ~/.zshrc'
-alias ohmyzsh='vim ~/.oh-my-zsh/oh-my-zsh.sh'
-alias vimrc='vim ~/.vimrc'
+alias zshconfig='vim ~/.zshrc'
+alias ohmyzshconfig='vim ~/.oh-my-zsh/oh-my-zsh.sh'
+alias vimconfig='vim ~/.vimrc'
 
 function gclssh(){ 
     # clone github repo via ssh
