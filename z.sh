@@ -27,10 +27,9 @@ python3 pyutils/add_attribution.py ~/.zshrc "source /etc/zsh_command_not_found" 
 git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 git clone https://github.com/supercrabtree/k ~/.oh-my-zsh/custom/plugins/k
-git clone git://github.com/gradle/gradle-completion ~/.oh-my-zsh/plugins/gradle-completion
 
 # Add wanted plugins here
-PLUGINS="plugins=(git zsh-syntax-highlighting copydir copyfile extract zsh-autosuggestions k)"
+PLUGINS="plugins=(git zsh-syntax-highlighting copydir copyfile extract zsh-autosuggestions k docker-compose)"
 
 python3 pyutils/add_attribution.py ~/.zshrc $PLUGINS
 #=============================================================================================

@@ -18,6 +18,21 @@ function gclhttps(){
     git clone --recurse-submodules https://github.com/$@
 }
 
+function docker-stop-all(){
+    # stop all containers
+    docker stop $(docker ps -a -q) 
+    # remove all containers
+    docker rm $(docker ps -a -q) 
+    # remove all volumes
+    docker volume rm $(docker volume ls -q)
+    # remove all images
+    docker rmi -f $(docker images -f "dangling=true" -q)
+}
+
+function docker-delete-all(){
+    docker image prune -a -f
+}
+
 function remaper(){ 
     # change keyboard numerical row mappings to its symbols
     FLAG=~/REMAPER_ON_FLAG
