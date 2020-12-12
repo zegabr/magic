@@ -7,33 +7,20 @@ alias bashrc='vim ~/.bashrc'
 alias zshconfig='vim ~/.zshrc'
 alias ohmyzshconfig='vim ~/.oh-my-zsh/oh-my-zsh.sh'
 alias vimconfig='vim ~/.vimrc'
+alias docker-clear-images='docker rmi -f $(docker images -a -q)'
+alias docker-stop-all='docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q) && docker volume rm $(docker volume ls -q)'
 
-function gclssh(){ 
+function gclssh(){
     # clone github repo via ssh
     git clone --recurse-submodules git@github.com:$@.git
 }
 
-function gclhttps(){ 
+function gclhttps(){
     # clone github repo via https
     git clone --recurse-submodules https://github.com/$@
 }
 
-function docker-stop-all(){
-    # stop all containers
-    docker stop $(docker ps -a -q) 
-    # remove all containers
-    docker rm $(docker ps -a -q) 
-    # remove all volumes
-    docker volume rm $(docker volume ls -q)
-    # remove all images
-    docker rmi -f $(docker images -f "dangling=true" -q)
-}
-
-function docker-delete-all(){
-    docker image prune -a -f
-}
-
-function remaper(){ 
+function remaper(){
     # change keyboard numerical row mappings to its symbols
     FLAG=~/REMAPER_ON_FLAG
     if [ ! -f "$FLAG" ]; then
