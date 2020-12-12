@@ -10,12 +10,13 @@ Run `source z.sh` if you want to install [oh-my-zsh](https://github.com/ohmyzsh/
 
 Run `source a.sh` to add my aliases (at stuff/aliases.sh) to yours.
 
-Run `source m.sh` to run scripts: z.sh, a.sh and stuff/custom-keybinds.sh (usefull if you have edited some of them and want to update the setup). 
+Run `source stuff/custom-keybindings.sh` to add keyboard shortcuts (for now it only adds flameshot for now and it overrides all custom shortcuts previously added)
 
+Run `source m.sh` to run scripts: z.sh, a.sh and stuff/custom-keybinds.sh (usefull if you have edited some of them and want to update the setup). 
 
 Run `bash v.sh` if you want to override your vim setup with mine (you probably won't, it's basic).
 
-Run `source c.sh` if you want my competitive setup (vim and c++) (see [cp](https://github.com/zegabr/cp)) (you probably won't want it too).
+Run `source c.sh` if you want my competitive setup (vim, c++ and [cp](https://github.com/zegabr/cp)) (you probably won't want it too).
 
 # Extra interesting stuff
 - To update ohmyzsh plugins and theme, see PLUGINS and THEME variables at z.sh file, change as you wish, then run `source z.sh` again to update.
