@@ -18,3 +18,21 @@ if [ "$ans" == "y" ]; then
     sudo dpkg -i google-chrome-stable_current_amd64.deb
     sudo rm -rf google-chrome-stable_current_amd64.deb
 fi
+
+# DOCKER 
+read -p "Type y if you want Docker to be installed (y/n): " ans
+if [ "$ans" == "y" ]; then
+    sudo apt-get remove docker docker-engine docker.io containerd runc
+    sudo apt-get purge docker-ce docker-ce-cli containerd.io
+    sudo rm -rf /var/lib/docker
+    sudo apt-get install docker-ce docker-ce-cli containerd.io
+    sudo groupadd docker
+    sudo usermod -aG docker $USER
+
+    #docker compose
+    sudo curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+    sudo chmod +x /usr/local/bin/docker-compose
+    docker-compose --version
+    docker --version
+    echo "after relogging, run newgrp docker"
+fi

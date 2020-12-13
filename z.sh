@@ -29,7 +29,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/p
 git clone https://github.com/supercrabtree/k ~/.oh-my-zsh/custom/plugins/k
 
 # Add wanted plugins here
-PLUGINS="plugins=(git zsh-syntax-highlighting copydir copyfile extract zsh-autosuggestions k docker-compose)"
+PLUGINS="plugins=(git zsh-syntax-highlighting copydir copyfile extract zsh-autosuggestions k docker docker-compose)"
 
 python3 pyutils/add_attribution.py ~/.zshrc $PLUGINS
 #=============================================================================================
