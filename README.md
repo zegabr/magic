@@ -16,7 +16,7 @@ Run `bash v.sh` if you want to override your vim setup with mine (you probably w
 
 Run `source c.sh` if you want my competitive setup (vim, c++ and [cp](https://github.com/zegabr/cp)) (you probably won't want it too).
 
-Run `source m.sh` to get full setup.
+Run `source m.sh` to get full setup (one liner it is!).
 
 # Extra interesting stuff
 - To update ohmyzsh plugins and theme, see PLUGINS and THEME variables at z.sh file, change as you wish, then run `source z.sh` again to update.
