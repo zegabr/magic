@@ -10,6 +10,7 @@ sudo apt update && sudo apt upgrade -y
 
 read -p "Type y if you want GRUB to be updated (y/n): " ans
 if [ "$ans" == "y" ]; then
+    sudo chmod 777 /etc/default/grub
     sudo echo "GRUB_DEFAULT=saved" >> /etc/default/grub
     sudo echo "GRUB_SAVEDEFAULT=true" >> /etc/default/grub
     sudo update-grub
