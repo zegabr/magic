@@ -16,9 +16,10 @@ if [ "$ans" == "y" ]; then
     echo """
     ===================================================
     The ssh key is in clipboard, add it to github client
-    profile->settings->ssh->new ssh key
     ===================================================
     """
+
+    sensible-browser https://github.com/settings/keys
 
     git config --global user.email $USER_EMAIL
     git config --global user.name $USER_NAME

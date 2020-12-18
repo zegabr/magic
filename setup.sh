@@ -2,8 +2,6 @@
 # FULL LINUX SETUP
 bash stuff/apps.sh # for app instalation
 
-bash stuff/dual-boot-clock.sh # will ask if you have dual boot time problems (and solve it)
-
 bash stuff/custom-keybindings.sh # will ask to override keyboard shortcuts
 
 sudo apt update && sudo apt upgrade -y
@@ -15,3 +13,5 @@ if [ "$ans" == "y" ]; then
     sudo echo "GRUB_SAVEDEFAULT=true" >> /etc/default/grub
     sudo update-grub
 fi
+
+bash stuff/dual-boot-clock.sh # will ask if you have dual boot time problems (and solve it)
