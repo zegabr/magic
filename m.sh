@@ -1,6 +1,7 @@
 #!/bin/sh
 # m for main
 
+bash g.sh # gnome
 bash setup.sh #install apps and docker
 bash v.sh # updates vimrc
 bash ssh.sh # setup ssh
