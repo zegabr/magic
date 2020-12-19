@@ -5,13 +5,13 @@ alias lag='alias | grep'
 
 alias gs='git status'
 
-alias bashrc='vim ~/.bashrc'
+alias bashconfig='vim ~/.bashrc'
 alias zshconfig='vim ~/.zshrc'
-alias ohmyzshconfig='vim ~/.oh-my-zsh/oh-my-zsh.sh'
+alias omzconfig='vim ~/.oh-my-zsh/oh-my-zsh.sh'
 alias vimconfig='vim ~/.vimrc'
 
-alias docker-clear-images='docker rmi -f $(docker images -a -q)'
-alias docker-stop-all='docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q) && docker volume rm $(docker volume ls -q)'
+alias dci='docker rmi -f $(docker images -a -q)'
+alias dsa='docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q) && docker volume rm $(docker volume ls -q)'
 
 # global python
 alias py='python3'
