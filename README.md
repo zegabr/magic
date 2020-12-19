@@ -2,6 +2,8 @@
 Usefull scripts for linux setup/productivity (at least I find it usefull).
 
 # What the scripts do
+Run `g.sh` for gnome settings.
+
 Run `bash setup.sh` for basic setup (take a look at the file stuff/apps.sh first so you don't install things you don't want).
 
 Run `bash ssh.sh` to create ssh keys and setup for github.
