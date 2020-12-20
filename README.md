@@ -2,13 +2,13 @@
 Usefull scripts for linux setup/productivity (at least I find it usefull).
 
 # What the scripts do
-Run `g.sh` for gnome settings.
+Run `bash g.sh` for gnome settings.
 
 Run `bash setup.sh` for basic setup (take a look at the file stuff/apps.sh first so you don't install things you don't want).
 
 Run `bash ssh.sh` to create ssh keys and setup for github.
 
-Run `source z.sh` if you want to install [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh/blob/master/README.md) (it installs already with some plugins).
+Run `source z.sh` if you want to install [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh/blob/master/README.md) (it overrides your .zshrc with mine).
 
 Run `source a.sh` to add my aliases (at stuff/aliases.sh) to yours.
 
@@ -21,8 +21,6 @@ Run `source c.sh` if you want my competitive setup (vim, c++ and [cp](https://gi
 Run `source m.sh` to get full setup (one liner it is!).
 
 # Extra interesting stuff
-- To update ohmyzsh plugins and theme, see PLUGINS and THEME variables at z.sh file, change as you wish, then run `source z.sh` again to update.
-
 - After running a.sh, some commands will be added:
     - `gclhttps`
         - Clone github repos via https protocol easily by running `gclhttps <github_user_name>/<repo_name>`. For example, running `gclhttps zegabr/m` would clone this repo via https.
