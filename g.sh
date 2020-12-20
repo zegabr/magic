@@ -3,7 +3,7 @@
 #g for GNOME
 if hash gedit 2>/dev/null; then
 	gsettings set org.gnome.gedit.preferences.print print-syntax-highlighting true
-	gsettings set org.gnome.gedit.preferences.editor highlight-current-line true
+	gsettings set org.gnome.gedit.preferences.editor highlight-current-line false
 	gsettings set org.gnome.gedit.preferences.editor bracket-matching true
 	gsettings set org.gnome.gedit.preferences.editor scheme 'oblivion'
 	gsettings set org.gnome.gedit.preferences.editor display-line-numbers true
