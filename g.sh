@@ -25,3 +25,9 @@ gsettings set org.gnome.desktop.interface enable-animations false
 gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-dark'
 gsettings set org.gnome.desktop.interface clock-show-weekday true
 gsettings set org.gnome.desktop.interface clock-format '24h'
+
+gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true
+gsettings set org.gnome.settings-daemon.plugins.color night-light-schedule-automatic false
+gsettings set org.gnome.settings-daemon.plugins.color night-light-schedule-from 17.5
+gsettings set org.gnome.settings-daemon.plugins.color night-light-schedule-to 6.0
+gsettings set org.gnome.settings-daemon.plugins.color night-light-temperature 2700
