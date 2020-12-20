@@ -10,7 +10,9 @@ sudo snap install code --classic
 sudo snap install tree
 
 sudo apt update
-sudo apt install git xclip vim-gtk3 build-essential vlc wget curl flameshot usb-creator-gtk -y # these are considered essential
+sudo apt install git xclip vim-gtk3 build-essential vlc wget curl flameshot usb-creator-gtk python3-pip -y # these are considered essential
+
+pip3 install pylint
 
 # GOOGLE CHROME
 read -p "Type y if you want Google Chrome to be installed (y/n): " ans
