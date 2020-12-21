@@ -5,10 +5,9 @@ alias lag='alias | grep'
 
 alias gs='git status'
 
-alias bashconfig='vim ~/.bashrc'
-alias zshconfig='vim ~/.zshrc'
-alias omzconfig='vim ~/.oh-my-zsh/oh-my-zsh.sh'
-alias vimconfig='vim ~/.vimrc'
+alias ebash='vim ~/.bashrc'
+alias ezsh='vim ~/.zshrc'
+alias evim='vim ~/.vimrc'
 
 alias dci='docker rmi -f $(docker images -a -q)'
 alias dsa='docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q) && docker volume rm $(docker volume ls -q)'
