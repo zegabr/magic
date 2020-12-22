@@ -15,9 +15,6 @@ alias dsa='docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q) && doc
 # global python
 alias py='python3'
 
-#dikastis
-alias dikastis-build='cd api/ && ./gradlew assemble && cd ../judge && ./gradlew assemble && cd ..'
-
 function gclssh(){
     # clone github repo via ssh
     git clone --recurse-submodules git@github.com:$@.git
