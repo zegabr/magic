@@ -31,3 +31,5 @@ gsettings set org.gnome.settings-daemon.plugins.color night-light-schedule-autom
 gsettings set org.gnome.settings-daemon.plugins.color night-light-schedule-from 17.5
 gsettings set org.gnome.settings-daemon.plugins.color night-light-schedule-to 6.0
 gsettings set org.gnome.settings-daemon.plugins.color night-light-temperature 2700
+
+gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ new-tab '<Primary>t'
