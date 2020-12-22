@@ -3,6 +3,7 @@
 if ! [ -x "$(command -v zsh)" ]; then
     rm -rf ~/.oh-my-zsh
     sudo apt install zsh -y
+    sudo apt install curl
     chsh -s $(which zsh) #change default terminal to be zsh
     sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 fi

@@ -17,6 +17,7 @@ pip3 install pylint
 # GOOGLE CHROME
 read -p "Type y if you want Google Chrome to be installed (y/n): " ans
 if [ "$ans" == "y" ]; then
+    sudo apt install wget
     wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
     sudo dpkg -i google-chrome-stable_current_amd64.deb
     sudo rm -rf google-chrome-stable_current_amd64.deb
