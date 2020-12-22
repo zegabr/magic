@@ -10,7 +10,9 @@ alias ezsh='vim ~/.zshrc'
 alias evim='vim ~/.vimrc'
 
 alias dci='docker rmi -f $(docker images -a -q)'
-alias dsa='docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q) && docker volume rm $(docker volume ls -q)'
+alias dsa='docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)'
+alias dlf='docker logs -f'
+alias dl='docker logs'
 
 # global python
 alias py='python3'
