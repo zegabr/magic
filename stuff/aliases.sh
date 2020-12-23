@@ -14,6 +14,8 @@ alias dsa='docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)'
 alias dlf='docker logs -f'
 alias dl='docker logs'
 
+alias gw='./gradlew'
+
 # global python
 alias py='python3'
 
