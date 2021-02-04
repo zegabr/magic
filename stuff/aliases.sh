@@ -4,6 +4,7 @@ alias atualiza='sudo apt update && sudo apt -u upgrade -y && sudo apt autoclean 
 alias lag='alias | grep'
 
 alias gs='git status'
+alias guncommit='git reset HEAD~1 --soft'
 
 alias ebash='vim ~/.bashrc'
 alias ezsh='vim ~/.zshrc'
