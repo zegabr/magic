@@ -34,7 +34,8 @@ set statusline+=--Line:\ %l/%L
 "}}}
 
 "Mappings--------------{{{
-:let mapleader = "-"
+:nnoremap <Space> <nop>
+:let mapleader = " "
 
 "ctrl A, ctrl C, ctrl V, ctrl S and ctrl D equivalents
 noremap <leader>a GVgg
