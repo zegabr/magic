@@ -35,6 +35,7 @@ set statusline+=--Line:\ %l/%L
 
 "Mappings--------------{{{
 :nnoremap <Space> <nop>
+:vnoremap <Space> <nop>
 :let mapleader = " "
 
 "ctrl A, ctrl C, ctrl V, ctrl S and ctrl D equivalents
