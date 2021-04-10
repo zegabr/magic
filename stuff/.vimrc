@@ -105,6 +105,9 @@ set autoindent
 :iabbrev adn and
 :iabbrev endk endl
 :iabbrev enld endl
+:iabbrev MANY int t;<CR>cin>>t;<CR>for(int i=1;i<=t;i++){<CR>solve(i);<CR>}<CR>
+:iabbrev CODEJAM cout << "Case #" << test_case << ": ";
+:iabbrev SOLVE void solve(int test_case = 1){<CR><CR>}<ESC>O
 
 "TODO : see how to do snippets to these
 ":iabbrev fauto for(auto&
