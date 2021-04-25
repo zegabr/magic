@@ -10,6 +10,15 @@ sudo snap install code --classic
 sudo snap install tree
 
 sudo apt update
+# remove node npm and nodejs
+sudo apt remove nodejs
+sudo apt remove npm
+sudo apt update
+sudo rm -rf $(which node)
+sudo rm -rf $(which nodejs)
+sudo rm -rf $(which npm)
+#
+
 sudo apt install git xclip vim-gtk3 build-essential vlc wget curl flameshot usb-creator-gtk python3-pip -y # these are considered essential
 
 pip3 install pylint
