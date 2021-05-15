@@ -12,18 +12,27 @@ set showcmd
 set ruler 
 set splitright
 set title 
-set scrolloff=3
+set scrolloff=8
 hi Search ctermbg=yellow
 hi Search ctermfg=black
 colorscheme elflord
 syntax on
-set hlsearch "search highlight
+set nohlsearch "search highlight
 set relativenumber "line numbers moving relatively
 set number
+set hidden
+set noerrorbells
+set nowrap
 set incsearch "cursor moves as soon as typing search
 set ignorecase "search ignore cases
 set smartcase "search start to not ignore cases if search for uppercase letter
 set shortmess+=A "ignores swap files error
+set signcolumn=yes
+"TODO: find why this not works
+"set noswapfile
+"set nobackup
+"set undodir=~/.vim/undodir
+"set undofile
 
 "^x^o auto completion (does not work with c or c++ unless ctags is installed)
 filetype plugin on
@@ -50,16 +59,8 @@ inoremap <c-d> <esc>ddi
 inoremap jk <ESC>
 
 "go up, go down, ident, save&quit, last edit pos, save
-nnoremap <M-up> ddkP
-nnoremap <c-k> ddkP
-"TODO	put an if statement above to do it only if line number is not 1
-nnoremap <M-down> ddp
-nnoremap <c-j> ddp
-
-inoremap <M-up> <ESC>ddkPi
-inoremap <c-k> <esc>ddkPi
-inoremap <M-down> <ESC>ddpi
-inoremap <c-j> <esc>ddpi
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
 
 "toggle word case
 inoremap <c-u> <esc>lviw~<esc>
