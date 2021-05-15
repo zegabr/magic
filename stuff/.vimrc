@@ -6,7 +6,6 @@ augroup END
 "}}}
 
 "Default settings---------{{{
-set mouse=a "ativa clique com mouse
 set nocompatible
 set showcmd
 set ruler 
@@ -58,7 +57,7 @@ inoremap <c-d> <esc>ddi
 "esc and save in jk 
 inoremap jk <ESC>
 
-"go up, go down, ident, save&quit, last edit pos, save
+"go up, go down, 
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 
@@ -66,7 +65,7 @@ vnoremap K :m '<-2<CR>gv=gv
 inoremap <c-u> <esc>lviw~<esc>
 nnoremap <c-u> viw~<esc>
 
-"normal mode arrow keys
+"normal mode arrow keys, ident, save&quit, last edit pos, save
 "nnoremap <Right> mijkgg=G'izz
 nnoremap <Left> :wq<CR>
 nnoremap <up> <C-o>
