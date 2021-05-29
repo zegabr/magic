@@ -17,19 +17,33 @@ alias dl='docker logs'
 alias dps='docker ps'
 alias dpsa='docker ps -a'
 
-alias gw='./gradlew'
+alias gw='./gradlew' # lê-se: GRADILEU 
 
 # global python
 alias py='python3'
 
 function gclssh(){
     # clone github repo via ssh
-    git clone --recurse-submodules git@github.com:$@.git
+    git clone --recurse-submodules git@github.com:$1.git
+}
+
+function gclssh-by-id(){
+    # clone github repo via ssh using ssh config id
+    # ex: $ gclssh-by-id zegabr zegabr/m
+    # use this when multiple ssh keys are added
+    git clone --recurse-submodules git@github.com-$1:$2.git
+}
+
+function gconfiglocal(){
+    # config local user and email
+    # ex: $ gconfiglocal zegabr jgsp2@cin.ufpe.br
+    git config user.name $1
+    git config user.email $2
 }
 
 function gclhttps(){
     # clone github repo via https
-    git clone --recurse-submodules https://github.com/$@
+    git clone --recurse-submodules https://github.com/$1
 }
 
 function remaper(){
