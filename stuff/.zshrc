@@ -120,15 +120,14 @@ alias ebash='vim ~/.bashrc'
 alias ezsh='vim ~/.zshrc'
 alias evim='vim ~/.vimrc'
 
-alias dci='docker rmi -f $(docker images -a -q)'
-alias dsa='docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)'
+alias dsa='docker stop $(docker ps -a -q)'
+alias drma='docker rm $(docker ps -a -q)'
 alias dlf='docker logs -f'
 alias dl='docker logs'
+alias dps='docker ps'
+alias dpsa='docker ps -a'
 
 alias gw='./gradlew'
-
-# global python
-alias py='python3'
 
 function gclssh(){
     # clone github repo via ssh

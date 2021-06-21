@@ -19,9 +19,17 @@ sudo rm -rf $(which nodejs)
 sudo rm -rf $(which npm)
 #
 
-sudo apt install git xclip vim-gtk3 build-essential vlc wget curl flameshot usb-creator-gtk python3-pip -y # these are considered essential
-
-pip3 install pylint
+sudo apt install \
+git \
+xclip \
+vim-gtk3 \
+build-essential \
+vlc \
+wget \
+curl \
+flameshot \
+usb-creator-gtk \
+-y 
 
 # GOOGLE CHROME
 read -p "Type y if you want Google Chrome to be installed (y/n): " ans
