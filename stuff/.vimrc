@@ -6,6 +6,7 @@ augroup END
 "}}}
 
 "Default settings---------{{{
+set exrc "also source vimrcs inside directory of file
 set nocompatible
 set showcmd
 set ruler 
@@ -16,7 +17,7 @@ hi Search ctermbg=yellow
 hi Search ctermfg=black
 colorscheme elflord
 syntax on
-set nohlsearch "search highlight
+set nohlsearch "search highlight off
 set relativenumber "line numbers moving relatively
 set number
 set hidden
@@ -26,8 +27,9 @@ set incsearch "cursor moves as soon as typing search
 set ignorecase "search ignore cases
 set smartcase "search start to not ignore cases if search for uppercase letter
 set shortmess+=A "ignores swap files error
-set signcolumn=yes
-"TODO: find why this not works
+set signcolumn=yes "leftmost column, used for linting
+set colorcolumn=80
+"TODO: find why this not works (install undotree plugin and test)
 "set noswapfile
 "set nobackup
 "set undodir=~/.vim/undodir
@@ -51,7 +53,6 @@ noremap <leader>c "+y
 noremap <leader>v "+p
 noremap <leader>s :w<CR>
 noremap <leader>d dd
-inoremap <c-d> <esc>ddi
 
 "esc and save in jk 
 inoremap jk <ESC>
