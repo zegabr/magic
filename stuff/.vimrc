@@ -1,4 +1,4 @@
-"Vimscript file settings -------------{{{
+"folding and unfolding with 'za'-------------{{{
 augroup fyletype_vim
     autocmd!
     autocmd Filetype vim setlocal foldmethod=marker
@@ -33,7 +33,6 @@ set signcolumn=yes
 "set undodir=~/.vim/undodir
 "set undofile
 
-"^x^o auto completion (does not work with c or c++ unless ctags is installed)
 filetype plugin on
 set omnifunc=syntaxcomplete#complete
 
@@ -56,6 +55,7 @@ inoremap <c-d> <esc>ddi
 
 "esc and save in jk 
 inoremap jk <ESC>
+vnoremap jk <ESC>
 
 "go up, go down, 
 vnoremap J :m '>+1<CR>gv=gv
@@ -67,9 +67,23 @@ nnoremap <c-u> viw~<esc>
 
 "normal mode arrow keys, ident, save&quit, last edit pos, save
 "nnoremap <Right> mijkgg=G'izz
-nnoremap <Left> :wq<CR>
-nnoremap <up> <C-o>
-nnoremap <down> :w<CR>
+"nnoremap <Left> :wq<CR>
+"nnoremap <up> <C-o>
+"nnoremap <down> :w<CR>
+inoremap <Right> <nop>
+inoremap <Left> <nop>
+inoremap <Up> <nop>
+inoremap <Down> <nop>
+
+vnoremap <Right> <nop>
+vnoremap <Left> <nop>
+vnoremap <Up> <nop>
+vnoremap <Down> <nop>
+
+nnoremap <Right> <nop>
+nnoremap <Left> <nop>
+nnoremap <Up> <nop>
+nnoremap <Down> <nop>
 
 "center things
 nnoremap G Gzz
@@ -78,16 +92,18 @@ nnoremap N Nzz
 nnoremap } }zz
 nnoremap { {zz
 
+"surround things (TODO: remove if any plugins already do it)
+nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel
+nnoremap <leader>' viw<esc>a'<esc>hbi'<esc>lel
+
 "edit my vimrc
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 
-"surrounds word with "
-nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel
 "}}}
 
 " C/C++------------{{{
 function! CPPSET()
-set makeprg=g++\ -std=c++14\ -O2\ -Wfatal-errors\ %;
+set makeprg=g++\ -std=c++17\ -O2\ -Wfatal-errors\ %;
 set errorformat=%f:%l:\ %m
 set cindent
 set textwidth=0
@@ -105,25 +121,6 @@ set autoindent
 :iabbrev adn and
 :iabbrev endk endl
 :iabbrev enld endl
-:iabbrev MANY int t;<CR>cin>>t;<CR>for(int i=1;i<=t;i++){<CR>solve(i);<CR>}<CR>
-:iabbrev CODEJAM cout << "Case #" << test_case << ": ";
-:iabbrev SOLVE void solve(int test_case = 1){<CR><CR>}<ESC>O
-
-"TODO : see how to do snippets to these
-":iabbrev fauto for(auto&
-":iabbrev ll long long
-":iabbrev ld long double
-":iabbrev flush cout.flush();
-
-":iabbrev vec vector< ><esc>hi
-":iabbrev ii pair< ><esc>hi
-":iabbrev pb push_back()
-":iabbrev pf push_front()
-":iabbrev ppb pop_back()
-":iabbrev ppf pop_front
-"do a snippet to for loops
-"do a snippet for all and rall
-
 
 endfunction
 "}}}
@@ -143,12 +140,15 @@ endfunction
 
 "autocmd defaults-------{{{
 "below command is for vimrc testing while ediing it
-autocmd bufwritepost .vimrc source $MYVIMRC
-autocmd bufwritepre,bufread *.cpp :normal gg=G
+autocmd! bufwritepost .vimrc source $MYVIMRC
+autocmd! bufwritepre,bufread *.cpp :normal gg=G
 filetype on
-autocmd FileType python call PYSET() 
-autocmd Filetype cpp call CPPSET()
-autocmd Filetype c call CPPSET()
+autocmd! FileType python call PYSET() 
+autocmd! Filetype cpp call CPPSET()
+autocmd! Filetype c call CPPSET()
 "}}}
 
+"test stuff--------{{{
+
+"}}}
 
