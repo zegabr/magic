@@ -5,27 +5,6 @@ augroup fyletype_vim
 augroup END
 "}}}
 
-"Plugins installation--------{{{
-
-" Install vim-plug if not found
-if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-endif
-
-" Run PlugInstall if there are missing plugins
-autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
-  \| PlugInstall --sync | source $MYVIMRC
-\| endif
-
-call plug#begin('~/.vim/plugged')
-
-Plug 'morhetz/gruvbox'
-
-call plug#end()
-
-"}}}
-
 "Default settings---------{{{
 set exrc "also source vimrcs inside directory of file
 set nocompatible
@@ -50,7 +29,6 @@ set smartcase "search start to not ignore cases if search for uppercase letter
 set shortmess+=A "ignores swap files error
 set signcolumn=yes "leftmost column, used for linting
 set colorcolumn=80
-colorscheme gruvbox
 "TODO: find why this not works (install undotree plugin and test)
 "set noswapfile
 "set nobackup
@@ -123,8 +101,6 @@ nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 
 " C/C++------------{{{
 function! CPPSET()
-set makeprg=g++\ -std=c++17\ -O2\ -Wfatal-errors\ %;
-set errorformat=%f:%l:\ %m
 set cindent
 set textwidth=0
 set nowrap
@@ -172,3 +148,39 @@ autocmd! Filetype c call CPPSET()
 
 "}}}
 
+"Plugins installation--------{{{
+
+" Install vim-plug if not found
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+endif
+
+" Run PlugInstall if there are missing plugins
+autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
+  \| PlugInstall --sync | source $MYVIMRC
+\| endif
+
+call plug#begin('~/.vim/plugged')
+
+Plug 'morhetz/gruvbox'
+
+" FuzzyFinder FZF---{{{
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'airblade/vim-rooter'
+"}}}
+
+call plug#end()
+
+colorscheme gruvbox
+
+" FuzzyFinder FZF mappings ---- {{{
+noremap <silent> <C-p> :Files<CR>
+noremap <silent> <C-b> :Buffers<CR>
+noremap <silent> <C-f> :Rg<CR>
+
+"}}}
+
+
+"}}}
