@@ -97,6 +97,9 @@ nnoremap <leader>' viw<esc>a'<esc>hbi'<esc>lel
 "edit my vimrc
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 
+"replace ocurrences
+nnoremap <leader>r :%s///g<Left><Left>
+nnoremap <leader>rc :%s///gc<Left><Left>
 "}}}
 
 " C/C++------------{{{
@@ -163,23 +166,28 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 
 call plug#begin('~/.vim/plugged')
 
+"color scheme
 Plug 'morhetz/gruvbox'
+" git vim fugitive
 
 " FuzzyFinder FZF---{{{
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'stsewd/fzf-checkout.vim'
 Plug 'airblade/vim-rooter'
 "}}}
 
 call plug#end()
 
+" use gruvbox theme
 colorscheme gruvbox
 
-" FuzzyFinder FZF mappings ---- {{{
+" FuzzyFinder FZF settings ---- {{{
+nnoremap <leader>gc :GBranches<CR>
 noremap <silent> <C-p> :Files<CR>
+noremap <silent> <C-g> :GFiles<CR>
 noremap <silent> <C-b> :Buffers<CR>
-noremap <silent> <C-f> :Rg<CR>
-
+noremap <silent> <C-f> :Rg!<CR>
 "}}}
 
 
