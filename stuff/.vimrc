@@ -192,8 +192,8 @@ call plug#end()
 
 " use gruvbox theme
 colorscheme gruvbox
+let g:airline_theme='minimalist'
 set background=dark
-
 
 " FuzzyFinder FZF settings ---- {{{
 " automatically chooses between project files and git files
