@@ -48,7 +48,7 @@ set statusline+=--Line:\ %l/%L
 noremap <leader>a GVgg
 noremap <leader>c "+y
 noremap <leader>v "+p
-noremap <leader>s :w<CR>
+noremap <leader>w :w<CR>
 noremap <leader>q :q<CR>
 noremap <leader>d dd
 
@@ -251,7 +251,8 @@ let g:undotree_WindowLayout = 2
 " easymotion ----{{{
 let g:EasyMotion_do_mapping = 0 " Disable default mappings
 " search by f{char}{label}
-nmap f <Plug>(easymotion-overwin-f)
+nmap <leader>f <Plug>(easymotion-overwin-f)
+nmap <leader>s <Plug>(easymotion-overwin-f2)
 " JK motions: Line motions
 nmap <Leader>j <Plug>(easymotion-j)
 nmap <Leader>k <Plug>(easymotion-k)
