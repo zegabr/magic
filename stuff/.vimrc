@@ -49,6 +49,7 @@ noremap <leader>a GVgg
 noremap <leader>c "+y
 noremap <leader>v "+p
 noremap <leader>s :w<CR>
+noremap <leader>q :q<CR>
 noremap <leader>d dd
 
 "esc and save in jk 
@@ -178,8 +179,8 @@ Plug 'stsewd/fzf-checkout.vim'
 Plug 'airblade/vim-rooter'
 
 " NerdTree
-Plug 'preservim/nerdtree' |
-			\ Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'preservim/nerdtree' 
+Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " git vim fugitive
 Plug 'airblade/vim-gitgutter'
@@ -188,12 +189,18 @@ Plug 'tpope/vim-fugitive'
 " for Quick fixes (this uses ripgrep, ripgrep must be installed TODO: learn how to use
 "Plug 'mileszs/ack.vim'
 
+" Undotree
+Plug 'mbbill/undotree'
+
+" easymotion
+Plug 'easymotion/vim-easymotion'
 call plug#end()
 
-" use gruvbox theme
+" use gruvbox theme ----- {{{
 colorscheme gruvbox
 let g:airline_theme='minimalist'
 set background=dark
+" }}}
 
 " FuzzyFinder FZF settings ---- {{{
 " automatically chooses between project files and git files
@@ -237,5 +244,18 @@ set updatetime=100
 " Git Fugitive -------{{{
 nnoremap <leader>gs :G<CR>
 " }}}
+" undotree ---- {{{
+nnoremap <F5> :UndotreeToggle<CR>
+let g:undotree_WindowLayout = 2
+" }}}
+" easymotion ----{{{
+let g:EasyMotion_do_mapping = 0 " Disable default mappings
+" search by f{char}{label}
+nmap f <Plug>(easymotion-overwin-f)
+" JK motions: Line motions
+nmap <Leader>j <Plug>(easymotion-j)
+nmap <Leader>k <Plug>(easymotion-k)
+"}}}
 
 "}}}
+
