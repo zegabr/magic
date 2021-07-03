@@ -1,2 +1,2 @@
 clang++
-%cpp -std=c++17
+%h %cpp -std=c++17
