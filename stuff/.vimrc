@@ -41,11 +41,11 @@ set statusline=File:\ %F\
 set statusline+=--Line:\ %l/%L
 
 " sets tab width in spaces
-set softtabstop=2
+set softtabstop=4
 " sets width to be used when using identation in normal mode 
-set shiftwidth=2
+set shiftwidth=4
 " width of tab char
-set tabstop=2
+set tabstop=4
 " if set uses spaces intead of tabs
 set noexpandtab
 
@@ -291,7 +291,10 @@ let g:EasyMotion_do_mapping = 0 " Disable default mappings
 nmap f <Plug>(easymotion-bd-f)
 "}}}
 " Coc settings ------{{{
-let g:coc_global_extensions = ['coc-json']
+let g:coc_global_extensions = [
+			\'coc-json',
+			\'coc-pairs'
+\]
 
 
 " Better display for messages
@@ -387,4 +390,3 @@ set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
 "}}}
 "}}}
-
