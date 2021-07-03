@@ -10,41 +10,61 @@ set exrc "also source vimrcs inside directory of file
 set nocompatible
 set showcmd
 set ruler 
-set splitright
+set splitright splitbelow
+set hidden
 set title 
 set scrolloff=8
-hi Search ctermbg=yellow
-hi Search ctermfg=black
-colorscheme elflord
+set wildmode=longest,list,full
 syntax on
-set nohlsearch "search highlight off
 set relativenumber "line numbers moving relatively
 set number
-set hidden
 set noerrorbells
 set nowrap
+set cursorline cursorcolumn
+
+set nohlsearch "search highlight off
 set incsearch "cursor moves as soon as typing search
 set ignorecase "search ignore cases
 set smartcase "search start to not ignore cases if search for uppercase letter
-set shortmess+=A "ignores swap files error
+
 set signcolumn=yes "leftmost column, used for linting
 set colorcolumn=80
-"TODO: find why this not works (install undotree plugin and test)
-"set noswapfile
-"set nobackup
-"set undodir=~/.vim/undodir
-"set undofile
+
+set shortmess+=A "ignores swap files error
+set noswapfile
+set nobackup
+set undodir=~/.vim/undodir
+set undofile
 
 set statusline=File:\ %F\  
 set statusline+=--Line:\ %l/%L
+
+" sets tab width in spaces
+set softtabstop=2
+" sets width to be used when using identation in normal mode 
+set shiftwidth=2
+" width of tab char
+set tabstop=2
+" if set uses spaces intead of tabs
+set noexpandtab
+
+"Remove trailing space on save
+autocmd BufWritePre * %s/\s\s+$//e
 "}}}
 
 "Mappings--------------{{{
-:nnoremap <Space> <nop>
-:vnoremap <Space> <nop>
-:let mapleader = " "
+nnoremap <Space> <nop>
+vnoremap <Space> <nop>
+let mapleader = " "
+
+"Navigate splits
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
 
 "ctrl A, ctrl C, ctrl V, ctrl S and ctrl D equivalents
+set clipboard+=unnamedplus
 noremap <leader>a GVgg
 noremap <leader>c "+y
 noremap <leader>v "+p
@@ -98,6 +118,8 @@ nnoremap <leader>' viw<esc>a'<esc>hbi'<esc>lel
 "edit my vimrc
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 
+"replace all ocurrence
+nnoremap S :%s//gI<Left><Left><Left>
 "replace ocurrences
 nnoremap <leader>r :%s///g<Left><Left>
 nnoremap <leader>rc :%s///gc<Left><Left>
@@ -166,7 +188,6 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 \| endif
 
 call plug#begin('~/.vim/plugged')
-
 "color scheme
 Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
@@ -177,10 +198,6 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'stsewd/fzf-checkout.vim'
 Plug 'airblade/vim-rooter'
-
-" NerdTree
-Plug 'preservim/nerdtree' 
-Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " git vim fugitive
 Plug 'airblade/vim-gitgutter'
@@ -194,6 +211,16 @@ Plug 'mbbill/undotree'
 
 " easymotion
 Plug 'easymotion/vim-easymotion'
+
+" NerdTree
+Plug 'preservim/nerdtree' 
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'ryanoasis/vim-devicons'
+Plug 'preservim/nerdcommenter'
+
+" Conquer of completion
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 " use gruvbox theme ----- {{{
@@ -222,6 +249,7 @@ nnoremap <leader>gc :GBranches<CR>
 "}}}
 " NerdTree Setings ---{{{
 let g:NERDTreeGitStatusConcealBrackets = 1
+let g:NERDTreeLimitedSyntax = 1
 nnoremap <C-t> :NERDTreeToggle<CR>
 " Start NERDTree when Vim is started without file arguments.
 autocmd StdinReadPre * let s:std_in=1
@@ -237,6 +265,14 @@ autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTr
 autocmd BufEnter * if bufname('#') =~ 'NERD_tree_\d\+' && bufname('%') !~ 'NERD_tree_\d\+' && winnr('$') > 1 |
     \ let buf=bufnr() | buffer# | execute "normal! \<C-W>w" | execute 'buffer'.buf | endif
 
+set encoding=UTF-8
+set guifont=DroidSansMono\ Nerd\ Font\ 11
+"change to command below if using windows or macos
+"set guifont=DroidSansMono\ Nerd\ Font:h11
+let g:airline_powerline_fonts = 1
+filetype plugin on
+nmap <C-_> <Plug>NERDCommenterToggle
+vmap <C-_> <Plug>NERDCommenterToggle<CR>gv
 "}}}
 " Git gutter -----{{{
 set updatetime=100
@@ -257,6 +293,8 @@ nmap <leader>s <Plug>(easymotion-overwin-f2)
 nmap <Leader>j <Plug>(easymotion-j)
 nmap <Leader>k <Plug>(easymotion-k)
 "}}}
-
+" Coc settings ------{{{
+let g:coc_global_extensions = ['coc-json']
+"}}}
 "}}}
 

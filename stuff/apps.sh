@@ -8,6 +8,7 @@ sudo snap install telegram-desktop
 sudo snap install spotify
 sudo snap install code --classic
 sudo snap install tree
+sudo snap install ccls --classic
 
 sudo apt update
 # remove node npm and nodejs
