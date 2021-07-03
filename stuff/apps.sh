@@ -30,6 +30,7 @@ wget \
 curl \
 flameshot \
 usb-creator-gtk \
+bat \
 -y 
 
 # GOOGLE CHROME

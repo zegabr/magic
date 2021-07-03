@@ -171,10 +171,6 @@ autocmd! Filetype cpp call CPPSET()
 autocmd! Filetype c call CPPSET()
 "}}}
 
-"test stuff--------{{{
-
-"}}}
-
 "Plugins installation--------{{{
 
 " Install vim-plug if not found
@@ -270,6 +266,8 @@ nmap f <Plug>(easymotion-bd-f)
 " Coc settings ------{{{
 let g:coc_global_extensions = [
 			\'coc-json',
+			\'coc-fzf-preview',
+			\'coc-explorer',
 			\'coc-pairs'
 \]
 
@@ -365,5 +363,8 @@ command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organize
 " Add status line support, for integration with other plugin, checkout `:h coc-status`
 set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
+" coc-explorer
+nnoremap <space>e :CocCommand explorer<CR>
+autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
 "}}}
 "}}}

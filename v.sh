@@ -6,6 +6,7 @@
 #sudo dpkg -i ripgrep_12.1.1_amd64.deb
 #rm ripgrep_12.1.1_amd64.deb
 
+cp ./stuff/coc-settings.json ~/.vim/coc-settings.json
 cp ./stuff/.ccls ~/.ccls
 cp ./stuff/.vimrc ~/.vimrc
 echo
