@@ -189,11 +189,6 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 \| endif
 
 call plug#begin('~/.vim/plugged')
-"color scheme
-Plug 'morhetz/gruvbox'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-
 " FuzzyFinder FZF
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -213,15 +208,19 @@ Plug 'mbbill/undotree'
 " easymotion
 Plug 'easymotion/vim-easymotion'
 
-" NerdTree
-Plug 'preservim/nerdtree' 
-Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-Plug 'ryanoasis/vim-devicons'
+" Nerd Commenter
 Plug 'preservim/nerdcommenter'
+Plug 'tpope/vim-surround'
 
 " Conquer of completion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+"color scheme and fonts
+Plug 'morhetz/gruvbox'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'ryanoasis/vim-devicons'
+
 call plug#end()
 
 " use gruvbox theme ----- {{{
@@ -248,29 +247,7 @@ noremap <C-f> :Rg!<CR>
 nnoremap <leader>gc :GBranches<CR>
 
 "}}}
-" NerdTree Setings ---{{{
-let g:NERDTreeGitStatusConcealBrackets = 1
-let g:NERDTreeLimitedSyntax = 1
-nnoremap <C-t> :NERDTreeToggle<CR>
-" Start NERDTree when Vim is started without file arguments.
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | endif
-" Start NERDTree when Vim starts with a directory argument.
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists('s:std_in') |
-    \ execute 'NERDTree' argv()[0] | wincmd p | enew | execute 'cd '.argv()[0] | endif
-" Exit Vim if NERDTree is the only window left.
-autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
-    \ quit | endif
-" If another buffer tries to replace NERDTree, put it in the other window, and bring back NERDTree.
-autocmd BufEnter * if bufname('#') =~ 'NERD_tree_\d\+' && bufname('%') !~ 'NERD_tree_\d\+' && winnr('$') > 1 |
-    \ let buf=bufnr() | buffer# | execute "normal! \<C-W>w" | execute 'buffer'.buf | endif
-
-set encoding=UTF-8
-set guifont=DroidSansMono\ Nerd\ Font\ 11
-"change to command below if using windows or macos
-"set guifont=DroidSansMono\ Nerd\ Font:h11
-let g:airline_powerline_fonts = 1
+" NerdCommenter  Setings ---{{{
 filetype plugin on
 nmap <C-_> <Plug>NERDCommenterToggle
 vmap <C-_> <Plug>NERDCommenterToggle<CR>gv
