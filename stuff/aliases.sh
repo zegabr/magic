@@ -1,6 +1,6 @@
 ##ALIASES
 
-alias atualiza='sudo apt update && sudo apt -u upgrade -y && sudo apt autoclean -y && sudo apt clean -y && sudo apt autoremove -y'
+alias update='sudo apt update && sudo apt -u upgrade -y && sudo apt autoclean -y && sudo apt clean -y && sudo apt autoremove -y'
 alias lag='alias | grep'
 
 alias gs='git status'
@@ -18,6 +18,7 @@ alias dps='docker ps'
 alias dpsa='docker ps -a'
 
 alias gw='./gradlew' # lê-se: GRADILEU 
+alias getcppincludepaths='g++ -E -x c++ - -v < /dev/null'
 
 # global python
 alias py='python3'
