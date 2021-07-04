@@ -47,7 +47,7 @@ set shiftwidth=4
 " width of tab char
 set tabstop=4
 " if set uses spaces intead of tabs
-set noexpandtab
+set expandtab
 
 "Remove trailing space on save
 autocmd BufWritePre * %s/\s\s+$//e
@@ -134,7 +134,7 @@ set nowrap
 set ts=4 
 set sw=4 
 set sts=4 
-set noexpandtab 
+set expandtab 
 set autoindent
 
 "abbreviations here
@@ -195,9 +195,6 @@ Plug 'airblade/vim-rooter'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 
-" for Quick fixes (this uses ripgrep, ripgrep must be installed TODO: learn how to use
-"Plug 'mileszs/ack.vim'
-
 " Undotree
 Plug 'mbbill/undotree'
 
@@ -239,7 +236,7 @@ command! ProjectFiles execute s:find_files()
 
 nnoremap <C-p> :ProjectFiles<CR>
 noremap <C-b> :Buffers<CR>
-noremap <C-f> :Rg!<CR>
+noremap <C-f> :Rg!<CR> 
 nnoremap <leader>gc :GBranches<CR>
 
 "}}}
@@ -268,9 +265,19 @@ let g:coc_global_extensions = [
 			\'coc-json',
 			\'coc-fzf-preview',
 			\'coc-explorer',
-			\'coc-pairs'
+			\'coc-html',
+			\'coc-html-css-support',
+			\'coc-tsserver',
+			\'coc-pairs',
+			\'coc-pyright',
+			\'coc-java',
+			\'coc-sh',
+			\'coc-snippets',
+			\'coc-spell-checker'
 \]
 
+" this must fix possible issues with pyright not finding project root
+autocmd FileType python let b:coc_root_patterns = ['.git', '.env', 'venv', '.venv', 'setup.cfg', 'setup.py', 'pyproject.toml', 'pyrightconfig.json']
 
 " Better display for messages
 set cmdheight=2
