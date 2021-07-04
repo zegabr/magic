@@ -14,6 +14,7 @@ set splitright splitbelow
 set hidden
 set title 
 set scrolloff=8
+set wildmenu
 set wildmode=longest,list,full
 syntax on
 set relativenumber "line numbers moving relatively
@@ -42,7 +43,7 @@ set statusline+=--Line:\ %l/%L
 
 " sets tab width in spaces
 set softtabstop=4
-" sets width to be used when using identation in normal mode 
+" sets width to be used when using indentation in normal mode 
 set shiftwidth=4
 " width of tab char
 set tabstop=4
