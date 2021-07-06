@@ -13,9 +13,3 @@ echo
 echo "========my vim setup overrided yours======="
 echo
 
-#cd ~/Downloads
-#git clone https://github.com/https://github.com/ryanoasis/nerd-fonts
-#cd nerd-font/
-#./install.sh DroidSansMono
-#echo "setup this DroidSansMono font on your terminal"
-

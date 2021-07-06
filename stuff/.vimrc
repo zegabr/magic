@@ -67,11 +67,12 @@ map <C-l> <C-w>l
 
 "ctrl A, ctrl C, ctrl V, ctrl S and ctrl D equivalents
 set clipboard+=unnamedplus
-noremap <leader>a GVgg
-noremap <leader>c "+y
-noremap <leader>v "+p
-noremap <leader>s :w<CR>
-noremap <leader>q :q<CR>
+noremap <C-a> GVgg
+noremap <C-c> "+y
+" remap visual block to leader v
+noremap <leader>v <C-v>
+" remap cntrl v to usual 
+nnoremap <C-v> "+p
 noremap <leader>d dd
 
 "esc and save in jk 
@@ -213,7 +214,6 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
 
