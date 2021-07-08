@@ -1,11 +1,4 @@
-"folding and unfolding with 'za'-------------{{{
-augroup fyletype_vim
-    autocmd!
-    autocmd Filetype vim setlocal foldmethod=marker
-augroup END
-"}}}
-
-"Default settings---------{{{
+"---------------Default settings---------
 set exrc "also source vimrcs inside directory of file
 set nocompatible
 set showcmd
@@ -52,9 +45,8 @@ set expandtab
 
 "Remove trailing space on save
 autocmd BufWritePre * %s/\s\s+$//e
-"}}}
 
-"Mappings--------------{{{
+"------------Mappings--------------
 nnoremap <Space> <nop>
 vnoremap <Space> <nop>
 let mapleader = " "
@@ -76,7 +68,7 @@ nnoremap <C-v> "+p
 noremap <leader>d dd
 
 "esc and save in jk 
-inoremap jk <ESC>
+inoremap jk <ESC>:w<CR>
 vnoremap jk <ESC>
 
 "go up, go down, 
@@ -126,9 +118,8 @@ nnoremap S :%s//gI<Left><Left><Left>
 "replace ocurrences
 nnoremap <leader>r :%s///g<Left><Left>
 nnoremap <leader>rc :%s///gc<Left><Left>
-"}}}
 
-" C/C++------------{{{
+"-------------- C/C++------------
 function! CPPSET()
 set cindent
 set textwidth=0
@@ -148,9 +139,8 @@ set autoindent
 :iabbrev enld endl
 
 endfunction
-"}}}
 
-" Python--------{{{
+"------------------- Python--------
 function! PYSET()
 set tw=0
 set nowrap
@@ -161,9 +151,8 @@ set sw=4
 set sts=4 
 set noexpandtab
 endfunction
-"}}}
 
-"autocmd defaults-------{{{
+"--------------autocmd defaults-------
 "below command is for vimrc testing while ediing it
 autocmd! bufwritepost .vimrc source $MYVIMRC
 autocmd! bufwritepre,bufread *.cpp :normal gg=G
@@ -171,9 +160,8 @@ filetype on
 autocmd! FileType python call PYSET() 
 autocmd! Filetype cpp call CPPSET()
 autocmd! Filetype c call CPPSET()
-"}}}
 
-"Plugins installation--------{{{
+"-----------------Plugins installation--------
 
 " Install vim-plug if not found
 if empty(glob('~/.vim/autoload/plug.vim'))
@@ -217,13 +205,12 @@ Plug 'vim-airline/vim-airline-themes'
 
 call plug#end()
 
-" use gruvbox theme ----- {{{
+" ----------use gruvbox theme ----- 
 colorscheme gruvbox
 let g:airline_theme='minimalist'
 set background=dark
-" }}}
 
-" FuzzyFinder FZF settings ---- {{{
+"----------- FuzzyFinder FZF settings ---- 
 " automatically chooses between project files and git files
 function! s:find_files()
     let git_dir = system('git rev-parse --show-toplevel 2> /dev/null')[:-2]
@@ -240,28 +227,27 @@ noremap <C-b> :Buffers<CR>
 noremap <C-f> :Rg!<CR> 
 nnoremap <leader>gc :GBranches<CR>
 
-"}}}
-" NerdCommenter  Setings ---{{{
+"------------ NerdCommenter Setings ---
 filetype plugin on
 nmap <C-_> <Plug>NERDCommenterToggle
 vmap <C-_> <Plug>NERDCommenterToggle<CR>gv
-"}}}
-" Git gutter -----{{{
+
+"-------------- Git gutter -----
 set updatetime=100
-"}}}
-" Git Fugitive -------{{{
+
+" ------------------Git Fugitive -------
 nnoremap <leader>gs :G<CR>
-" }}}
-" undotree ---- {{{
+
+" ------------------undotree ---- 
 nnoremap <F5> :UndotreeToggle<CR>
 let g:undotree_WindowLayout = 2
-" }}}
-" easymotion ----{{{
+
+" --------------easymotion ----
 let g:EasyMotion_do_mapping = 0 " Disable default mappings
 " search by f{char}{label}
 nmap f <Plug>(easymotion-bd-f)
-"}}}
-" Coc settings ------{{{
+
+"------------------- Coc settings ------
 let g:coc_global_extensions = [
 			\'coc-json',
 			\'coc-fzf-preview',
@@ -371,8 +357,8 @@ command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organize
 " Add status line support, for integration with other plugin, checkout `:h coc-status`
 set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
-" coc-explorer
+"--------------------- coc-explorer--------------------
 nnoremap <space>e :CocCommand explorer<CR>
 autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
-"}}}
-"}}}
+
+
