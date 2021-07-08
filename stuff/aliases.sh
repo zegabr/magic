@@ -7,7 +7,7 @@ alias lag='alias | grep'
 alias ebash='vim ~/.bashrc'
 alias ezsh='vim ~/.zshrc'
 alias evim='vim ~/.vimrc'
-alias note='vim ~/notes.txt'
+alias note='vim ~/notes.md'
 
 #--------------------containers
 alias dps='docker ps'
