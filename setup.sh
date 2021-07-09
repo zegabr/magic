@@ -14,4 +14,7 @@ if [ "$ans" == "y" ]; then
     sudo update-grub
 fi
 
+#for working note taking
+mkdir ~/notes
+
 bash stuff/dual-boot-clock.sh # will ask if you have dual boot time problems (and solve it)
