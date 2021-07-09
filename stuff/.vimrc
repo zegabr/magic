@@ -119,6 +119,12 @@ nnoremap S :%s//gI<Left><Left><Left>
 nnoremap <leader>r :%s///g<Left><Left>
 nnoremap <leader>rc :%s///gc<Left><Left>
 
+" alternate between opened buffers
+nnoremap <f7> :bp<CR>
+nnoremap <f8> :bn<CR>
+" close only current buffer
+nnoremap <C-f8> :bd<CR>
+
 "-------------- C/C++------------
 function! CPPSET()
 set cindent
