@@ -31,6 +31,7 @@ curl \
 flameshot \
 usb-creator-gtk \
 bat \
+fzf \
 -y 
 
 # GOOGLE CHROME

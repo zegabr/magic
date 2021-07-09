@@ -7,6 +7,8 @@ alias lag='alias | grep'
 alias ebash='vim ~/.bashrc'
 alias ezsh='vim ~/.zshrc'
 alias evim='vim ~/.vimrc'
+" open vim and search for file with fzf"
+alias vimf='vim -o `fzf`'
 
 function note(){
     #Open current day note file
