@@ -125,6 +125,8 @@ nnoremap <f8> :bn<CR>
 " close only current buffer
 nnoremap <C-f8> :bd<CR>
 
+" terminal
+nnoremap <C-t> :term<CR>
 "-------------- C/C++------------
 function! CPPSET()
 set cindent
