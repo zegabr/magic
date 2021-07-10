@@ -68,7 +68,7 @@ nnoremap <C-v> "+p
 noremap <leader>d dd
 
 "esc and save in jk 
-inoremap jk <ESC>:w<CR>
+inoremap jk <ESC>
 vnoremap jk <ESC>
 
 "go up, go down, 
