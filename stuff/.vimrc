@@ -69,8 +69,6 @@ noremap <leader>d dd
 
 "esc and save in jk 
 inoremap jk <ESC>
-inoremap JK <ESC>
-vnoremap jk <ESC>
 
 "go up, go down, 
 vnoremap J :m '>+1<CR>gv=gv
@@ -197,9 +195,6 @@ Plug 'tpope/vim-fugitive'
 " Undotree
 Plug 'mbbill/undotree'
 
-" easymotion
-Plug 'easymotion/vim-easymotion'
-
 " Nerd Commenter
 Plug 'preservim/nerdcommenter'
 Plug 'tpope/vim-surround'
@@ -250,11 +245,6 @@ nnoremap <leader>gs :G<CR>
 " ------------------undotree ---- 
 nnoremap <F5> :UndotreeToggle<CR>
 let g:undotree_WindowLayout = 2
-
-" --------------easymotion ----
-let g:EasyMotion_do_mapping = 0 " Disable default mappings
-" search by f{char}{label}
-nmap f <Plug>(easymotion-bd-f)
 
 "------------------- Coc settings ------
 let g:coc_global_extensions = [
