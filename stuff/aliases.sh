@@ -10,8 +10,15 @@ alias evim='vim ~/.vimrc'
 " open vim and search for file with fzf"
 alias vimf='vim -o `fzf`'
 
+# save vim configuration files to m/
+function vimconfigsave(){
+    cp ~/.vimrc ~/m/stuff/.vimrc
+    cp ~/.ccls ~/m/stuff/.ccls
+    cp ~/.vim/coc-settings.json ~/m/stuff/coc-settings.json
+}
+
+#Open current day note file
 function note(){
-    #Open current day note file
     filename=$(date +'%a-%m-%d-%Y')
     vim ~/notes/${filename}.txt
 }
