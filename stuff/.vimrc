@@ -8,7 +8,7 @@ set hidden
 set title 
 set scrolloff=8
 set wildmenu
-set wildmode=longest,list,full
+set wildmode=longest,full
 syntax on
 set relativenumber "line numbers moving relatively
 set number
