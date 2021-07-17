@@ -21,7 +21,7 @@ function configsave(){
 #Open current day note file
 function note(){
     filename=$(date +'%a-%m-%d-%Y')
-    vim ~/notes/${filename}.txt
+    vim ~/notes/${filename}.txt +
 }
 
 #--------------------containers
