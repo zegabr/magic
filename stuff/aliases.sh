@@ -11,7 +11,8 @@ alias evim='vim ~/.vimrc'
 alias vimf='vim -o `fzf`'
 
 # save vim configuration files to m/
-function vimconfigsave(){
+function configsave(){
+    cp ~/.zshrc ~/m/stuff/.zshrc
     cp ~/.vimrc ~/m/stuff/.vimrc
     cp ~/.ccls ~/m/stuff/.ccls
     cp ~/.vim/coc-settings.json ~/m/stuff/coc-settings.json
