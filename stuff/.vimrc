@@ -69,6 +69,7 @@ noremap <leader>d dd
 
 "esc and save in jk 
 inoremap jk <ESC>
+inoremap kj <ESC>
 
 "go up, go down, 
 vnoremap J :m '>+1<CR>gv=gv
@@ -105,16 +106,12 @@ nnoremap N Nzz
 nnoremap } }zz
 nnoremap { {zz
 
-"surround things (TODO: remove if any plugins already do it)
-nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel
-nnoremap <leader>' viw<esc>a'<esc>hbi'<esc>lel
-
 "edit my vimrc
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 
 "replace all ocurrence
 nnoremap S :%s//gI<Left><Left><Left>
-"replace ocurrences
+"replace ocurrences of last searched word
 nnoremap <leader>r :%s///g<Left><Left>
 nnoremap <leader>rc :%s///gc<Left><Left>
 
@@ -197,7 +194,7 @@ Plug 'mbbill/undotree'
 
 " Nerd Commenter
 Plug 'preservim/nerdcommenter'
-Plug 'tpope/vim-surround'
+"Plug 'tpope/vim-surround'
 
 " Conquer of completion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -251,16 +248,16 @@ let g:coc_global_extensions = [
 			\'coc-json',
 			\'coc-fzf-preview',
 			\'coc-explorer',
-			\'coc-html',
-			\'coc-html-css-support',
-			\'coc-tsserver',
-			\'coc-pairs',
+            \'coc-tsserver',
 			\'coc-pyright',
 			\'coc-java',
 			\'coc-sh',
 			\'coc-snippets',
 			\'coc-spell-checker'
 \]
+            "\'coc-pairs',
+            "\'coc-html',
+            "\'coc-html-css-support',
 
 " this must fix possible issues with pyright not finding project root
 autocmd FileType python let b:coc_root_patterns = ['.git', '.env', 'venv', '.venv', 'setup.cfg', 'setup.py', 'pyproject.toml', 'pyrightconfig.json']
@@ -291,7 +288,7 @@ inoremap <silent><expr> <c-space> coc#refresh()
 " Coc only does snippet and additional edit on confirm.
 inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
-" Use `[c` and `]c` to navigate diagnostics
+" Use `[d` and `]d` to navigate diagnostics
 nmap <silent> [d <Plug>(coc-diagnostic-prev)
 nmap <silent> ]d <Plug>(coc-diagnostic-next)
 

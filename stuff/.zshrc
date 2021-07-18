@@ -117,6 +117,9 @@ alias cw='g++ -std=c++17 -O2 -Wfatal-errors'
 
 ##COMPETITIVE
 
+
+
+
 ##ALIASES
 
 alias update='sudo apt update && sudo apt -u upgrade -y && sudo apt autoclean -y && sudo apt clean -y && sudo apt autoremove -y'
@@ -140,7 +143,7 @@ function configsave(){
 #Open current day note file
 function note(){
     filename=$(date +'%a-%m-%d-%Y')
-    vim ~/notes/${filename}.txt
+    vim ~/notes/${filename}.txt +
 }
 
 #--------------------containers
