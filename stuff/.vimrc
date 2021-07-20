@@ -100,10 +100,7 @@ nnoremap N Nzz
 nnoremap } }zz
 nnoremap { {zz
 
-"edit my vimrc
-nnoremap <leader>ev :vsplit $MYVIMRC<cr>
-
-"replace all ocurrence
+"replace all ocurrence by typing old and new
 nnoremap S :%s//gI<Left><Left><Left>
 "replace ocurrences of last searched word
 nnoremap <leader>r :%s///g<Left><Left>
@@ -129,8 +126,9 @@ set expandtab
 set autoindent
 
 "abbreviations here
-:iabbrev sp ' '
-:iabbrev pl '\n'
+" does not work with coc pairs
+":iabbrev sp ' '
+":iabbrev pl '\n'
 :iabbrev ee &
 :iabbrev adn and
 :iabbrev endk endl
@@ -144,9 +142,9 @@ set tw=0
 set nowrap
 setlocal expandtab
 setlocal smarttab
-set ts=2 
-set sw=2 
-set sts=2 
+set ts=4 
+set sw=4 
+set sts=4 
 set noexpandtab
 endfunction
 
@@ -220,10 +218,10 @@ command! ProjectFiles execute s:find_files()
 nnoremap <C-p> :ProjectFiles<CR>
 noremap <C-b> :Buffers<CR>
 noremap <C-f> :Rg!<CR> 
-nnoremap <leader>gc :GBranches<CR>
 
 "------------ NerdCommenter Setings ---
 filetype plugin on
+imap <C-_> <ESC><Plug>NERDCommenterToggle
 nmap <C-_> <Plug>NERDCommenterToggle
 vmap <C-_> <Plug>NERDCommenterToggle<CR>gv
 
@@ -231,7 +229,10 @@ vmap <C-_> <Plug>NERDCommenterToggle<CR>gv
 set updatetime=100
 
 " ------------------Git Fugitive -------
+"  git status
 nnoremap <leader>gs :G<CR>
+" git checkout
+nnoremap <leader>gc :GBranches<CR>
 
 " ------------------undotree ---- 
 nnoremap <F5> :UndotreeToggle<CR>
