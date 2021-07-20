@@ -57,15 +57,9 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
-"ctrl A, ctrl C, ctrl V, ctrl S and ctrl D equivalents
-set clipboard+=unnamedplus
+"ctrl A select all file, y and p uses system clipboard
+set clipboard=unnamedplus
 noremap <C-a> GVgg
-noremap <C-c> "+y
-" remap visual block to leader v
-noremap <leader>v <C-v>
-" remap cntrl v to usual 
-nnoremap <C-v> "+p
-noremap <leader>d dd
 
 "esc and save in jk 
 inoremap jk <ESC>
@@ -356,5 +350,4 @@ set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 "--------------------- coc-explorer--------------------
 nnoremap <space>e :CocCommand explorer<CR>
 autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
-
 
